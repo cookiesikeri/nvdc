@@ -13,7 +13,8 @@ use App\Models\Volunteer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Mail;
-use Intervention\Image\Facades\Image;
+Use Image;
+use Intervention\Image\Exception\NotReadableException;
 use Illuminate\Support\Facades\Validator;
 
 class HomeController extends Controller
@@ -189,20 +190,22 @@ class HomeController extends Controller
             return redirect()->back()->withErrors($validator)->withInput();
         }
 
-        if($request->hasFile('image'))
-        {
-            $image = $request->image;
-            $file = $request->file('image');
-            $name = $file->getClientOriginalName();
+        $image = $this->upload_image($request->image);
 
-            $location = 'img/'. $name;
+        // if($request->hasFile('image'))
+        // {
+        //     $image = $request->image;
+        //     $file = $request->file('image');
+        //     $name = $file->getClientOriginalName();
 
-            Image::make($image)->resize(729, 486, function ($constraint) {
-                $constraint->aspectRatio();})->save($location);
+        //     $location = 'img/'. $name;
 
-            $data['image'] = $location;
+        //     Image::make($image)->resize(729, 486, function ($constraint) {
+        //         $constraint->aspectRatio();})->save($location);
 
-        }
+        //     $data['image'] = $location;
+
+        // }
 
 
 
@@ -211,6 +214,23 @@ class HomeController extends Controller
         Mail::to('info@nvdcng.com')->send(new \App\Mail\Volunteer($message));
         Mail::to($request->email)->send(new \App\Mail\JoinVolunteer($data));
         return redirect()->back();
+    }
+
+    public function upload_image($image)
+    {
+        if ($image != '') {
+            $original_name = $image->getClientOriginalName(); //get image original name
+            $new_name      = md5(microtime() . $original_name) . '.' . 'png';  //generate new name for the image
+            $make_image    = Image::make($image->getRealPath()); // read image from temporary file
+            try {
+                $make_image->save('storage/volunteer/' . $new_name, 60); //upload the image to server
+                return $new_name;
+            } catch (\Exception $e) {
+                // throw $e;
+            }
+        }
+
+        return null;
     }
 
     public function postPartner(Request $request) {
