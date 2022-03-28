@@ -35,4 +35,4 @@ class JoinVolunteer extends Mailable
     }
 
     }
-}
+
