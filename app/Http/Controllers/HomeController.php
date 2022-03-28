@@ -174,7 +174,7 @@ class HomeController extends Controller
             'publish'   =>  'required|string',
             'nationality'   =>  'required|string',
             'purpose'   =>  'required|string|max:191',
-            'image' => 'required|mimes:jpg,jpeg,png|max:2048',
+            'image' => 'mimes:jpg,jpeg,png|max:2048',
         ], [
             'name.required'     =>  'Name field is required. Please fill in your name.',
             'email.required'    =>  'E-Mail field is required. Please enter your e-mail address.',
