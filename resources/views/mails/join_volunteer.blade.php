@@ -2,7 +2,7 @@
 Hello <b>{{ $data['name'] }}</b>! <br>
 
 <p>
-Thank you for registering as our Volunteer, Our Admin would reach out to ypou soon, <br>
+Thank you for registering as our Volunteer, Our Admin would reach out to you soon, <br>
 Thanks once again.
 
 </p>
