@@ -154,14 +154,14 @@ class HomeController extends Controller
 
     public function postVolunteer(Request $request) {
 
-        $image = $this->upload_image($request->image);
+        // $image = $this->upload_image($request->image);
 
         $data = array(
             'name'      =>  $request->name,
             'email'     =>  $request->email,
             'purpose'   =>  $request->purpose,
             'phone'     =>  $request->phone,
-            'image'     =>  $image,
+            // 'image'     =>  $image,
             'sex'   =>  $request->sex,
             'nationality'   =>  $request->nationality,
             'address'   =>  $request->address,
@@ -196,20 +196,20 @@ class HomeController extends Controller
 
 
 
-        // if($request->hasFile('image'))
-        // {
-        //     $image = $request->image;
-        //     $file = $request->file('image');
-        //     $name = $file->getClientOriginalName();
+        if($request->hasFile('image'))
+        {
+            $image = $request->image;
+            $file = $request->file('image');
+            $name = $file->getClientOriginalName();
 
-        //     $location = 'img/'. $name;
+            $location = 'volunteer/'. $name;
 
-        //     Image::make($image)->resize(729, 486, function ($constraint) {
-        //         $constraint->aspectRatio();})->save($location);
+            Image::make($image)->resize(729, 486, function ($constraint) {
+                $constraint->aspectRatio();})->save($location);
 
-        //     $data['image'] = $location;
+            $data['image'] = $location;
 
-        // }
+        }
 
 
 
@@ -278,7 +278,7 @@ class HomeController extends Controller
             $file = $request->file('image');
             $name = $file->getClientOriginalName();
 
-            $location = 'img/'. $name;
+            $location = 'partner/'. $name;
 
             Image::make($image)->resize(729, 486, function ($constraint) {
                 $constraint->aspectRatio();})->save($location);
