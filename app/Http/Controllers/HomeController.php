@@ -153,12 +153,15 @@ class HomeController extends Controller
     }
 
     public function postVolunteer(Request $request) {
+
+        $image = $this->upload_image($request->image);
+
         $data = array(
             'name'      =>  $request->name,
             'email'     =>  $request->email,
             'purpose'   =>  $request->purpose,
             'phone'     =>  $request->phone,
-            'image'     =>  $request->image,
+            'image'     =>  $image,
             'sex'   =>  $request->sex,
             'nationality'   =>  $request->nationality,
             'address'   =>  $request->address,
@@ -191,7 +194,7 @@ class HomeController extends Controller
             return redirect()->back()->withErrors($validator)->withInput();
         }
 
-        $image = $this->upload_image($request->image);
+
 
         // if($request->hasFile('image'))
         // {
