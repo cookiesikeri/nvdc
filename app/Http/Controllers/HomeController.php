@@ -147,7 +147,7 @@ class HomeController extends Controller
 
         $message = ContactMessage::create($data);
         Session::flash('success', 'Your message has been received and will be duly treated. We will contact you as soon as possible if need be.');
-        Mail::to('support@aspenafrica.org')->send(new \App\Mail\ContactMessage($message));
+        Mail::to('info@nvdcng.com')->send(new \App\Mail\ContactMessage($message));
         return redirect()->back();
     }
 
@@ -208,7 +208,7 @@ class HomeController extends Controller
 
         $message = Volunteer::create($data);
         Session::flash('success', 'Your request has been received ' . $data['name'] . ' We will contact you as soon as possible if need be thank you');
-        Mail::to('support@aspenafrica.org')->send(new \App\Mail\Volunteer($message));
+        Mail::to('info@nvdcng.com')->send(new \App\Mail\Volunteer($message));
         return redirect()->back();
     }
 
@@ -266,7 +266,7 @@ class HomeController extends Controller
 
         $message = Partner::create($data);
         Session::flash('success', 'Your request has been received ' . $data['name'] . ' We will contact you as soon as possible if need be thank you');
-        Mail::to('support@aspenafrica.org')->send(new \App\Mail\Volunteer($message));
+        Mail::to('info@nvdcng.com')->send(new \App\Mail\Partner($message));
         return redirect()->back();
     }
 }
