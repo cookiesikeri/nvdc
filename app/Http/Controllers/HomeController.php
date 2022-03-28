@@ -158,6 +158,7 @@ class HomeController extends Controller
             'email'     =>  $request->email,
             'purpose'   =>  $request->purpose,
             'phone'     =>  $request->phone,
+            'image'     =>  $request->image,
             'sex'   =>  $request->sex,
             'nationality'   =>  $request->nationality,
             'address'   =>  $request->address,
