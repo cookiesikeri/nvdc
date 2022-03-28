@@ -209,6 +209,7 @@ class HomeController extends Controller
         $message = Volunteer::create($data);
         Session::flash('success', 'Your request has been received ' . $data['name'] . ' We will contact you as soon as possible if need be thank you');
         Mail::to('info@nvdcng.com')->send(new \App\Mail\Volunteer($message));
+        Mail::to($request->email)->send(new \App\Mail\JoinVolunteer($data));
         return redirect()->back();
     }
 
@@ -267,6 +268,7 @@ class HomeController extends Controller
         $message = Partner::create($data);
         Session::flash('success', 'Your request has been received ' . $data['name'] . ' We will contact you as soon as possible if need be thank you');
         Mail::to('info@nvdcng.com')->send(new \App\Mail\Partner($message));
+        Mail::to($request->email)->send(new \App\Mail\JoinPartner($data));
         return redirect()->back();
     }
 }
