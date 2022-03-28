@@ -29,6 +29,6 @@ class ContactMessage extends Mailable
      */
     public function build()
     {
-        return $this->from('support@aspenafrica.org', 'African Primary Healthcare Foundation')->subject('Contact Feedback')->view('mails.contact_us_message');
+        return $this->from('info@nvdcng.com', 'National Voters Drive Coalation')->subject('Contact Feedback')->view('mails.contact_us_message');
     }
 }

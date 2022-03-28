@@ -29,6 +29,6 @@ class Volunteer extends Mailable
      */
     public function build()
     {
-        return $this->from('support@aspenafrica.org', 'African Primary Healthcare Foundation')->subject('Volunteer')->view('mails.volunteer');
+        return $this->from('info@nvdcng.com', 'National Voters Drive Coalation')->subject('Volunteer')->view('mails.volunteer');
     }
 }

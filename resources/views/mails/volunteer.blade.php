@@ -25,7 +25,7 @@
                             <address>
                                 <strong>{{ config('app.name') }}</strong>
                                 <br>
-                                    Email: support@aph-foundation.org
+                                    Email: info@nvdcng.com
                                 <br>
                                 <abbr title="Phone">Tel:</abbr> 0700-6258244
                             </address>
