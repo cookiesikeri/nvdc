@@ -17,300 +17,79 @@ About Us
 					</div>
 				</div>
 			</div>
-			<!-- CITY VISIT WRAP START-->
-			<div class="city_visit_wrap">
-				<div class="container-fluid">
+
+            <div class="city_about_wrap">
+				<div class="container">
 					<div class="row">
-						<div class="col-md-6 col-sm-6">
-							<div class="city_visit_fig">
+						<div class="col-md-6">
+							<div class="city_about_fig">
 								<figure class="box">
-									<div class="box-layer layer-1"></div>
-									<div class="box-layer layer-2"></div>
-									<div class="box-layer layer-3"></div>
-									<img src="extra-images/visit-fig.jpg" alt="">
+									<img src="{{URL::to($general->about_image)}}" alt="about us image">
 								</figure>
+
 							</div>
 						</div>
-						<div class="col-md-6 col-sm-6">
-							<div class="city_visit_text">
-								<h3>What Are You <span>Wondering</span></h3>
-								<h3>Are You A <span>Resident!</span></h3>
-								<p><i>Proin gravida nibh vel velit auctor aliquet Aenean <br>sollicitudin, </i></p>
-								<p>Lorem quis bibendum auctor, nisi elit consequat ipsum, nec <br>sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate<br> cursus a sit amet mauris. </p>
-								<a class="theam_btn border-color color" href="#" tabindex="0">Explore More</a>
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6">
-							<div class="city_visit_text text2">
-								<h3>What Are You <span>Searching</span></h3>
-								<h3>Are You A <span>Visitor!</span></h3>
-								<p><i>Proin gravida nibh vel velit auctor aliquet Aenean <br>sollicitudin, </i></p>
-								<p>Lorem quis bibendum auctor, nisi elit consequat ipsum, nec <br>sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate<br> cursus a sit amet mauris. </p>
-								<a class="theam_btn border-color color" href="#" tabindex="0">Explore More</a>
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6">
-							<div class="city_visit_fig">
-								<figure class="box">
-									<div class="box-layer layer-1"></div>
-									<div class="box-layer layer-2"></div>
-									<div class="box-layer layer-3"></div>
-									<img src="extra-images/visit-fig1.jpg" alt="">
-								</figure>
+						<div class="col-md-6">
+							<div class="city_about_list">
+								<!--SECTION HEADING START-->
+								<div class="section_heading border">
+									<span>ABOUT</span>
+									<h2>{{$site->site_name}}</h2>
+								</div>
+								<!--SECTION HEADING END-->
+								<div class="city_about_text">
+                                    <p>{!! $general->about_content !!}</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- CITY VISIT WRAP END-->
 
-
-			<!--CITY NEWS2 WRAP END-->
-
-            <div class="city_blog2_wrap team">
+			<div class="city_requset_wrap">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-4 col-sm-6">
-							<div class="city_team_fig">
-								<figure class="overlay">
-									<img src="extra-images/team-fig.jpg" alt="">
-									<div class="city_top_social">
-										<ul>
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-										</ul>
+						<div class="col-md-6 col-sm-6">
+							<div class="city_request_list">
+								<div class="city_request_row">
+									<span><i class="fa icon-shout"></i></span>
+									<div class="city_request_text">
+										<h4>Who we are</h4>
 									</div>
-								</figure>
-								<div class="city_team_text">
-									<h4><a href="#">Sebastien Proulx</a></h4>
-									<p>City Mayor</p>
+								</div>
+								<div class="city_request_link">
+                                    <p>{!! $general->who_we_are !!}</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="city_team_fig">
-								<figure class="overlay">
-									<img src="extra-images/team-fig1.jpg" alt="">
-									<div class="city_top_social">
-										<ul>
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-										</ul>
+						<div class="col-md-6 col-sm-6">
+							<div class="city_request_list">
+								<div class="city_request_row">
+									<span><i class="fa icon-shout"></i></span>
+									<div class="city_request_text">
+										<h4>What we do</h4>
 									</div>
-								</figure>
-								<div class="city_team_text">
-									<h4><a href="#">Jamimy Sam</a></h4>
-									<p>City Mayor</p>
+								</div>
+								<div class="city_request_link">
+                                    <p>{!! $general->what_we_do !!}</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="city_team_fig">
-								<figure class="overlay">
-									<img src="extra-images/team-fig2.jpg" alt="">
-									<div class="city_top_social">
-										<ul>
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-										</ul>
-									</div>
-								</figure>
-								<div class="city_team_text">
-									<h4><a href="#">Sebastien Proulx</a></h4>
-									<p>City Mayor</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="city_team_fig">
-								<figure class="overlay">
-									<img src="extra-images/team-fig3.jpg" alt="">
-									<div class="city_top_social">
-										<ul>
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-										</ul>
-									</div>
-								</figure>
-								<div class="city_team_text">
-									<h4><a href="#">Sebastien Proulx</a></h4>
-									<p>City Mayor</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="city_team_fig">
-								<figure class="overlay">
-									<img src="extra-images/team-fig4.jpg" alt="">
-									<div class="city_top_social">
-										<ul>
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-										</ul>
-									</div>
-								</figure>
-								<div class="city_team_text">
-									<h4><a href="#">David Melon</a></h4>
-									<p>City Mayor</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="city_team_fig">
-								<figure class="overlay">
-									<img src="extra-images/team-fig5.jpg" alt="">
-									<div class="city_top_social">
-										<ul>
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-										</ul>
-									</div>
-								</figure>
-								<div class="city_team_text">
-									<h4><a href="#">Paula Marcus</a></h4>
-									<p>City Mayor</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="city_team_fig">
-								<figure class="overlay">
-									<img src="extra-images/team-fig6.jpg" alt="">
-									<div class="city_top_social">
-										<ul>
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-										</ul>
-									</div>
-								</figure>
-								<div class="city_team_text">
-									<h4><a href="#">Sebastien Proulx</a></h4>
-									<p>City Mayor</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="city_team_fig">
-								<figure class="overlay">
-									<img src="extra-images/team-fig7.jpg" alt="">
-									<div class="city_top_social">
-										<ul>
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-										</ul>
-									</div>
-								</figure>
-								<div class="city_team_text">
-									<h4><a href="#">Sebastien Proulx</a></h4>
-									<p>City Mayor</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="city_team_fig">
-								<figure class="overlay">
-									<img src="extra-images/team-fig8.jpg" alt="">
-									<div class="city_top_social">
-										<ul>
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-										</ul>
-									</div>
-								</figure>
-								<div class="city_team_text">
-									<h4><a href="#">Sebastien Proulx</a></h4>
-									<p>City Mayor</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="city_team_fig">
-								<figure class="overlay">
-									<img src="extra-images/team-fig9.jpg" alt="">
-									<div class="city_top_social">
-										<ul>
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-										</ul>
-									</div>
-								</figure>
-								<div class="city_team_text">
-									<h4><a href="#">Sebastien Proulx</a></h4>
-									<p>City Mayor</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="city_team_fig">
-								<figure class="overlay">
-									<img src="extra-images/team-fig10.jpg" alt="">
-									<div class="city_top_social">
-										<ul>
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-										</ul>
-									</div>
-								</figure>
-								<div class="city_team_text">
-									<h4><a href="#">Sebastien Proulx</a></h4>
-									<p>City Mayor</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="city_team_fig">
-								<figure class="overlay">
-									<img src="extra-images/team-fig11.jpg" alt="">
-									<div class="city_top_social">
-										<ul>
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-										</ul>
-									</div>
-								</figure>
-								<div class="city_team_text">
-									<h4><a href="#">Sebastien Proulx</a></h4>
-									<p>City Mayor</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-12">
-							<div class="pagination">
-								<ul>
-									<li><a href="#"><i class="fa fa-angle-left"></i></a></li>
-									<li><a href="#">01</a></li>
-									<li><a href="#">02</a></li>
-									<li><a href="#">....</a></li>
-									<li><a href="#">08</a></li>
-									<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-								</ul>
-							</div>
-						</div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-6">
+                                <div class="city_request_list">
+                                    <div class="city_request_row">
+                                        <span><i class="fa icon-shout"></i></span>
+                                        <div class="city_request_text">
+                                            <h4>What we do</h4>
+                                        </div>
+                                    </div>
+                                    <div class="city_request_link">
+                                        <p>{!! $general->what_we_do !!}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 					</div>
 				</div>
 			</div>
@@ -326,40 +105,9 @@ About Us
 						</div>
 					</div>
 				</div>
-                <div class="city_award_wrap">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4 col-sm-4">
-                                <div class="city_award_list">
-                                    <span><i class="fa icon-politician"></i></span>
-                                    <div class="city_award_text">
-                                        <h3 class="counter">1495</h3>
-                                        <h3>Established</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <div class="city_award_list">
-                                    <span><i class="fa icon-cube"></i></span>
-                                    <div class="city_award_text">
-                                        <h3 class="counter">75,399</h3>
-                                        <h3>KM Square</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <div class="city_award_list">
-                                    <span><i class="fa icon-demographics"></i></span>
-                                    <div class="city_award_text">
-                                        <h3 class="counter">1,435,268</h3>
-                                        <h3>Total Population</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
 			</div>
+
 
 
 @endsection

@@ -35,8 +35,11 @@ Gallery
                         <img src="{{asset($post->image)}}" alt="">
                         <div class="city_top_social">
                             <ul>
-                                <li><a data-lightbox="image" href="{{asset($post->image)}}" target=”_”><i class="fa fa-eye"></i></a></li>
+                                <li>
+                                    <a class="paly_btn" data-rel="prettyPhoto" href="{{asset($post->image)}}"><i class="fa fa-plus"></i></a>
+                                    {{-- <a data-lightbox="image" href="{{asset($post->image)}}" target=”_”><i class="fa fa-eye"></i></a></li> --}}
                             </ul>
+                            {{-- <h4><a href="#">{{$post->title}}</a></h4> --}}
                         </div>
                     </figure>
                     <div class="city_team_text">

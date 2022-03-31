@@ -8,16 +8,16 @@
                 </figure>
             </div>
             <div class="city_top_news">
-                <span>Live Feeds</span>
+                <span>Clients Feedback</span>
                 <div class="city-news-slider">
                     <div>
                         <p>Welcome To {{$site->site_name}} <i class="fa fa-star"></i></p>
                     </div>
-                    {{-- @foreach($feedbacks as $state)
+                    @foreach($feedbacks as $state)
                     <div>
                         <p>{{$state->name}} - {!! $state->body !!} - {{$state->created_at->diffForHumans()}} <i class="fa fa-star"></i></p>
                     </div>
-                    @endforeach --}}
+                    @endforeach
                 </div>
             </div>
             <div class="city_top_social">
@@ -63,7 +63,7 @@
                     <div id="kode-responsive-navigation" class="dl-menuwrapper">
                         <button class="dl-trigger">Open Menu</button>
                         <ul class="dl-menu">
-                            <li><a class="active" href="index.html">Home</a></li>
+                            <li><a class="active" href="{{url('/')}}">Home</a></li>
                             <li><a href="{{route('aboutus')}}">About Us</a></li>
                             <li><a href="#">Get Involved</a>
                                 <ul class="child">

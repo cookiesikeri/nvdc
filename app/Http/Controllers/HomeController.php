@@ -39,81 +39,86 @@ class HomeController extends Controller
 
     public function AboutUs()
     {
+        $feedbacks  = Feedback::all();
 
-        return view('about');
+        return view('about', compact('feedbacks'));
     }
 
     public function ReadyToVote()
     {
         $clients = Client::all();
         $galleries = AbiaGallery::take(12)->inRandomOrder()->get();
+        $feedbacks  = Feedback::all();
 
-        return view('readytovote', compact('clients', 'galleries'));
+        return view('readytovote', compact('clients', 'galleries', 'feedbacks'));
     }
 
 
     public function ContactUs()
     {
+        $feedbacks  = Feedback::all();
 
-        return view('contact');
+        return view('contact', compact('feedbacks'));
     }
 
 
     public function BecomeVolunteer()
     {
+        $feedbacks  = Feedback::all();
 
-        return view('becomevolunteer');
+        return view('becomevolunteer', compact('feedbacks'));
     }
 
     public function Partner ()
     {
 
         $volunteers = Partner::where('status', 1)->get();
+        $feedbacks  = Feedback::all();
 
-        return view('partner' , compact('volunteers'));
+        return view('partner' , compact('volunteers', 'feedbacks'));
     }
 
     public function Volunteers()
     {
 
         $volunteers = Volunteer::where('status', 1)->get();
+        $feedbacks  = Feedback::all();
 
-        return view('volunteers' , compact('volunteers'));
+        return view('volunteers' , compact('volunteers', 'feedbacks'));
     }
 
 
     public function Donate()
     {
+        $feedbacks  = Feedback::all();
 
         $countries = Country::all();
 
 
-        return view('donate' , compact('countries'));
+        return view('donate' , compact('countries', 'feedbacks'));
     }
 
     public function Privacy()
     {
-        return view('privacy');
+        $feedbacks  = Feedback::all();
+        return view('privacy',compact('feedbacks'));
 
     }
 
-    public function Resources()
-    {
-        return view('resources');
-
-    }
 
     public function Terms()
     {
-        return view('terms');
+        $feedbacks  = Feedback::all();
+        return view('terms',compact('feedbacks'));
 
     }
 
     public function Gallery()
     {
         $galleries = Gallery::orderBy('id', 'desc')->paginate(12);
+        $feedbacks  = Feedback::all();
 
-        return view('gallery' , compact('galleries'));
+        return view('gallery' , compact('galleries', 'feedbacks'));
     }
 
     public function postMessage(Request $request) {

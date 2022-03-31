@@ -47,9 +47,6 @@ Home
 						<div class="col-md-6">
 							<div class="city_about_fig">
 								<figure class="box">
-									<div class="box-layer layer-1"></div>
-									<div class="box-layer layer-2"></div>
-									<div class="box-layer layer-3"></div>
 									<img src="extra-images/about-fig.jpg" alt="">
 								</figure>
 								<div class="city_about_video">
