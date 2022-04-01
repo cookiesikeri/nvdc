@@ -23,7 +23,7 @@ Home
 								<!--SECTION HEADING END-->
 								<div class="city_about_text">
                                     <p>{!! $general->home_intro !!}</p>
-                                    <a class="theam_btn border-color color" href="{{ route('donate') }}" tabindex="0">Donate </a>
+                                    <a class="theam_btn border-color color" href="{{ route('donate') }}" tabindex="0">MAKE A DONATION </a>
 								</div>
 							</div>
 						</div>
