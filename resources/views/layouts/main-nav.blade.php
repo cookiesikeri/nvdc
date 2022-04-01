@@ -8,7 +8,7 @@
                 </figure>
             </div>
             <div class="city_top_news">
-                <span>Clients Feedback</span>
+                <span> Feedback</span>
                 <div class="city-news-slider">
                     <div>
                         <p>Welcome To {{$site->site_name}} <i class="fa fa-star"></i></p>
