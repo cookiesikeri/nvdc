@@ -35,3 +35,6 @@ Route::get('/contact-us', [HomeController::class, 'ContactUs'])->name('contact')
 Route::post('/contact-us-post', [HomeController::class, 'postMessage'])->name('site.contact.post');
 Route::post('/become-a-volunteer', [HomeController::class, 'postVolunteer'])->name('become.volunteer.post');
 Route::post('/become-a-partner', [HomeController::class, 'postPartner'])->name('become.partner.post');
+
+Route::get('/projects', [HomeController::class, 'Project'])->name('projects');
+Route::get('/project/{slug}', [HomeController::class, 'ProjectDetails'])->name('project.details');

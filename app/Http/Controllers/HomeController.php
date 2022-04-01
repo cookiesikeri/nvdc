@@ -9,6 +9,7 @@ use App\Models\Country;
 use App\Models\Feedback;
 use App\Models\Gallery;
 use App\Models\Partner;
+use App\Models\Project;
 use App\Models\Volunteer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
@@ -33,8 +34,9 @@ class HomeController extends Controller
     public function index()
     {
         $feedbacks  = Feedback::all();
+        $projects = Project::take(3)->latest()->get();
 
-        return view('welcome', compact('feedbacks'));
+        return view('welcome', compact('feedbacks', 'projects'));
     }
 
     public function AboutUs()
@@ -104,6 +106,26 @@ class HomeController extends Controller
         return view('privacy',compact('feedbacks'));
 
     }
+
+    public function Project()
+    {
+
+        $projects = Project::orderBy('id', 'desc')->paginate(10);
+        $feedbacks  = Feedback::all();
+
+        return view('projects' , compact('projects', 'feedbacks'));
+    }
+
+    public function ProjectDetails($slug)
+    {
+
+        $eventdetails = Project::where('slug', $slug)->first();
+        $events = Project::take(4)->inRandomOrder()->get();
+        $feedbacks  = Feedback::all();
+
+        return view('project_details' , compact('eventdetails', 'events', 'feedbacks'));
+    }
+
 
 
     public function Terms()

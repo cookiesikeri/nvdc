@@ -6,7 +6,6 @@
                 <div class="banner_text">
                     <div class="small_text animated">Welcome to</div>
                     <div class="medium_text animated">{{$site->site_name}}</div>
-                    <div class="large_text animated"><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
                     <div class="banner_btn">
                         <a class="theam_btn animated" href="{{route('aboutus')}}">Read More</a>
                         <a class="theam_btn animated" href="{{route('volunteers')}}">Become A Volunteer</a>
@@ -18,7 +17,7 @@
             <figure class="overlay">
                 <img src="{{$general->slider1}}" alt="">
                 <div class="banner_text">
-                    <div class="small_text animated">Welcome to</div>
+                    {{-- <div class="small_text animated">Welcome to</div> --}}
                     <div class="medium_text animated">{{$site->site_name}}</div>
                     <div class="banner_btn">
                         <a class="theam_btn animated" href="{{route('aboutus')}}">Read More</a>
@@ -30,15 +29,19 @@
         <div>
             <figure class="overlay">
                 <img src="{{$general->slider2}}" alt="">
-                <div class="banner_text">
-                    <div class="small_text animated">Welcome to</div>
-                    <div class="medium_text animated"{{$site->site_name}}</div>
 
-                    <div class="banner_btn">
-                        <a class="theam_btn animated" href="{{route('aboutus')}}">Read More</a>
-                        <a class="theam_btn animated" href="{{route('volunteers')}}">Become A Volunteer</a>
-                    </div>
-                </div>
+            </figure>
+        </div>
+        <div>
+            <figure class="overlay">
+                <img src="{{$general->slider3}}" alt="">
+
+            </figure>
+        </div>
+        <div>
+            <figure class="overlay">
+                <img src="{{$general->slider4}}" alt="">
+
             </figure>
         </div>
     </div>

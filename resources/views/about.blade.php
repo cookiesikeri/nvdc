@@ -81,11 +81,11 @@ About Us
                                     <div class="city_request_row">
                                         <span><i class="fa icon-shout"></i></span>
                                         <div class="city_request_text">
-                                            <h4>What we do</h4>
+                                            <h4>Targeted States</h4>
                                         </div>
                                     </div>
                                     <div class="city_request_link">
-                                        <p>{!! $general->what_we_do !!}</p>
+                                        <p>{!! $general->targeted_states !!}</p>
                                     </div>
                                 </div>
                             </div>

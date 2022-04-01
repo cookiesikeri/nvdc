@@ -25,7 +25,7 @@
                                         <li><a href="{{route('aboutus')}}">About Us</a></li>
                                         <li><a href="{{route('galleries')}}">Gallery</a></li>
                                         <li><a href="{{route('volunteers')}}"> Volunteer</a></li>
-                                        <li><a href="{{route('states')}}">States</a></li>
+                                        <li><a href="{{route('projects')}}">Projects</a></li>
                                         <li><a href="{{route('donate')}}">Donate</a></li>
                                     </ul>
                                  </div>
