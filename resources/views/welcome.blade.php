@@ -30,6 +30,42 @@ Home
 					</div>
 				</div>
 			</div>
+             <div class="city_jobs_wrap">
+				<div class="city_jobs_fig">
+					<div class="city_job_text">
+
+						<h2>READY TO VOTE ABIA </h2>
+                        {{-- <span>Who, What, When, Where & How?</span> --}}
+                        <iframe title="YouTube video player" src="https://www.youtube.com/embed/5HPiEQOfi7g" width="600" height="400" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                        <br>
+                    </div>
+				</div>
+				<div class="city_jobs_list">
+					<ul>
+						<li>
+							<div class="city_jobs_item overlay">
+								<span><i class="fa icon-team"></i></span>
+								<div class="ciy_jobs_caption">
+									<h2>Ready to Vote Abia</h2>
+                                    <p>"By combining a convenient opportunity for voters to register and learn about the voting process with health screening and education, we will motivate citizens to elect leaders who will prioritize their communities and their health."</p>
+
+                                    <button class="theam_btn btn" type="submit">MAKE A DONATION</button>
+								</div>
+							</div>
+						</li>
+                        <li>
+							<div class="city_jobs_item pull-right overlay">
+								<div class="ciy_jobs_caption">
+									<h2>2</h2>
+                                    <p>Our medical personnel will perform blood pressure health screenings and educate attendees on how voting impacts their health while our volunteers will guide attendees in the PVC voter pre-registration process.</p>
+								</div>
+								<span><i class="fa icon-urban"></i></span>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
 			<div class="city_blog_wrap">
 				<div class="container">
 					<!--SECTION HEADING START-->
