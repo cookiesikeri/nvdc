@@ -20,10 +20,14 @@ About Us
 
             <div class="city_about_wrap">
 				<div class="container">
+
 					<div class="row">
+
 						<div class="col-md-6">
 							<div class="city_about_fig">
+
 								<figure class="box">
+
 									<img src="{{URL::to($general->about_image)}}" alt="about us image">
 								</figure>
 
@@ -31,6 +35,7 @@ About Us
 						</div>
 						<div class="col-md-6">
 							<div class="city_about_list">
+
 								<!--SECTION HEADING START-->
 								<div class="section_heading border">
 									<span>ABOUT</span>
