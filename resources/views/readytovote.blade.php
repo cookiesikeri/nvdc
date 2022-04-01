@@ -156,6 +156,51 @@ Ready To Vote Abia
 					</div>
 				</div>
 			</div>
+            <div class="city_jobs_wrap">
+				<div class="city_jobs_fig">
+					<div class="city_job_text">
+
+						<h2>THE PROJECT</h2>
+                        <span>Who, What, When, Where & How?</span>
+                        <iframe title="YouTube video player" src="https://www.youtube.com/embed/5HPiEQOfi7g" width="600" height="400" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                        <br>
+                        <span>When?</span>
+                        <p>This exercise will be a daily occurrence in different areas in each of the 17 local government areas for the next 3 months or until INEC’s Continuous Voter Registration process ends.</p>
+					</div>
+				</div>
+				<div class="city_jobs_list">
+					<ul>
+						<li>
+							<div class="city_jobs_item overlay">
+								<span><i class="fa icon-team"></i></span>
+								<div class="ciy_jobs_caption">
+									<h2>1</h2>
+                                    <p>Beginning with Abia, we will deploy teams of medical personnel and volunteers who will go to the 17 local government areas in the state.</p>
+
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="city_jobs_item pull-right overlay">
+								<div class="ciy_jobs_caption">
+									<h2>2</h2>
+                                    <p>Our medical personnel will perform blood pressure health screenings and educate attendees on how voting impacts their health while our volunteers will guide attendees in the PVC voter pre-registration process.</p>
+								</div>
+								<span><i class="fa icon-urban"></i></span>
+							</div>
+						</li>
+						<li>
+							<div class="city_jobs_item overlay">
+								<span><i class="fa icon-portfolio"></i></span>
+								<div class="ciy_jobs_caption">
+									<h2>3</h2>
+                                    <p>INEC will be present on-site to help those pre-registered complete the biometric portions of their registration before they go, which will allow attendees an expedited opportunity receive their PVCs.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
 			<!--CITY BLOG WRAP END-->
 			<div class="city_event2_wrap">
 				<div class="container">
@@ -218,6 +263,9 @@ Ready To Vote Abia
 
 				</div>
 			</div>
+			<!--CITY JOBS WRAP START-->
+
+			<!--CITY JOBS WRAP END-->
 
 
 
