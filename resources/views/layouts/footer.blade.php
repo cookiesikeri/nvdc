@@ -36,6 +36,7 @@
                                 <h4 class="widget_title">Features</h4>
                                  <div class="widget_service">
                                     <ul>
+                                        <li><a href="{{route('readytovote')}}">Ready To Vote Abia</a></li>
                                         <li><a href="{{route('partners')}}">Partner</a></li>
                                         <li><a href="{{route('privacy')}}">Privacy Policy</a></li>
                                         <li><a href="{{route('terms')}}">Terms of Use</a></li>
