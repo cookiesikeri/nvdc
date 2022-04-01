@@ -47,7 +47,7 @@ Home
 								<span><i class="fa icon-team"></i></span>
 								<div class="ciy_jobs_caption">
 									<h2>Ready to Vote Abia</h2>
-                                    <p>"By combining a convenient opportunity for voters to register and learn about the voting process with health screening and education, we will motivate citizens to elect leaders who will prioritize their communities and their health."</p>
+                                    <p>By combining a convenient opportunity for voters to register and learn about the voting process with health screening and education, we will motivate citizens to elect leaders who will prioritize their communities and their health.</p>
 
                                     <button class="theam_btn btn" type="submit">MAKE A DONATION</button>
 								</div>
@@ -56,8 +56,9 @@ Home
                         <li>
 							<div class="city_jobs_item pull-right overlay">
 								<div class="ciy_jobs_caption">
-									<h2>2</h2>
-                                    <p>Our medical personnel will perform blood pressure health screenings and educate attendees on how voting impacts their health while our volunteers will guide attendees in the PVC voter pre-registration process.</p>
+									{{-- <h2>2</h2> --}}
+                                    <p>We seek to educate voters on their right for fair elections and on how informed voting can significantly impact their life in positive ways.</p>
+
 								</div>
 								<span><i class="fa icon-urban"></i></span>
 							</div>
