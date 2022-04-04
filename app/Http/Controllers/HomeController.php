@@ -346,4 +346,36 @@ class HomeController extends Controller
         return back();
     }
 
+    public function posFeedback(Request $request) {
+        $data = array(
+            'name'      =>  $request->name,
+            'title'     =>  $request->title,
+            'body'      =>  $request->body,
+            'status'    =>  $request->status=0,
+        );
+
+
+        $validator = Validator::make($data, [
+            'name'      =>  'required|string|max:50',
+            'title'     =>  'nullable|string|max:50',
+            'body'   =>  'required|string|max:100',
+        ], [
+            'name.required'     =>  'Name field is required. Please fill in your name.',
+            'name.name'         =>     ' Name field must not exceed 50 characters.',
+            'title.title'        =>  'title field must not exceed 50 characters.',
+            'body.required'       =>  'Your forgot to type a message.'
+        ]);
+
+        if($validator->fails()) {
+            return redirect()->back()->withErrors($validator)->withInput();
+        }
+
+
+
+        $message = Feedback::create($data);
+        Session::flash('success', 'Your Feedback has been received ' . $data['name'] . ' We will post it you as soon as it has been approved by the Admin. thank you');
+        Mail::to('support@aspenafrica.org')->send(new \App\Mail\FeedbackMessage($message));
+        return redirect()->back();
+    }
+
 }

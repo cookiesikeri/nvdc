@@ -29,6 +29,8 @@ Route::get('/donate', [HomeController::class, 'Donate'])->name('donate');
 Route::get('/ready-to-vote-abia', [HomeController::class, 'ReadyToVote'])->name('readytovote');
 Route::get('/frequently-asked-questions', [HomeController::class, 'FAQ'])->name('faqs');
 Route::get('/feedbacks', [HomeController::class, 'FeedBacks'])->name('feedbacks');
+Route::post('/submit-feedback', [HomeController::class, 'posFeedback'])->name('feedback.post');
+
 
 Route::get('/galleries', [HomeController::class, 'gallery'])->name('galleries');
 Route::get('/about-us', [HomeController::class, 'AboutUs'])->name('aboutus');

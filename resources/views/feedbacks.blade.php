@@ -57,4 +57,33 @@ Feedbacks
     </div>
 </div>
 
+<div class="city_event_detail question overlay">
+    <h3>DID’T FIND YET? ASK YOUR QUESTION</h3>
+    <div class="event_booking_form">
+        <div class="row">
+            <form action="{{route('feedback.post')}}"  method="post">
+                {{csrf_field()}}
+            <div class="col-md-6 col-sm-6">
+                <div class="event_booking_field">
+                    <input type="text" placeholder="Your FullName" name="name">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="event_booking_field">
+                    <input type="text" placeholder="Your Title (Optional)" name="title">
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="event_booking_area">
+                    <textarea name="body" placeholder="your feedback"></textarea>
+                    <button class="theam_btn btn2" type="submit">Submit</button>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+
 @endsection
