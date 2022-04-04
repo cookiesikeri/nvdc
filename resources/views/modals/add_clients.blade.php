@@ -15,8 +15,8 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label for="">Title</label>
-                                <input type="url" name="title" class="form-control" >
+                                <label for="">URL</label>
+                                <input type="url" name="url" class="form-control" >
                             </div>
                         </div>
                         <div class="col-md-12">

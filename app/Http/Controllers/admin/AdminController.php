@@ -618,7 +618,7 @@ class AdminController extends Controller
 
             $data = array(
                 'image'        => NULL,
-                'title'   => $request->title,
+                'url'   => $request->url,
             );
 
             if($request->hasFile('image'))
