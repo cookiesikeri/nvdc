@@ -42,12 +42,12 @@
           <!-- User Account -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="{{asset('img/download.png')}}" class="user-image" alt="User Image">
-            </a>
+         <i class="fa fa-user"></i>
+      </a>
             <ul class="dropdown-menu scale-up">
               <!-- User image -->
               <li class="user-header">
-                <img src="{{asset('img/download.png')}}" class="img-responsive" alt="User Image">
+       <i class="fa fa-user"></i>
 
                 <p>
                     {{ucfirst(Auth::User()->name)}}
@@ -85,7 +85,8 @@
                   <li><!-- start message -->
                     <a href="#">
                       <div class="pull-left">
-                        <img src="../images/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        {{-- <img src="../images/user2-160x160.jpg" class="img-circle" alt="User Image"> --}}
+                      <i class="fa fa-user"></i>
                       </div>
                       <div class="mail-contnet">
                          <h4>

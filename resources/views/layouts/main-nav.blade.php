@@ -8,7 +8,8 @@
                 </figure>
             </div>
             <div class="city_top_news">
-                <span> Feedback</span>
+                <a href="{{route('feedbacks')}}">
+                <span> Feedback</span></a>
                 <div class="city-news-slider">
                     <div>
                         <p>Welcome To {{$site->site_name}} <i class="fa fa-star"></i></p>
@@ -22,12 +23,13 @@
             </div>
             <div class="city_top_social">
                 <ul>
-                    <li><a href="{{$site->facebook}}"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="{{$site->twitter}}"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="{{$site->linkedin}}"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="{{$site->youtube}}"><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="{{$site->instagram}}"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="{{ $site->facebook ? $site->facebook : ''}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="{{ $site->twitter ? $site->twitter : ''}}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="{{ $site->instagram ? $site->instagram : ''}}" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="{{ $site->linkedin ? $site->linkedin : ''}}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="{{ $site->youtube ? $site->youtube : ''}}" target="_blank"><i class="fa fa-youtube"></i></a></li>
                 </ul>
+
             </div>
 
         </div>

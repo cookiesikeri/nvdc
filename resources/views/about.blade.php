@@ -27,7 +27,11 @@ About Us
 							<div class="city_about_fig">
 
 								<figure class="box">
-
+									<div class="box-layer layer-1"></div>
+									<div class="box-layer layer-2"></div>
+									<div class="box-layer layer-3"></div>
+                                    <br>
+                                    <br>
 									<img src="{{URL::to($general->about_image)}}" alt="about us image">
 								</figure>
 
@@ -38,6 +42,8 @@ About Us
 
 								<!--SECTION HEADING START-->
 								<div class="section_heading border">
+                                    <br>
+                                    <br>
 									<span>ABOUT</span>
 									<h2>{{$site->site_name}}</h2>
 								</div>

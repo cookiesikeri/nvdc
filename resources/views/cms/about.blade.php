@@ -47,8 +47,10 @@ About
                     <form id="aboutForm" action="{{route('cms.aboutmore.update')}}" method="POST" enctype="multipart/form-data">
                   {{csrf_field()}}
                   <input type="hidden" name="_method" value="PUT">
+                  <label>Who we are</label>
                     <textarea  name="who_we_are" value="{{$general->who_we_are}}" class="form-control">{!! $general->who_we_are !!}</textarea>
                     <br>
+                    <label>What we do</label>
                     <textarea  name="what_we_do" value="{{$general->what_we_do}}" class="form-control">{!! $general->what_we_do !!}</textarea>
                     <br>
 

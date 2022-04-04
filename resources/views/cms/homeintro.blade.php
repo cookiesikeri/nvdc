@@ -41,6 +41,27 @@ Home Intro
                 </div>
             </form>
           </div>
+          <br>
+                            <!-- /.box-header -->
+                            <div class="box-body pad">
+                                <form id="aboutForm" action="{{route('cms.homesub.update')}}" method="POST" enctype="multipart/form-data">
+                              {{csrf_field()}}
+                              <input type="hidden" name="_method" value="PUT">
+                                <textarea  name="column1" value="{{$general->column1}}" class="form-control">{!! $general->column1 !!}</textarea>
+                                <br>
+                                <textarea  name="column2" value="{{$general->column2}}" class="form-control">{!! $general->column2 !!}</textarea>
+                                <br>
+                                <textarea  name="column3" value="{{$general->column3}}" class="form-control">{!! $general->column3 !!}</textarea>
+                                <br>
+                                <textarea  name="column4" value="{{$general->column4}}" class="form-control">{!! $general->column4 !!}</textarea>
+                                <br>
+
+                                <div class="form-layout-footer">
+                                  <button type="submit" class="btn btn-primary mg-r-5">Update</button>
+                              </div>
+
+                              </form>
+                              </div><!-- card -->
         </div>
         <!-- /.box -->
 

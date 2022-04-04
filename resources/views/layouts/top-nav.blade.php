@@ -5,10 +5,10 @@
           <div class="col-md-2">
             <div class="widget no-border m-0">
               <ul class="styled-icons icon-dark icon-theme-colored icon-sm sm-text-center">
-                <li><a href="{{$site->facebook}}"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="{{$site->twitter}}"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="{{$site->instagram}}"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="{{$site->linkedin}}"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="{{ $site->facebook ? $site->facebook : ''}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="{{ $site->twitter ? $site->twitter : ''}}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="{{ $site->instagram ? $site->instagram : ''}}" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="{{ $site->linkedin ? $site->linkedin : ''}}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
               </ul>
             </div>
           </div>

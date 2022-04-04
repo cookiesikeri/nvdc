@@ -16,7 +16,7 @@
                 </div>
                 <div class="col-md-8">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="widget_list">
                                 <h4 class="widget_title">Quick Links</h4>
                                  <div class="widget_service">
@@ -31,7 +31,7 @@
                                  </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="widget_list">
                                 <h4 class="widget_title">Features</h4>
                                  <div class="widget_service">
@@ -46,18 +46,23 @@
                                  </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="widget_list">
                                 <h4 class="widget_title">For Appointment</h4>
                                 <div class="widget_text text2">
-                                    <ul>
-                                        <li><a href="#">Monday<span>08 am - 3 pm</span></a></li>
-                                        <li><a href="#">Tusday <span>08 am - 3 pm</span></a></li>
-                                        <li><a href="#">Wednesfay<span>08 am - 3 pm</span></a></li>
-                                        <li><a href="#">Thursday<span>08 am - 3 pm</span></a></li>
-                                        <li><a href="#">FFriday <span>08 am - 3 pm</span></a></li>
-                                        <li><a href="#">Saturday - Sunday<span>Closed</span></a></li>
-                                    </ul>
+                                    <div class="city_news_feild">
+
+                                        <h4>Newsletter</h4>
+                                        <p>Subscribe to get the latest news, events updates and more..</p>
+                                        <div class="city_news_search">
+                                            <form {{route('news.letter.post')}} method="POST">
+                                                @csrf
+                                            {{-- <input type="text" name="text" placeholder="Enter Your Email Adress Here" required> --}}
+                                            <input type="email" required  id="email" name="email" placeholder="Enter Your Email Address Here">
+                                            <button class="theam_btn border-color color" type="submit">Subcribe Now</button>
+                                            </form>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -77,11 +82,11 @@
                     <div class="col-md-3 col-sm-6">
                         <div class="city_top_social">
                             <ul>
-                                <li><a href="{{$site->facebook}}"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="{{$site->twitter}}"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="{{$site->linkedin}}"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="{{$site->youtube}}"><i class="fa fa-youtube"></i></a></li>
-                                <li><a href="{{$site->instagram}}"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="{{ $site->facebook ? $site->facebook : ''}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="{{ $site->twitter ? $site->twitter : ''}}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="{{ $site->instagram ? $site->instagram : ''}}" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="{{ $site->linkedin ? $site->linkedin : ''}}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="{{ $site->youtube ? $site->youtube : ''}}" target="_blank"><i class="fa fa-youtube"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -90,3 +95,5 @@
         </div>
     </div>
 </footer>
+
+

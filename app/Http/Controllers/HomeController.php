@@ -8,8 +8,10 @@ use App\Models\ContactMessage;
 use App\Models\Country;
 use App\Models\Feedback;
 use App\Models\Gallery;
+use App\Models\NewsLetter;
 use App\Models\Partner;
 use App\Models\Project;
+use App\Models\Subscription;
 use App\Models\Volunteer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
@@ -61,6 +63,13 @@ class HomeController extends Controller
         $feedbacks  = Feedback::all();
 
         return view('contact', compact('feedbacks'));
+    }
+
+    public function FeedBacks()
+    {
+        $feedbacks  = Feedback::all();
+
+        return view('feedbacks', compact('feedbacks'));
     }
 
 
@@ -322,4 +331,19 @@ class HomeController extends Controller
         Mail::to($request->email)->send(new \App\Mail\JoinPartner($data));
         return redirect()->back();
     }
+
+    public function postNews(Request $request)
+    {
+        $request->validate([
+            'email'     => 'required'
+
+        ]);
+
+        NewsLetter::create($request->all());
+
+        // Toastr::success('message', 'NewsLetter Subscription successful.');
+        Session::flash('success', 'NewsLetter Subscription successful.');
+        return back();
+    }
+
 }

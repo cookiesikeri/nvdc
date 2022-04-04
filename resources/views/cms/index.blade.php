@@ -153,7 +153,8 @@
               @endif
               @foreach($feedbacks as $item)
               <div class="item">
-                <img src="{{asset('img/download.png')}}" alt="user image" class="offline">
+                <span class="info-box-icon push-bottom bg-blue"><i class="fa fa-user"></i></span>
+                {{-- <img src="{{asset('img/download.png')}}" alt="user image" class="offline"> --}}
 
                 <p class="message">
                   <a href="#" class="name">
