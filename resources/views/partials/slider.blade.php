@@ -15,7 +15,7 @@
         </div>
         <div>
             <figure class="overlay">
-                <img src="{{$general->slider1}}" alt="">
+                <img src="{{$general->slider2}}" alt="">
                 <div class="banner_text">
                     {{-- <div class="small_text animated">Welcome to</div> --}}
                     <div class="medium_text animated">{{$site->site_name}}</div>
