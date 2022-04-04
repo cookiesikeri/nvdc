@@ -58,7 +58,7 @@ Feedbacks
 </div>
 
 <div class="city_event_detail question overlay">
-    <h3>DID’T FIND YET? ASK YOUR QUESTION</h3>
+    <h3>HAVE A FEEDBACK FOR US? FILL THE FORM BELOW</h3>
     <div class="event_booking_form">
         <div class="row">
             <form action="{{route('feedback.post')}}"  method="post">
