@@ -627,7 +627,7 @@ class AdminController extends Controller
                 $name = $file->getClientOriginalName();
                 $file->move('img/', $name);
                 $data['image'] = "img/" .$name;
-                $data['thumb'] = "img/" .$name;
+                // $data['thumb'] = "img/" .$name;
             }
 
             $create = Client::create($data);
