@@ -3708,8 +3708,8 @@ table.text-center th {
 }
 
 .btn-info {
-    background-color: #d19e11;
-    border-color: #d69213;
+    background-color: #d12e11;
+    border-color: #d62a13;
 }
 
 .btn-info.hover,
@@ -5204,7 +5204,7 @@ table.dataTable thead .sorting:after {
 
 .login-page,
 .register-page {
-    background: url(../../images/login-register.html) center center no-repeat #d18514;
+    background: url(../../images/login-register.html) center center no-repeat #d91f1a;
     background-size: cover;
     height: 100%;
     width: 100%;
