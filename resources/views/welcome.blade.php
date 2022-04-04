@@ -20,6 +20,9 @@ Home
 							<div class="city_about_list">
 								<!--SECTION HEADING START-->
 								<div class="section_heading border">
+                                    <br>
+                                    <br>
+
 									<span>Welcome to</span>
 									<h2>{{$site->site_name}}</h2>
 								</div>
