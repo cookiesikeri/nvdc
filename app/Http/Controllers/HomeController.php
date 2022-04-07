@@ -37,8 +37,9 @@ class HomeController extends Controller
     {
         $feedbacks  = Feedback::all();
         $projects = Project::take(3)->latest()->get();
+        $clients = Client::all();
 
-        return view('welcome', compact('feedbacks', 'projects'));
+        return view('welcome', compact('feedbacks', 'projects', 'clients'));
     }
 
     public function AboutUs()

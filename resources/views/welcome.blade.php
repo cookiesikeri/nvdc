@@ -73,6 +73,7 @@ Home
 					</ul>
 				</div>
 			</div>
+
 			<div class="city_blog_wrap">
 				<div class="container">
 					<!--SECTION HEADING START-->
@@ -270,6 +271,7 @@ Home
 					</div>
 				</div>
 			</div>
+
 
 
 
