@@ -87,7 +87,7 @@
 .section_heading h2,
 .city_service_text h5 a:hover,
 .banner_search_field a {
-    color: #196464;
+    color: #008d93;
 }
 
 
@@ -111,7 +111,7 @@
 .social_icon li a,
 .city_about_text h6,
 .banner_search_field a {
-    color: #14284b;
+    color: #121111;
 }
 
 
@@ -203,7 +203,7 @@
 .banner_text,
 .city_top_navigation,
 .city_top_news span {
-    background-color: #196464;
+    background-color: #008d93;
 }
 
 
@@ -253,7 +253,7 @@
 .city_top_social ul li a:hover,
 .banner_search_field a:hover,
 .theam_btn:hover {
-    background-color: #14284b;
+    background-color: #121111;
 }
 
 
@@ -316,7 +316,7 @@
 .section_heading,
 .city_top_social ul li a,
 .city_top_social ul li a:hover {
-    border-color: #196464;
+    border-color: #008d93;
 }
 
 
@@ -331,7 +331,7 @@
 .city_top_social ul li a:hover,
 .banner_search_field input:focus,
 .theam_btn:hover {
-    border-color: #14284b;
+    border-color: #121111;
 }
 
 
@@ -577,9 +577,9 @@ textarea,
 }
 
 .border-color {
-    border-color: #14284b;
+    border-color: #121111;
 }
 
 .color {
-    color: #14284b;
+    color: #121111;
 }
