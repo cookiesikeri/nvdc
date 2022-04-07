@@ -27,9 +27,14 @@ Donate
 							<div class="section_heading center">
 
 								<h2>Donate To Us</h2>
-                                Every donation to the {{$site->site_name}} goes to supporting our wide range of services and programs aimed at providing a better life for those living in underserved communities throughout Africa. Make a donation African Primary Healthcare Foundation today to help to support our projects on the ground in Africa, whether it be for medical care and assistance, or to provide financial support to those in need.
+                                <h4>Why should you donate or volunteer?</h4>
+<p>
+    By joining us on this mission, you become part of the solution to ALL of Nigeria’s problems. We watched generations before us complain all the time, we want to be the generation that actually does something about it. Democracy is our only form of government, and any revolution must be through strengthening democracy. Voter apathy and lack of participation many times deprives the citizenry of good leadership and lack of accountability.
+<br>
+When you join us, you become part of the movement and we will carry you along every step of the way.
 
-                                As a United States registered 501(c)3 organization, all donations are tax-deductible.
+
+</p>
 							</div>
 							<div class="event_booking_form">
                                 <form action="{{ route('stripe.pay') }}" method="post">
@@ -67,9 +72,13 @@ Donate
 									</div>
 										<button class="theam_btn btn2" type="submit">Donate</button>
 									</div>
+
 								</div>
+
                                 </form>
+
 							</div>
+                            Do you want to become a  Volunteer? Click <a href="{{route('volunteers')}}"> <strong>HERE</strong></a>
 						</div>
 					</div>
 				</div>
