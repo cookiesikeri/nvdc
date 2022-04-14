@@ -37,7 +37,7 @@
 <body class="container-1340px has-side-panel side-panel-right">
 
 <div class="side-panel-body-overlay"></div>
-@include('layouts.sidebar')
+
 <div id="wrapper" class="clearfix">
   <!-- Header -->
   @include('layouts.main-nav')
