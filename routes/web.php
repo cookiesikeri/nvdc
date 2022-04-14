@@ -25,6 +25,7 @@ Route::post('/stripe/checkout', [StripeController::class, 'initialize'])->name('
 Route::post('/stripe/success', [StripeController::class, 'callback'])->name('stripe.callback');
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/donate', [HomeController::class, 'Donate'])->name('donate');
 Route::get('/partners', [HomeController::class, 'Partner'])->name('partners');
 Route::get('/volunteers', [HomeController::class, 'Volunteers'])->name('volunteers');
 Route::post('/submit-feedback', [HomeController::class, 'posFeedback'])->name('feedback.post');

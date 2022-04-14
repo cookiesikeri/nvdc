@@ -1,4 +1,11 @@
-<section class="">
+@extends('layouts.app')
+@section('title')
+Donate
+@endsection
+@section('content')
+
+
+<section class="" >
     <div class="container position-relative p-0 mt-90" style="max-width: 700px;">
         <h3 class="bg-theme-colored1 p-15 mb-0 text-white">Donation Form</h3>
         <div class="section-content bg-white p-30">
@@ -7,7 +14,6 @@
                     <!-- Reservation Form Start-->
                     <form name="appointment_form" class="appointment-form" method="post" action="{{ route('stripe.pay') }}">
                         {{csrf_field()}}
-                        <h3 class="mt-0">Donation<span class="text-theme-colored1 font-weight-600"> Form</span></h3>
                         <p class="">Why should you donate or volunteer?</p>
                         <p>
                             By joining us on this mission, you become part of the solution to ALL of Nigeria’s problems. We watched generations before us complain all the time, we want to be the generation that actually does something about it. Democracy is our only form of government,
@@ -17,25 +23,28 @@
 
                         </p>
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-12">
                                 <div class="form-group mb-30">
-                                    <input type="text" placeholder="Name" name="name" required class="form-control required"> @if ($errors->has('name'))
+                                    <input type="text" placeholder="NameName" name="name" required class="form-control required">
+                                     @if ($errors->has('name'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong class="text-danger">{{ $errors->first('name') }}</strong>
                                     </span> @endif
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-12">
                                 <div class="form-group mb-30">
-                                    <input type="email" placeholder="Email" name="email"> @if ($errors->has('email'))
+                                    <input type="email" placeholder="Email" name="email" class="form-control required">
+                                    @if ($errors->has('email'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong class="text-danger">{{ $errors->first('email') }}</strong>
                                     </span> @endif
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-12">
                                 <div class="form-group mb-30">
-                                    <input type="text" placeholder="1000" name="amount" required> @if ($errors->has('amount'))
+                                    <input type="text" placeholder="Enter Amount" name="amount" required class="form-control required">
+                                     @if ($errors->has('amount'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong class="text-danger">{{ $errors->first('amount') }}</strong>
                                     </span> @endif
@@ -50,36 +59,6 @@
                         </div>
                     </form>
                     <!-- Reservation Form End-->
-
-                    <!-- Reservation Form Validation Start-->
-                    <script>
-                        (function($) {
-                            $("#appointment_form_popup").validate({
-                                submitHandler: function(form) {
-                                    var form_btn = $(form).find('button[type="submit"]');
-                                    var form_result_div = '#form-result';
-                                    $(form_result_div).remove();
-                                    form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
-                                    var form_btn_old_msg = form_btn.html();
-                                    form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
-                                    $(form).ajaxSubmit({
-                                        dataType: 'json',
-                                        success: function(data) {
-                                            if (data.status == 'true') {
-                                                $(form).find('.form-control').val('');
-                                            }
-                                            form_btn.prop('disabled', false).html(form_btn_old_msg);
-                                            $(form_result_div).html(data.message).fadeIn('slow');
-                                            setTimeout(function() {
-                                                $(form_result_div).fadeOut('slow')
-                                            }, 6000);
-                                        }
-                                    });
-                                }
-                            });
-                        })(jQuery);
-                    </script>
-                    <!-- Reservation Form Validation Start -->
                 </div>
             </div>
         </div>
@@ -88,7 +67,5 @@
 </section>
 
 <!-- Footer Scripts -->
-<script>
-    //reload date and time picker
-    THEMEMASCOT.initialize.TM_datePicker();
-</script>
+
+@endsection

@@ -45,7 +45,9 @@
   <!-- Start main-content -->
   <div class="main-content-area">
     <!-- Section: home -->
+    @if(Request::is('/'))
     @include('layouts.slider')
+    @endif
 
     @yield('content')
 
@@ -87,6 +89,7 @@
     @endif
 
 </script>
+
 @yield('javascripts')
 
 </body>
