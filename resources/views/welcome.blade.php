@@ -14,8 +14,8 @@ Home
                   <div class="icon-box-wrapper">
                     <div class="icon-wrapper"> <a class="icon icon-default"> <i data-tm-font-size="4rem" class="flaticon-charity-awareness-ribbon-inside-a-heart" ></i> </a></div>
                     <div class="icon-text">
-                      <h6 class="icon-box-sub-title mb-0">Rules of Business</h6>
-                      <h4 class="icon-box-title mt-0">Medical Cases</h4>
+                      <h4 class="icon-box-sub-title mb-0">What do we hope to achieve in 2023</h4>
+                      <p class="icon-box-title mt-0">We would like to improve voter’s turnout to 50% from 34%. We would also like to be responsible for getting 10 million Nigerians to vote. </p>
                     </div>
                     <div class="clearfix"></div>
                   </div>
@@ -26,8 +26,12 @@ Home
                   <div class="icon-box-wrapper">
                     <div class="icon-wrapper"> <a class="icon icon-default"> <i data-tm-font-size="4rem" class="flaticon-charity-donation-box" ></i> </a></div>
                     <div class="icon-text">
-                      <h6 class="icon-box-sub-title mb-0">Rules of Business</h6>
-                      <h4 class="icon-box-title mt-0">Donate Us</h4>
+                      <h4 class="icon-box-sub-title mb-0">What have we done already?</h4>
+                      <p class="icon-box-title mt-0">In Abia state, we have registered 30,000 Abians  to vote and completed their Biometrics. We did this within 30 days.
+                          <br>
+                      </p>
+                      <br>
+
                     </div>
                     <div class="clearfix"></div>
                   </div>
@@ -38,8 +42,8 @@ Home
                   <div class="icon-box-wrapper">
                     <div class="icon-wrapper"> <a class="icon icon-default"> <i data-tm-font-size="4rem" class="flaticon-charity-shaking-hands-inside-a-heart" ></i> </a></div>
                     <div class="icon-text">
-                      <h6 class="icon-box-sub-title mb-0">Rules of Business</h6>
-                      <h4 class="icon-box-title mt-0">Become a Volunteer</h4>
+                      <h4 class="icon-box-sub-title mb-0">Why are we using this approach?</h4>
+                      <p class="icon-box-title mt-0">If we can raise 0.0001% of the annual remittance ($2m) to strengthen democracy and improve the type of leadership we have, then NVDC can help move the needle towards better governance in Nigeria</p>
                     </div>
                     <div class="clearfix"></div>
                   </div>
