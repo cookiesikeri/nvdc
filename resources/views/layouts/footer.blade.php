@@ -73,15 +73,16 @@
           <div class="row pt-30 pb-30">
             <div class="col-sm-12 col-lg-6">
               <div class="footer-paragraph text-center text-xl-left text-lg-left text-md-left mb-sm-15">
-                © 2020 ThemeMascot. All Rights Reserved.
+                Copyright. All Rights Reserved {{$site->site_name}} {{date('Y')}}
               </div>
             </div>
             <div class="col-sm-12 col-lg-6">
               <ul class="styled-icons icon-dark icon-md icon-circled text-center text-xl-right text-lg-right text-md-right">
-                <li><a data-tm-bg-color="#3457F1" class="social-link" href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a data-tm-bg-color="#4EBEFF" class="social-link" href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a data-tm-bg-color="#EF3230" class="social-link" href="#"><i class="fab fa-youtube"></i></a></li>
-                <li><a data-tm-bg-color="#5376AC" class="social-link" href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="{{ $site->facebook ? $site->facebook : ''}}" data-tm-bg-color="#3B5998"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="{{ $site->twitter ? $site->twitter : ''}}" data-tm-bg-color="#02B0E8"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="{{ $site->youtube ? $site->youtube : ''}}" data-tm-bg-color="#D71619"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="{{ $site->instagram ? $site->instagram : ''}}" data-tm-bg-color="#bd3f44"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="{{ $site->linkedin ? $site->linkedin : ''}}" data-tm-bg-color="#3B5998"><i class="fab fa-linkedin"></i></a></li>
               </ul>
             </div>
           </div>

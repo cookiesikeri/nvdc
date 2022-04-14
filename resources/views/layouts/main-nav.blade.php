@@ -42,7 +42,8 @@
                   <ul id="main-nav" class="menuzord-menu onepage-nav">
                     <li @if(active('/'))  class="active" @endif><a href="#home">Home</a> </li>
                     <li @if(active('aboutus')) class="active" @endif><a href="#about">About</a></li>
-                    <li><a href="#causes">Volunteer</a></li>
+                    <li><a href="#causes">Donate</a></li>
+                    <li><a href="#volunteer">Volunteer</a></li>
                     <li><a href="#event">Partner</a></li>
                     <li><a href="#event">Ready To Vote Abia</a></li>
                     <li><a href="#news">Gallery</a></li>

@@ -55,11 +55,7 @@ Home
         <div class="container">
           <div class="tm-sc-section-title section-title text-center" data-tm-margin-bottom="100px">
             <div class="row justify-content-md-center">
-              <div class="col"></div>
-              <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                <h5 class="text-theme-colored1 mt-0">A Little Introduction</h5>
-                <h2 class="mt-0">Welcome To SoolHart! Non-Profit & Charity Organization</h2>
-              </div>
+
               <div class="col"></div>
             </div>
           </div>
@@ -74,44 +70,44 @@ Home
         <div class="container">
           <div class="section-content" data-tm-margin-top="-250px">
             <div class="row">
-              <div class="col-md-6 col-lg-6 col-xl-3">
-                <div class="service-item-current-style1 mb-lg-30">
+              <div class="col-md-6 col-lg-6 col-xl-12">
+                <div class="service-item-current-style1 mb-lg-30 text-center">
                   <div class="service-icon mb-20">
                     <img class="icon1" src="images/icons/service-icon1.png" alt="">
                     <img class="icon2" src="images/icons/service-white-icon1.png" alt="">
                   </div>
-                  <h4 class="service-title">Healthy <br>Food</h4>
-                  <p class="service-details mb-0">There are many variations of passages of lorem Ipsum available but the majority have djin not the suffered.</p>
+                  <h4 class="service-title">About <strong>{{$site->site_name}}</strong></h4>
+                  <p class="service-details mb-0">{!! $general->about_content !!}</p>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-6 col-xl-3">
+              <div class="col-md-6 col-lg-6 col-xl-4">
                 <div class="service-item-current-style1 mb-lg-30">
                   <div class="service-icon mb-20">
                     <img class="icon1" src="images/icons/service-icon2.png" alt="">
                     <img class="icon2" src="images/icons/service-white-icon2.png" alt="">
                   </div>
-                  <h4 class="service-title">Pure Clean <br>Water</h4>
-                  <p class="service-details mb-0">There are many variations of passages of lorem Ipsum available but the majority have djin not the suffered.</p>
+                  <h4 class="service-title">Who We Are</h4>
+                  <p class="service-details mb-0">{!! $general->who_we_are !!}</p>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-6 col-xl-3">
+              <div class="col-md-6 col-lg-6 col-xl-4">
                 <div class="service-item-current-style1 mb-lg-30">
                   <div class="service-icon mb-20">
                     <img class="icon1" src="images/icons/service-icon3.png" alt="">
                     <img class="icon2" src="images/icons/service-white-icon3.png" alt="">
                   </div>
-                  <h4 class="service-title">Medical <br>Care</h4>
-                  <p class="service-details mb-0">There are many variations of passages of lorem Ipsum available but the majority have djin not the suffered.</p>
+                  <h4 class="service-title">What we Do</h4>
+                  <p class="service-details mb-0">{!! $general->what_we_do !!}</p>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-6 col-xl-3">
+              <div class="col-md-6 col-lg-6 col-xl-4">
                 <div class="service-item-current-style1 mb-lg-30">
                   <div class="service-icon mb-20">
                     <img class="icon1" src="images/icons/service-icon4.png" alt="">
                     <img class="icon2" src="images/icons/service-white-icon4.png" alt="">
                   </div>
-                  <h4 class="service-title">Children <br>Education</h4>
-                  <p class="service-details mb-0">There are many variations of passages of lorem Ipsum available but the majority have djin not the suffered.</p>
+                  <h4 class="service-title">Targeted <br>States</h4>
+                  <p class="service-details mb-0">{!! $general->targeted_states !!}</p>
                 </div>
               </div>
             </div>
@@ -119,151 +115,215 @@ Home
         </div>
       </section>
 
-      <!-- Section: Latest Causes -->
-      <section id="causes">
-        <div class="container pt-0">
-          <div class="tm-sc-section-title section-title text-center">
-            <div class="row justify-content-md-center">
-              <div class="col"></div>
-              <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                <h5 class="side-line text-theme-colored1 mt-0">Donate Now</h5>
-                <h2 class="mt-0">Latest Causes</h2>
-              </div>
-              <div class="col"></div>
-            </div>
-          </div>
+
+      <section  id="causes" class="bg-white-f6">
+        <div class="container">
           <div class="section-content">
             <div class="row">
-              <div class="col-md-12 col-lg-6 col-xl-4">
-                <div class="causes-item mb-lg-30">
-                  <div class="causes-thumb">
-                    <img src="http://placehold.it/405x340" alt="" class="w-100">
-                    <a href="page-causes-details.html" class="btn btn-donate-now btn-theme-colored2">Donate Now</a>
-                  </div>
-                  <div class="causes-details">
-                    <h3 class="causes-title mt-0 mb-20">Raise Fund for Clean & Healthy Water</h3>
-                    <p class="causes-text mb-0 mb-60">Aliq is notm hendr erit a augue insu image pellen teserit a augue insu image pellen tes.</p>
-                    <div class="tm-sc-progress progress-item current-style theme-style mb-0">
-                      <div class="tm-sc-progress-bar progress-bar-floating-percent" data-percent="60" data-bar-height="">
-                        <div class="progress-title-holder">
-                          <span class="percent"><span class="symbol-left"></span><span class="value">60</span><span class="symbol-right">%</span></span>
-                        </div>
-                        <div class="progress-holder">
-                          <div class="progress-content" data-width="60%"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="donation-goal">
-                    <ul>
-                      <li>
-                        <div class="raised">
-                          <p class="mb-0">$5455411 <span>Raised</span></p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="raised">
-                          <p class="mb-0">$5455411 <span>Raised</span></p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+              <div class="col-lg-6">
+                <h5 class="mb-0 text-gray">Donate To Us</h5>
+                <p>
+                    By joining us on this mission, you become part of the solution to ALL of Nigeria’s problems. We watched generations before us complain all the time, we want to be the generation that actually does something about it. Democracy is our only form of government, and any revolution must be through strengthening democracy. Voter apathy and lack of participation many times deprives the citizenry of good leadership and lack of accountability.
+                <br>
+                When you join us, you become part of the movement and we will carry you along every step of the way.
+
+
+                </p>
               </div>
-              <div class="col-md-12 col-lg-6 col-xl-4">
-                <div class="causes-item mb-lg-30">
-                  <div class="causes-thumb">
-                    <img src="http://placehold.it/405x340" alt="" class="w-100">
-                    <a href="page-causes-details.html" class="btn btn-donate-now btn-theme-colored2">Donate Now</a>
-                  </div>
-                  <div class="causes-details">
-                    <h3 class="causes-title mt-0 mb-20">Raise Fund for Clean & Healthy Water</h3>
-                    <p class="causes-text mb-0 mb-60">Aliq is notm hendr erit a augue insu image pellen teserit a augue insu image pellen tes.</p>
-                    <div class="tm-sc-progress progress-item current-style theme-style mb-0">
-                      <div class="tm-sc-progress-bar progress-bar-floating-percent" data-percent="60" data-bar-height="">
-                        <div class="progress-title-holder">
-                          <span class="percent"><span class="symbol-left"></span><span class="value">60</span><span class="symbol-right">%</span></span>
+              <div class="col-lg-6">
+                <h2 class="mt-0 mb-0">Donation Form</h2>
+
+                <!-- Contact Form -->
+                <form name="contact_form" class="appointment-form" method="post" action="{{ route('stripe.pay') }}">
+                    {{csrf_field()}}
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group mb-30">
+                                <input type="text" placeholder="NameName" name="name" required class="form-control required">
+                                 @if ($errors->has('name'))
+                                <span class="invalid-feedback" role="alert">
+                                    <strong class="text-danger">{{ $errors->first('name') }}</strong>
+                                </span> @endif
+                            </div>
                         </div>
-                        <div class="progress-holder">
-                          <div class="progress-content" data-width="60%"></div>
+                        <div class="col-sm-12">
+                            <div class="form-group mb-30">
+                                <input type="email" placeholder="Email" name="email" class="form-control required">
+                                @if ($errors->has('email'))
+                                <span class="invalid-feedback" role="alert">
+                                    <strong class="text-danger">{{ $errors->first('email') }}</strong>
+                                </span> @endif
+                            </div>
                         </div>
-                      </div>
+                        <div class="col-sm-12">
+                            <div class="form-group mb-30">
+                                <input type="text" placeholder="Enter Amount" name="amount" required class="form-control required">
+                                 @if ($errors->has('amount'))
+                                <span class="invalid-feedback" role="alert">
+                                    <strong class="text-danger">{{ $errors->first('amount') }}</strong>
+                                </span> @endif
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group mb-0 mt-0">
+                                <input name="form_botcheck" class="form-control" type="hidden" value="">
+                                <button type="submit" class="btn btn-theme-colored1 btn-round" data-loading-text="Please wait...">Submit Now</button>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="donation-goal">
-                    <ul>
-                      <li>
-                        <div class="raised">
-                          <p class="mb-0">$5455411 <span>Raised</span></p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="raised">
-                          <p class="mb-0">$5455411 <span>Raised</span></p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12 col-lg-6 col-xl-4">
-                <div class="causes-item mb-lg-30">
-                  <div class="causes-thumb">
-                    <img src="http://placehold.it/405x340" alt="" class="w-100">
-                    <a href="page-causes-details.html" class="btn btn-donate-now btn-theme-colored2">Donate Now</a>
-                  </div>
-                  <div class="causes-details">
-                    <h3 class="causes-title mt-0 mb-20">Raise Fund for Clean & Healthy Water</h3>
-                    <p class="causes-text mb-0 mb-60">Aliq is notm hendr erit a augue insu image pellen teserit a augue insu image pellen tes.</p>
-                    <div class="tm-sc-progress progress-item current-style theme-style mb-0">
-                      <div class="tm-sc-progress-bar progress-bar-floating-percent" data-percent="60" data-bar-height="">
-                        <div class="progress-title-holder">
-                          <span class="percent"><span class="symbol-left"></span><span class="value">60</span><span class="symbol-right">%</span></span>
-                        </div>
-                        <div class="progress-holder">
-                          <div class="progress-content" data-width="60%"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="donation-goal">
-                    <ul>
-                      <li>
-                        <div class="raised">
-                          <p class="mb-0">$5455411 <span>Raised</span></p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="raised">
-                          <p class="mb-0">$5455411 <span>Raised</span></p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+                </form>
+                <!-- Contact Form Validation-->
+
               </div>
             </div>
           </div>
         </div>
-        <div class="tm-floating-objects">
-          <span class="floating-object-2 tm-animation-scaling" data-tm-bg-img="images/photos/2.png" data-tm-opacity="0.1" data-tm-width="161" data-tm-height="189" data-tm-top="30%"></span>
+      </section>
+
+      <section  id="volunteer" class="bg-white-f6">
+        <div class="container">
+          <div class="section-content">
+            <div class="row">
+              <div class="col-lg-12">
+                <h5 class="mb-0 text-gray">Volunteer Form </h5>
+                {{-- <h2 class="mt-0 mb-0">Volunteer Form</h2> --}}
+                <form action="{{route('become.volunteer.post')}}" class="appointment-form" method="POST" enctype="multipart/form-data">
+                        {{csrf_field()}}
+                        @if(Session::has('success'))
+                        <div class="col-md-12">
+                           <div class="alert alert-success no-b">
+                              <span class="text-semibold">Thank you!</span> {{ Session::get('success')}}
+                              <button type="button" class="close" data-dismiss="alert"><span>×</span></button>
+                           </div>
+                        </div>
+                        @endif
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group mb-30">
+                                <input type="text" placeholder="Enter Your Full Name" name="name" required class="form-control required">
+                                 @if ($errors->has('name'))
+                                <span class="invalid-feedback" role="alert">
+                                    <strong class="text-danger">{{ $errors->first('name') }}</strong>
+                                </span> @endif
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group mb-30">
+                                <input type="email" placeholder="Email" name="email" class="form-control required">
+                                @if ($errors->has('email'))
+                                <span class="invalid-feedback" role="alert">
+                                    <strong class="text-danger">{{ $errors->first('email') }}</strong>
+                                </span> @endif
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group mb-30">
+                                <input type="text" placeholder="Phone" name="phone" class="form-control required" required>
+                                @if ($errors->has('phone'))
+                                <span class="invalid-feedback" role="alert">
+                                <strong class="text-danger">{{ $errors->first('phone') }}</strong>
+                                </span>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group mb-30">
+                                <label>Profile Photo</label>
+                                <input type="file"  name="image" class="form-control">
+                                @if ($errors->has('image'))
+                                <span class="invalid-feedback" role="alert">
+                                <strong class="text-danger">{{ $errors->first('image') }}</strong>
+                                </span>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group mb-30">
+                            <select name="nationality" class="form-control required">
+
+                                <option value="">Select Nationality</option>
+                                @foreach($countries as $country)
+                                <option value="{{$country->title}}">{{ ucfirst($country->title) }}</option>
+                                @endforeach
+                                </select>
+                                @if ($errors->has('nationality'))
+                                <span class="invalid-feedback" role="alert">
+                                <strong class="text-danger">{{ $errors->first('nationality') }}</strong>
+                                </span>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <select name="sex" class="form-control required">
+                                <option value="">Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                                </select>
+                                @if ($errors->has('sex'))
+                                <span class="invalid-feedback" role="alert">
+                                <strong class="text-danger">{{ $errors->first('sex') }}</strong>
+                                </span>
+                                @endif
+                        </div>
+                        <div class="col-sm-4">
+                            <select name="publish" class="form-control required">
+                                <option value="">Publish(profile to be displayed on our website)</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                </select>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group mb-30">
+                                <textarea type="text" placeholder="Enter Home Address"  name="address" class="form-control"></textarea>
+                                @if ($errors->has('address'))
+                                <span class="invalid-feedback" role="alert">
+                                <strong class="text-danger">{{ $errors->first('address') }}</strong>
+                                </span>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group mb-30">
+                                <textarea placeholder="Why do you want to become a Volunteer" type="text" name="purpose" class="form-control required"></textarea>
+                                @if ($errors->has('purpose'))
+                                <span class="invalid-feedback" role="alert">
+                                <strong class="text-danger">{{ $errors->first('purpose') }}</strong>
+                                </span>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group mb-0 mt-0">
+
+                                <button type="submit" class="btn btn-theme-colored1 btn-round" data-loading-text="Please wait...">Submit Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- Contact Form Validation-->
+
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Section: Video Popup -->
-      <section class="layer-overlay overlay-dark-5 bg-no-repeat" data-tm-bg-img="http://placehold.it/1920x1280">
+      <section class="layer-overlay overlay-dark-5 bg-no-repeat" data-tm-bg-img="images/job-bg.png">
         <div class="container">
           <div class="section-content">
             <div class="row">
               <div class="col"></div>
               <div class="col-lg-10 col-xl-10">
                 <div class="video-block text-center mb-0">
-                  <h6 class="text-uppercase letter-spacing-4px font-weight-500 text-white">Watch our few minutes video</h6>
-                  <h2 class="text-white popup-video-title mb-40">The Measure of a Life is <br> Not its Duration, but its Donation</h2>
+                  {{-- <h6 class="text-uppercase letter-spacing-4px font-weight-500 text-white">Watch our few minutes video</h6> --}}
+                  <h2 class="text-white popup-video-title mb-40">READY TO VOTE ABIA </h2>
                   <div class="box-hover-effect tm-sc-video-popup tm-sc-video-popup-css-button">
                     <div class="effect-wrapper d-flex align-items-center">
                       <div class="animated-css-play-button"><span class="play-icon"><i class="fa fa-play"></i></span></div>
-                      <a class="hover-link" data-lightbox-gallery="youtube-video" href="https://www.youtube.com/watch?v=xcJtL7QggTI" title=""></a>
+                      <iframe title="YouTube video player" src="https://www.youtube.com/embed/5HPiEQOfi7g" width="700" height="400" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                      {{-- <a class="hover-link" data-lightbox-gallery="youtube-video" href="https://www.youtube.com/embed/5HPiEQOfi7g" title=""></a> --}}
                     </div>
                   </div>
                 </div>
@@ -274,181 +334,6 @@ Home
         </div>
       </section>
 
-      <!-- Section: Call To Action -->
-      <section class="bg-no-repeat bg-pos-center-top bg-size-cover bg-theme-colored2" data-tm-bg-img="images/call-to-action-bg1.png">
-        <div class="container">
-          <div class="section-content">
-            <div class="row d-flex align-items-center">
-              <div class="col-lg-8 col-xl-8">
-                <div class="book-roofing">
-                  <div class="book-roofing-text">
-                    <h2 class="text-white mt-0 mb-md-15">Best Way to Make a Difference in <br>the Lives of Others</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-xl-4 text-left text-lg-right">
-                <a href="page-team-details.html" class="btn btn-circle btn-lg btn-dark text-white">Becone a Volunteer</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section: Event -->
-      <section id="event" class="bg-silver-light">
-        <div class="container mb-lg-120">
-          <div class="tm-sc-section-title section-title">
-            <div class="row justify-content-md-center">
-              <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
-                <h5 class="side-line text-theme-colored1 mt-0">New Events</h5>
-                <h2 class="mt-0 mb-md-40">Upcoming Events</h2>
-              </div>
-              <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                <div class="text-left text-lg-right text-xl-right"><a href="page-about.html" class="btn btn-light btn-lg">View All Events</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="section-content">
-            <div class="row">
-              <div class="col-md-12 col-lg-12 col-xl-8">
-                <div class="upcoming-events-current-style mb-40">
-                  <div class="row align-items-center">
-                    <div class="col-sm-3 pr-0 pr-sm-15">
-                      <div class="thumb">
-                        <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="...">
-                        <div class="event-date">
-                          <h5 class="date">20 jan 2020</h5>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-8">
-                      <div class="event-details p-15">
-                        <ul class="event-location">
-                          <li class="event-time"><i class="far fa-clock text-theme-colored2 font-icon sm-display-block"></i> 04:00 am</li>
-                          <li class="event-address"><i class="fas fa-map-marker-alt text-theme-colored2 font-icon sm-display-block"></i> Broklyn Street 40, New York</li>
-                        </ul>
-                        <h4 class="media-heading text-uppercase mt-0 mb-30">Mission for healthy and clean water</h4>
-                        <p class="mb-0">Dignissim cras tincidunt lorem ipsum is simply free text feugiat at augue. Id purus integer orci.</p>
-                      </div>
-                    </div>
-                    <div class="col"></div>
-                  </div>
-                </div>
-                <div class="upcoming-events-current-style mb-40">
-                  <div class="row align-items-center">
-                    <div class="col-sm-3 pr-0 pr-sm-15">
-                      <div class="thumb">
-                        <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="...">
-                        <div class="event-date">
-                          <h5 class="date">20 jan 2020</h5>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-8">
-                      <div class="event-details p-15">
-                        <ul class="event-location">
-                          <li class="event-time"><i class="far fa-clock text-theme-colored2 font-icon sm-display-block"></i> 04:00 am</li>
-                          <li class="event-address"><i class="fas fa-map-marker-alt text-theme-colored2 font-icon sm-display-block"></i> Broklyn Street 40, New York</li>
-                        </ul>
-                        <h4 class="media-heading text-uppercase mt-0 mb-30">Mission for healthy and clean water</h4>
-                        <p class="mb-0">Dignissim cras tincidunt lorem ipsum is simply free text feugiat at augue. Id purus integer orci.</p>
-                      </div>
-                    </div>
-                    <div class="col"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12 col-lg-12 col-xl-4">
-                <div class="donation-form-current-style text-center" data-tm-margin-bottom="-200px">
-                  <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit sed do eiusm od tempor ut labore.</p>
-                  <form id="paypal_donate_form" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                    <div class="form-group mt-30 mb-20">
-                      <label><strong>I Want to Donate for</strong></label>
-                      <select class="form-control" name="item_name">
-                        <option value="Educate Children">Educate Children</option>
-                        <option value="Child Camps">Child Camps</option>
-                        <option value="Clean Water for Life">Clean Water for Life</option>
-                        <option value="Campaign for Child Poverty">Campaign for Child Poverty</option>
-                      </select>
-                    </div>
-
-                    <div class="mb-30">
-                      <label><strong>How much do you want to donate?</strong></label>
-                      <br>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" checked="" name="amount" id="amountRadio1" value="20">
-                        <label class="form-check-label" for="amountRadio1">$20</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="amount" id="amountRadio2" value="50">
-                        <label class="form-check-label" for="amountRadio2">$50</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="amount" id="amountRadio3" value="100">
-                        <label class="form-check-label" for="amountRadio3">$100</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="amount" id="amountRadio4" value="200">
-                        <label class="form-check-label" for="amountRadio4">$200</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="amount" id="amountRadio5" value="500">
-                        <label class="form-check-label" for="amountRadio5">$500</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="amount" id="amountRadio6" value="other">
-                        <label class="form-check-label" for="amountRadio6">Other Amount</label>
-                      </div>
-                      <div id="custom_other_amount" class="mt-20">
-                        <label><strong>Custom Amount:</strong></label>
-                      </div>
-                    </div>
-
-                    <input type="hidden" name="cmd" value="_donations">
-                    <input type="hidden" name="business" value="accounts@thememascot.com">
-                    <input type="hidden" name="no_shipping" value="1">
-                    <input type="hidden" name="cn" value="Comments...">
-                    <input type="hidden" name="currency_code" value="USD">
-                    <input type="hidden" name="tax" value="0">
-                    <input type="hidden" name="lc" value="US">
-                    <input type="hidden" name="bn" value="PP-DonationsBF">
-
-
-                    <input type="hidden" name="return" value="http://www.yoursite.com/thankyou.html">
-                    <input type="hidden" name="cancel_return" value="http://www.yoursite.com/paymentcancel.html">
-                    <input type="hidden" name="notify_url" value="http://www.yoursite.com/notifypayment.php">
-
-                    <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                    <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                  </form>
-
-                  <!-- Script for Donation Form Custom Amount -->
-                  <script>
-                    (function($) {
-                      var $custom_other_amount = $("#custom_other_amount");
-                      $custom_other_amount.hide();
-                      $("#paypal_donate_form [name='amount']").change(function() {
-                        var $this = $(this);
-                        if ($this.val() === 'other') {
-                          $custom_other_amount.show().append('<div class="input-group mb-3"> <div class="input-group-prepend"> <span class="input-group-text" id="basic-addon1">$</span> </div> <input type="text" class="form-control" name="amount" value="100"> </div>');
-                        }
-                        else{
-                          $custom_other_amount.children( ".input-group" ).remove();
-                          $custom_other_amount.hide();
-                        }
-                      });
-                    })(jQuery);
-                  </script>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- floating objects -->
-        <div class="tm-floating-objects d-none d-xl-block">
-          <span class="floating-object-1 tm-animation-floating" data-tm-bg-img="images/bg/bird-bg-object2.png" data-tm-opacity="1" data-tm-width="360" data-tm-height="490" data-tm-right="0" data-tm-left="auto" data-tm-top="48%"></span>
-        </div>
-      </section>
 
       <!-- Section: Testimonials -->
       <section>
@@ -654,124 +539,6 @@ Home
         </div>
       </section>
 
-      <!-- Section: News -->
-      <section id="news" class="z-index-1">
-        <div class="container pb-0">
-          <div class="tm-sc-section-title section-title text-center">
-            <div class="row justify-content-md-center">
-              <div class="col"></div>
-              <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                <h5 class="side-line text-theme-colored1 mt-0">Latest News</h5>
-                <h2 class="mt-0">News and Articles</h2>
-              </div>
-              <div class="col"></div>
-            </div>
-          </div>
-          <div class="section-content">
-            <div class="row">
-              <div class="col-md-6 col-lg-4 col-xl-4">
-                <div class="tm-sc-blog tm-sc-blog-masonry blog-style1-current-theme mb-lg-30">
-                  <article class="post">
-                    <div class="entry-header">
-                      <div class="post-thumb">
-                        <div class="post-thumb-inner">
-                          <div class="thumb"> <img class="w-100" src="http://placehold.it/360x275" alt="Image"></div>
-                        </div>
-                      </div>
-                      <div class="post-single-meta">
-                        <div class="entry-date">14<span> June,</span> 2020</div>
-                      </div>
-                    </div>
-                    <div class="entry-content">
-                      <div class="blog-meta">
-                        <span class="admin-type mr-10">
-                          <i class="far fa-user-circle text-theme-colored1"></i>
-                          Admin
-                        </span>
-                        <span class="comments-type">
-                          <i class="far fa-comments text-theme-colored1"></i>
-                          2 Comments
-                        </span>
-                      </div>
-                      <h4 class="entry-title"><a href="news-details.html" rel="bookmark">Donation is hope for poor helpless children</a></h4>
-                      <p class="entry-content mb-30">Lorem ipsum dolor sit am adipi sicing elit, sed do consulting firms Et leggings across the nation lipsim tempor.</p>
-                      <a href="news-details.html" class="btn btn-theme-colored1 btn-flat text-uppercase text-white">Read more</a>
-                      <div class="clearfix"></div>
-                    </div>
-                  </article>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 col-xl-4">
-                <div class="tm-sc-blog tm-sc-blog-masonry blog-style1-current-theme mb-lg-30">
-                  <article class="post">
-                    <div class="entry-header">
-                      <div class="post-thumb">
-                        <div class="post-thumb-inner">
-                          <div class="thumb"> <img class="w-100" src="http://placehold.it/360x275" alt="Image"></div>
-                        </div>
-                      </div>
-                      <div class="post-single-meta">
-                        <div class="entry-date">14<span> June,</span> 2020</div>
-                      </div>
-                    </div>
-                    <div class="entry-content">
-                      <div class="blog-meta">
-                        <span class="admin-type mr-10">
-                          <i class="far fa-user-circle text-theme-colored1"></i>
-                          Admin
-                        </span>
-                        <span class="comments-type">
-                          <i class="far fa-comments text-theme-colored1"></i>
-                          2 Comments
-                        </span>
-                      </div>
-                      <h4 class="entry-title"><a href="news-details.html" rel="bookmark">Donation is hope for poor helpless children</a></h4>
-                      <p class="entry-content mb-30">Lorem ipsum dolor sit am adipi sicing elit, sed do consulting firms Et leggings across the nation lipsim tempor.</p>
-                      <a href="news-details.html" class="btn btn-theme-colored1 btn-flat text-uppercase text-white">Read more</a>
-                      <div class="clearfix"></div>
-                    </div>
-                  </article>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 col-xl-4">
-                <div class="tm-sc-blog tm-sc-blog-masonry blog-style1-current-theme mb-lg-30">
-                  <article class="post">
-                    <div class="entry-header">
-                      <div class="post-thumb">
-                        <div class="post-thumb-inner">
-                          <div class="thumb"> <img class="w-100" src="http://placehold.it/360x275" alt="Image"></div>
-                        </div>
-                      </div>
-                      <div class="post-single-meta">
-                        <div class="entry-date">14<span> June,</span> 2020</div>
-                      </div>
-                    </div>
-                    <div class="entry-content">
-                      <div class="blog-meta">
-                        <span class="admin-type mr-10">
-                          <i class="far fa-user-circle text-theme-colored1"></i>
-                          Admin
-                        </span>
-                        <span class="comments-type">
-                          <i class="far fa-comments text-theme-colored1"></i>
-                          2 Comments
-                        </span>
-                      </div>
-                      <h4 class="entry-title"><a href="news-details.html" rel="bookmark">Donation is hope for poor helpless children</a></h4>
-                      <p class="entry-content mb-30">Lorem ipsum dolor sit am adipi sicing elit, sed do consulting firms Et leggings across the nation lipsim tempor.</p>
-                      <a href="news-details.html" class="btn btn-theme-colored1 btn-flat text-uppercase text-white">Read more</a>
-                      <div class="clearfix"></div>
-                    </div>
-                  </article>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tm-floating-objects">
-          <span class="floating-object-3 tm-animation-floating" data-tm-bg-img="images/photos/3.png" data-tm-opacity="0.1" data-tm-width="161" data-tm-height="189" data-tm-top="70%" data-tm-right="4%"></span>
-        </div>
-      </section>
 
       <!-- Start Divider -->
       <section class="bg-silver-light pt-0" data-tm-margin-top="-100">
@@ -781,12 +548,11 @@ Home
               <div class="col-sm-12">
                 <div class="tm-sc-clients tm-sc-clients-carousel owl-dots-light-skin owl-dots-center clients-animation-grayscale">
                   <div class="owl-carousel owl-theme tm-owl-carousel-6col" data-autoplay="true" data-loop="true" data-duration="6000" data-smartspeed="300" data-margin="30" data-stagepadding="0" data-laptop="4">
-                    <div class="item"> <a target="_blank" href="#"> <img src='images/clients/1.png' alt='Image' /> </a></div>
-                    <div class="item"> <a target="_blank" href="#"> <img src='images/clients/2.png' alt='Image' /> </a></div>
-                    <div class="item"> <a target="_blank" href="#"> <img src='images/clients/3.png' alt='Image' /> </a></div>
-                    <div class="item"> <a target="_blank" href="#"> <img src='images/clients/4.png' alt='Image' /> </a></div>
-                    <div class="item"> <a target="_blank" href="#"> <img src='images/clients/5.png' alt='Image' /> </a></div>
-                    <div class="item"> <a target="_blank" href="#"> <img src='images/clients/6.png' alt='Image' /> </a></div>
+
+                    @foreach($clients as $client)
+                    <div class="item"> <a target="_blank" href="{{$client->link}}"> <img src='{{URL::to($client->image)}}' alt='Image' /> </a></div>
+                    @endforeach
+
                   </div>
                 </div>
               </div>
@@ -801,8 +567,8 @@ Home
           <div class="section-content">
             <div class="row">
               <div class="col-lg-6">
-                <h5 class="mb-0 text-gray">Happy to help!</h5>
-                <h2 class="mb-30">If you need someone to talk to, we listen. We won’t judge or tell you what to do.</h2>
+                {{-- <h5 class="mb-0 text-gray">Happy to help!</h5>
+                <h2 class="mb-30">If you need someone to talk to, we listen. We won’t judge or tell you what to do.</h2> --}}
                 <div class="icon-box icon-left iconbox-centered-in-responsive iconbox-theme-colored1 animate-icon-on-hover animate-icon-rotate mb-50">
                   <div class="icon-box-wrapper">
                     <div class="icon-wrapper">
@@ -810,7 +576,7 @@ Home
                     </div>
                     <div class="icon-text">
                       <h5 class="icon-box-title mt-0">Phone</h5>
-                      <div class="content"><a href="tel:+123.456.7890">+123.456.7890</a></div>
+                      <div class="content"><a href="tel:{{$site->hotline}}">{{$site->hotline}}</a></div>
                     </div>
                     <div class="clearfix"></div>
                   </div>
@@ -822,7 +588,7 @@ Home
                     </div>
                     <div class="icon-text">
                       <h5 class="icon-box-title mt-0">Email</h5>
-                      <div class="content"><a href="mailto:needhelp@yourdomain.com">needhelp@yourdomain.com</a></div>
+                      <div class="content"><a href="mailto:{{$site->site_email}}">{{$site->site_email}}</a></div>
                     </div>
                     <div class="clearfix"></div>
                   </div>
@@ -834,37 +600,55 @@ Home
                     </div>
                     <div class="icon-text">
                       <h5 class="icon-box-title mt-0">Address</h5>
-                      <div class="content">66 Broklyn Street USA</div>
+                      <div class="content">{{$site->site_address}}</div>
                     </div>
                     <div class="clearfix"></div>
                   </div>
                 </div>
                 <ul class="styled-icons icon-dark icon-sm icon-circled mt-30">
-                  <li><a href="#" data-tm-bg-color="#3B5998"><i class="fab fa-facebook"></i></a></li>
-                  <li><a href="#" data-tm-bg-color="#02B0E8"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#" data-tm-bg-color="#4C75A3"><i class="fab fa-vk"></i></a></li>
-                  <li><a href="#" data-tm-bg-color="#D9CCB9"><i class="fab fa-instagram"></i></a></li>
-                  <li><a href="#" data-tm-bg-color="#D71619"><i class="fab fa-google-plus"></i></a></li>
-                  <li><a href="#" data-tm-bg-color="#A4CA39"><i class="fab fa-android"></i></a></li>
-                  <li><a href="#" data-tm-bg-color="#4C75A3"><i class="fab fa-vk"></i></a></li>
+                    <li><a href="{{ $site->facebook ? $site->facebook : ''}}" data-tm-bg-color="#3B5998"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="{{ $site->twitter ? $site->twitter : ''}}" data-tm-bg-color="#02B0E8"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="{{ $site->youtube ? $site->youtube : ''}}" data-tm-bg-color="#D71619"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="{{ $site->instagram ? $site->instagram : ''}}" data-tm-bg-color="#bd3f44"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="{{ $site->linkedin ? $site->linkedin : ''}}" data-tm-bg-color="#3B5998"><i class="fab fa-linkedin"></i></a></li>
+
                 </ul>
               </div>
               <div class="col-lg-6">
-                <h2 class="mt-0 mb-0">Interested in discussing?</h2>
+                <h2 class="mt-0 mb-0">Contact Us</h2>
                 <p class="font-size-20">Active & Ready to use Contact Form!</p>
                 <!-- Contact Form -->
-                <form id="contact_form" name="contact_form" class="" action="includes/sendmail.php" method="post">
+                <form name="contact_form" class="" action="{{route('site.contact.post')}}" method="post">
+                    {{csrf_field()}}
+                    @if(Session::has('success'))
+                    <div class="col-md-12">
+                        <div class="alert alert-success no-b">
+                            <span class="text-semibold">Thank you!</span> {{ Session::get('success')}}
+                            <button type="button" class="close" data-dismiss="alert"><span>×</span></button>
+                        </div>
+                    </div>
+                    @endif
                   <div class="form-row">
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Name <small>*</small></label>
-                        <input name="form_name" class="form-control" type="text" placeholder="Enter Name">
+                        <input type="text" placeholder="Name"  name="name" class="form-control">
+                        @if ($errors->has('name'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong class="text-danger">{{ $errors->first('name') }}</strong>
+                        </span>
+                    @endif
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Email <small>*</small></label>
-                        <input name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
+                        <input type="email" placeholder="Email" name="email" class="form-control">
+                        @if ($errors->has('email'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong class="text-danger">{{ $errors->first('email') }}</strong>
+                        </span>
+                    @endif
                       </div>
                     </div>
                   </div>
@@ -872,19 +656,34 @@ Home
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Subject <small>*</small></label>
-                        <input name="form_subject" class="form-control required" type="text" placeholder="Enter Subject">
+                        <input type="text" placeholder="Subject" name="subject" class="form-control">
+                        @if ($errors->has('subject'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong class="text-danger">{{ $errors->first('subject') }}</strong>
+                        </span>
+                    @endif
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Phone</label>
-                        <input name="form_phone" class="form-control" type="text" placeholder="Enter Phone">
+                        <input type="text" placeholder="Phone Number" name="phone" class="form-control">
+                        @if ($errors->has('phone'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong class="text-danger">{{ $errors->first('phone') }}</strong>
+                        </span>
+                    @endif
                       </div>
                     </div>
                   </div>
                   <div class="form-group">
                     <label>Message</label>
-                    <textarea name="form_message" class="form-control required" rows="5" placeholder="Enter Message"></textarea>
+                    <textarea name="message" class="form-control required" rows="5" placeholder="Enter Message"></textarea>
+                    @if ($errors->has('message'))
+                    <span class="invalid-feedback" role="alert">
+                        <strong class="text-danger">{{ $errors->first('message') }}</strong>
+                    </span>
+                @endif
                   </div>
                   <div class="form-group">
                     <input name="form_botcheck" class="form-control" type="hidden" value="" />
@@ -893,31 +692,7 @@ Home
                   </div>
                 </form>
                 <!-- Contact Form Validation-->
-                <script>
-                  (function($) {
-                    $("#contact_form").validate({
-                      submitHandler: function(form) {
-                        var form_btn = $(form).find('button[type="submit"]');
-                        var form_result_div = '#form-result';
-                        $(form_result_div).remove();
-                        form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
-                        var form_btn_old_msg = form_btn.html();
-                        form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
-                        $(form).ajaxSubmit({
-                          dataType:  'json',
-                          success: function(data) {
-                            if( data.status == 'true' ) {
-                              $(form).find('.form-control').val('');
-                            }
-                            form_btn.prop('disabled', false).html(form_btn_old_msg);
-                            $(form_result_div).html(data.message).fadeIn('slow');
-                            setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
-                          }
-                        });
-                      }
-                    });
-                  })(jQuery);
-                </script>
+
               </div>
             </div>
           </div>
