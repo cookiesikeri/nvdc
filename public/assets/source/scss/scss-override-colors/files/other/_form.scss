@@ -1,0 +1,19 @@
+/*
+ * Shortcode: form.scss
+ * -----------------------------------------------
+*/
+.contact-from {
+  border-top-color: $theme-color1;
+}
+.newsletter-form-current-style {
+  background: $theme-color1;
+  .form-control {
+  }
+}
+.donation-form-current-style {
+  background: #fff;
+  padding: 80px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px 5px rgba(0,0,0,0.05);
+  border: 1px solid #ddd;
+}

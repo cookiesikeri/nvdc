@@ -1,0 +1,30 @@
+/*
+ * Shortcode: testimonials.scss
+ * -----------------------------------------------
+*/
+.testimonial-current-item {
+  .testimonial-thumb-holder {
+    &:after {
+    }
+    .author-thumb {
+    }
+    .testimonial-author-info {
+      .job-position {
+        color: $theme-color2;
+      }
+    }
+  }
+  &:hover {
+    .testimonial-thumb-holder {
+      .testimonial-author-info {
+        .name,
+        .job-position {
+        }
+      }
+    }
+    .testimonial-text-holder {
+      .author-text {
+      }
+    }
+  }
+}

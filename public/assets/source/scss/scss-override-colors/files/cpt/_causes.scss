@@ -1,0 +1,35 @@
+/*
+ * Shortcode: causes.scss
+ * -----------------------------------------------
+*/
+.causes-item {
+  .causes-thumb {
+    .btn-donate-now {
+    }
+  }
+  .causes-details {
+  }
+  .donation-goal {
+    background: $theme-color2;
+    .raised {
+      p {
+        span {
+        }
+      }
+    }
+    ul {
+      li {
+      }
+    }
+  }
+  &:hover {
+    .causes-details {
+      a {
+        color: $theme-color1;
+      }
+    }
+    .donation-goal {
+      background: $theme-color1;
+    }
+  }
+}

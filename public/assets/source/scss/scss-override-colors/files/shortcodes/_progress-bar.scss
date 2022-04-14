@@ -1,0 +1,55 @@
+/*
+ * progress-bar.scss
+ * -----------------------------------------------
+*/
+.tm-sc-progress {
+	&.current-style {
+		.tm-sc-progress-bar {
+			.progress-title-holder {
+				.percent {
+			    background: $theme-color1;
+				}
+			}
+			.progress-holder {
+		    border-color: $theme-color1;
+				.progress-content {
+			    &:after {
+					}
+				}
+			}
+		}
+	}
+}
+
+.tm-sc-progress {
+	&.current-style {
+		.tm-sc-progress-bar {
+			.progress-title-holder {
+				.percent {
+			    background: $theme-color1;
+				}
+			}
+			.progress-holder {
+		    border-color: $theme-color1;
+				.progress-content {
+			    &:after {
+					}
+				}
+			}
+		}
+		&.white {
+			.tm-sc-progress-bar {
+				.progress-title-holder {
+					.percent {
+						background-color: #fff;
+						color: $theme-color1;
+					}
+				}
+				.progress-holder {
+					.progress-content {
+					}
+				}
+			}
+		}
+	}
+}

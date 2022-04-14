@@ -1,0 +1,22 @@
+/*
+ * event.scss
+ * -----------------------------------------------
+*/
+.upcoming-events-current-style {
+	.thumb {
+		img {
+		}
+		.event-date {
+			background: $theme-color1;
+			.date {
+			}
+		}
+	}
+	&:hover {
+		.event-details {
+			a {
+				color: $theme-color1;
+			}
+		}
+	}
+}

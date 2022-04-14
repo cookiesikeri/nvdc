@@ -1,0 +1,44 @@
+/*
+ * Shortcode: current-theme.scss
+ * -----------------------------------------------
+*/
+.image-box {
+	.call-for-estimate {
+    background: $theme-color1;
+	}
+}
+.side-line:before {
+	background: $theme-color1;
+}
+.help-people-icon-box {
+	background: $theme-color1;
+}
+.featured-campaign-block {
+	background: $theme-color1;
+	.donation-tag {
+		background: $theme-color2;
+	}
+}
+
+.phone-number-block {
+	background: $theme-color2;
+	&:hover{
+		background: $theme-color1;
+		.divider-phone-icon {
+			background: $theme-color2;
+		}
+	}
+	.divider-phone-icon {
+		background: $theme-color1;
+	}
+	.divider-phone-number {
+		.number {
+		}
+	}
+}
+
+.instagram-thumb {
+	&:after {
+    background: $theme-color1;
+	}
+}

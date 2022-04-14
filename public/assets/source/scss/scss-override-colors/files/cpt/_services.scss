@@ -1,0 +1,117 @@
+/*
+ * Shortcode: services.scss
+ * -----------------------------------------------
+*/
+.service-block-item {
+  .service-icon {
+    &:before {
+      background: $theme-color1;
+    }
+    .icon2 {
+    }
+  }
+  .service-title {
+  }
+  &:hover {
+    background: $theme-color1;
+    .service-title {
+    }
+    .service-icon {
+      &:before {
+      }
+      .icon1 {
+      }
+      .icon2 {
+      }
+    }
+    .service-details {
+    }
+  }
+}
+.service-block-item2 {
+  .service-icon {
+    &:before {
+      background: $theme-color1;
+    }
+    .icon2 {
+    }
+  }
+  .service-title {
+  }
+  &:hover {
+    background: $theme-color1;
+    .service-title {
+    }
+    .service-icon {
+      &:before {
+      }
+      .icon1 {
+      }
+      .icon2 {
+      }
+    }
+    .service-details {
+    }
+  }
+}
+
+.service-block-item2 {
+  .service-icon {
+    &:before {
+      background: $theme-color1;
+    }
+    &:after {
+    }
+  }
+  .service-details {
+  }
+  .arrow-btn {
+    color: $theme-color2;
+  }
+  .service-title {
+  }
+  &:hover {
+    background: $theme-color1;
+    .service-title {
+    }
+    .service-icon {
+      &:before {
+      }
+    }
+    .service-details,
+    a .arrow-btn {
+    }
+    &:after {
+    }
+  }
+  &:after {
+    background: $theme-color2;
+  }
+}
+
+.service-item-current-style1 {
+  .service-icon {
+    &:before {
+      background: $theme-color1;
+    }
+    .icon2 {
+    }
+  }
+  .service-title {
+  }
+  &:hover {
+    background: $theme-color1;
+    .service-title {
+    }
+    .service-icon {
+      &:before {
+      }
+      .icon1 {
+      }
+      .icon2 {
+      }
+    }
+    .service-details {
+    }
+  }
+}

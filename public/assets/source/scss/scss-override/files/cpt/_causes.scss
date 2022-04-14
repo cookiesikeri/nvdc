@@ -1,0 +1,68 @@
+/*
+ * Shortcode: causes.scss
+ * -----------------------------------------------
+*/
+.causes-item {
+  .causes-thumb {
+    position: relative;
+    overflow: hidden;
+    img {
+      @include scale(1);
+      @include transition(all .4s ease-in-out);
+    }
+    .btn-donate-now {
+      position: absolute;
+      bottom: -60px;
+      left: 40px;
+      color: #fff;
+      font-weight: 600;
+      opacity: 0;
+      @include transition(all 0.3s ease 0s);
+    }
+  }
+  .causes-details {
+    padding: 30px;
+    border: 1px solid #eee;
+  }
+  .donation-goal {
+    border: 1px solid #ddd;
+    border-top: none;
+    background: #e1eeed;
+    padding: 20px 10px;
+    @include transition(all .4s ease-in-out);
+    .raised {
+      p {
+        color: #fff;
+        font-size: 20px;
+        font-family: $font-current-theme1;
+        span {
+          font-size: 14px;
+          color: #fff;
+        }
+      }
+    }
+    ul {
+      li {
+        display: inline-block;
+        width: 49%;
+        text-align: center;
+      }
+    }
+  }
+  &:hover {
+    .causes-thumb {
+      img {
+        @include scale(1.1);
+      }
+      .btn-donate-now {
+        opacity: 1;
+        bottom: 0;
+      }
+    }
+    .causes-details {
+      a {
+        color: #111;
+      }
+    }
+  }
+}
