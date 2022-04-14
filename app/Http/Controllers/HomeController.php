@@ -35,11 +35,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $feedbacks  = Feedback::all();
+        $feedbacks  = Feedback::take(3)->latest()->get();
         $projects = Project::take(3)->latest()->get();
-        $clients = Client::all();
+        $galleries = Gallery::take(3)->latest()->get();
+        $clients = Client::latest()->take(9);
 
-        return view('welcome', compact('feedbacks', 'projects', 'clients'));
+        return view('welcome', compact('feedbacks', 'projects', 'clients', 'galleries'));
     }
 
     public function AboutUs()

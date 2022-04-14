@@ -334,6 +334,122 @@ Home
         </div>
       </section>
 
+      <section  id="partner" class="bg-white-f6">
+        <div class="container">
+          <div class="section-content">
+            <div class="row">
+              <div class="col-lg-12">
+                <h5 class="mb-0 text-gray">Partnership Form </h5>
+                {{-- <h2 class="mt-0 mb-0">Volunteer Form</h2> --}}
+                <form action="{{route('become.partner.post')}}" class="appointment-form" method="POST" enctype="multipart/form-data">
+                        {{csrf_field()}}
+                        @if(Session::has('success'))
+                        <div class="col-md-12">
+                           <div class="alert alert-success no-b">
+                              <span class="text-semibold">Thank you!</span> {{ Session::get('success')}}
+                              <button type="button" class="close" data-dismiss="alert"><span>×</span></button>
+                           </div>
+                        </div>
+                        @endif
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group mb-30">
+                                <input type="text" placeholder="Company Name" name="name" required class="form-control required">
+                                 @if ($errors->has('name'))
+                                <span class="invalid-feedback" role="alert">
+                                    <strong class="text-danger">{{ $errors->first('name') }}</strong>
+                                </span> @endif
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group mb-30">
+                                <input type="email" placeholder="Company Email" name="email" class="form-control required">
+                                @if ($errors->has('email'))
+                                <span class="invalid-feedback" role="alert">
+                                    <strong class="text-danger">{{ $errors->first('email') }}</strong>
+                                </span> @endif
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group mb-30">
+                                <input type="text" placeholder="Company PhoneNumber" name="phone" class="form-control required" required>
+                                @if ($errors->has('phone'))
+                                <span class="invalid-feedback" role="alert">
+                                <strong class="text-danger">{{ $errors->first('phone') }}</strong>
+                                </span>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group mb-30">
+                                <label>Company Logo</label>
+                                <input type="file"  name="image" class="form-control">
+                                @if ($errors->has('image'))
+                                <span class="invalid-feedback" role="alert">
+                                <strong class="text-danger">{{ $errors->first('image') }}</strong>
+                                </span>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group mb-30">
+                            <select name="nationality" class="form-control required">
+
+                                <option value="">Select Nationality</option>
+                                @foreach($countries as $country)
+                                <option value="{{$country->title}}">{{ ucfirst($country->title) }}</option>
+                                @endforeach
+                                </select>
+                                @if ($errors->has('nationality'))
+                                <span class="invalid-feedback" role="alert">
+                                <strong class="text-danger">{{ $errors->first('nationality') }}</strong>
+                                </span>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <select name="publish" class="form-control required">
+                                <option value="">Publish(profile to be displayed on our website)</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                </select>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group mb-30">
+                                <textarea type="text" placeholder="Enter Company's Address"  name="address" class="form-control"></textarea>
+                                @if ($errors->has('address'))
+                                <span class="invalid-feedback" role="alert">
+                                <strong class="text-danger">{{ $errors->first('address') }}</strong>
+                                </span>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group mb-30">
+                                <textarea placeholder="Why do you want to become a Partner" type="text" name="purpose" class="form-control required"></textarea>
+                                @if ($errors->has('purpose'))
+                                <span class="invalid-feedback" role="alert">
+                                <strong class="text-danger">{{ $errors->first('purpose') }}</strong>
+                                </span>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group mb-0 mt-0">
+
+                                <button type="submit" class="btn btn-theme-colored1 btn-round" data-loading-text="Please wait...">Submit Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- Contact Form Validation-->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       <!-- Section: Testimonials -->
       <section>
@@ -350,192 +466,81 @@ Home
           </div>
           <div class="section-content">
             <div class="row">
+                @foreach($feedbacks as $state)
               <div class="col-md-12 col-lg-6 col-xl-4">
                 <div class="testimonial-current-item mb-lg-30">
                   <div class="testimonial-thumb-holder d-flex align-items-center">
                     <div class="author-thumb">
-                      <img class="w-100 rounded-circle" src="http://placehold.it/90x90" alt="Image">
+                        <i class="fa fab-user"></i>
+                      <img class="w-100 rounded-circle" src="images/icons/icon2.png" alt="Image">
                     </div>
                     <div class="testimonial-author-info">
-                      <h4 class="name m-0">Kevin Martin</h4>
-                      <p class="job-position text-uppercase font-weight-500 m-0">Consultant in Bank</p>
+                      <h4 class="name m-0">{{$state->name}}</h4>
+                      {{-- <p class="job-position text-uppercase font-weight-500 m-0">Consultant in Bank</p> --}}
                     </div>
                   </div>
                   <div class="testimonial-text-holder">
-                    <div class="author-text">There are many variations of passages of lorem ipsum available but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</div>
+                    <div class="author-text">{!! $state->body !!}</div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-12 col-lg-6 col-xl-4">
-                <div class="testimonial-current-item mb-lg-30">
-                  <div class="testimonial-thumb-holder d-flex align-items-center">
-                    <div class="author-thumb">
-                      <img class="w-100 rounded-circle" src="http://placehold.it/90x90" alt="Image">
-                    </div>
-                    <div class="testimonial-author-info">
-                      <h4 class="name m-0">Kevin Martin</h4>
-                      <p class="job-position text-uppercase font-weight-500 m-0">Consultant in Bank</p>
-                    </div>
-                  </div>
-                  <div class="testimonial-text-holder">
-                    <div class="author-text">There are many variations of passages of lorem ipsum available but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12 col-lg-12 col-xl-4">
-                <div class="testimonial-current-item mb-lg-30">
-                  <div class="testimonial-thumb-holder d-flex align-items-center">
-                    <div class="author-thumb">
-                      <img class="w-100 rounded-circle" src="http://placehold.it/90x90" alt="Image">
-                    </div>
-                    <div class="testimonial-author-info">
-                      <h4 class="name m-0">Kevin Martin</h4>
-                      <p class="job-position text-uppercase font-weight-500 m-0">Consultant in Bank</p>
-                    </div>
-                  </div>
-                  <div class="testimonial-text-holder">
-                    <div class="author-text">There are many variations of passages of lorem ipsum available but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</div>
-                  </div>
-                </div>
-              </div>
+              @endforeach
+
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Section: Help People Now -->
-      <section class="bg-silver-light">
-        <div class="container">
+      <section id="gallery" class="bg-white-f6">
+        <div class="container pb-70">
           <div class="section-content">
             <div class="row">
-              <div class="col-md-12 col-lg-6 col-xl-6">
-                <h5 class="side-line text-theme-colored1 mt-0 mb-0">Help People Now</h5>
-                <h2 class="mt-0 mb-40">You have the Power <br> Today to Change <br> Tomorrow</h2>
-                <p class="mb-60">Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Id consectetur purus ut faucibus pulvinar elementum integer enim tempor orci. Id consectetur purus ut faucibus pulvinar eleme ntum integer enim neque volutpat ac tincidunta vitae semper quis lectus nulla at volutpat diam ut venenatis tellus in. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Id consectetur purus ut faucibus pulvinar elementum consectetur purus ut faucibus.</p>
-                <a href="page-about.html" class="btn btn-theme-colored2 btn-lg text-white mb-md-40">Discover More</a>
-              </div>
-              <div class="col-md-6 col-lg-3 col-xl-3">
-                <div class="help-people-icon-box mb-30">
-                  <div class="help-people-icon">
-                    <img src="images/icons/help-people-icon1.png" alt="">
-                  </div>
-                  <h4 class="help-people-title">Let’s Become a Volunteer</h4>
-                </div>
-                <div class="help-people-image">
-                  <img class="w-100" src="http://placehold.it/315x315" alt="">
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 col-xl-3">
-                <div class="help-people-image mb-30 mt-30">
-                  <img class="w-100" src="http://placehold.it/315x315" alt="">
-                </div>
-                <div class="help-people-icon-box">
-                  <div class="help-people-icon">
-                    <img src="images/icons/help-people-icon2.png" alt="">
-                  </div>
-                  <h4 class="help-people-title">Urgent Help is Needed</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tm-floating-objects">
-          <span class="floating-object-4 tm-animation-floating" data-tm-bg-img="images/bg/bird-bg-object1.png" data-tm-opacity="1" data-tm-width="360" data-tm-height="490" data-tm-left="0" data-tm-top="36%"></span>
-        </div>
-      </section>
+              <div class="col-sm-12">
+                <div class="tm-sc-gallery tm-sc-gallery-grid gallery-style1-basic">
+                  <!-- Isotope Filter -->
 
-      <!-- Section: Funfacts -->
-      <section class="layer-overlay overlay-dark-7 bg-no-repeat bg-pos-center-center" data-tm-bg-img="http://placehold.it/1920x1070">
-        <div class="container pt-100 pb-150">
-          <div class="tm-sc-section-title section-title text-center mb-30">
-            <div class="row justify-content-md-center">
-              <div class="col"></div>
-              <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                <h5 class="text-white text-uppercase letter-space-3 font-weight-300 mt-0">Numbers Speak Everything</h5>
-              </div>
-              <div class="col"></div>
-            </div>
-          </div>
-          <div class="section-content">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6 col-lg-6 col-xl-3">
-                  <div class="funfact-item mb-lg-60">
-                    <h2 data-animation-duration="2000" data-value="8705" class="counter animate-number mt-0 mb-10">0</h2>
-                    <p class="title mb-0">Donations</p>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3">
-                  <div class="funfact-item mb-lg-60">
-                    <h2 data-animation-duration="2000" data-value="3365" class="counter animate-number mt-0 mb-10">0</h2>
-                    <p class="title mb-0">Campaigns</p>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3">
-                  <div class="funfact-item mb-lg-60">
-                    <h2 data-animation-duration="2000" data-value="780" class="counter animate-number mt-0 mb-10">0</h2>
-                    <p class="title mb-0">Volunteers</p>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3">
-                  <div class="funfact-item mb-lg-60">
-                    <h2 data-animation-duration="2000" data-value="18970" class="counter animate-number mt-0 mb-10">0</h2>
-                    <p class="title mb-0">Funds Raised</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section: Urgent Causes -->
-      <section>
-        <div class="container pt-0 pb-0">
-          <div class="section-content">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12 col-xl-3">
-                  <h5 class="side-line text-theme-colored1 mt-60 mb-0">Donate Now</h5>
-                  <h2 class="mt-0 mb-40">Urgent Cause Need Help</h2>
-                  <p>Dignissim cras tincidunt feugiat at augue. Id purus integer orci.</p>
-                </div>
-                <div class="col-lg-12 col-xl-9">
-                  <div class="right-infinity-bg pt-30 pb-30 mt-sm-60">
-                    <div class="row">
-                      <div class="col-lg-12 col-xl-4">
-                        <div class="tm-sc-pie-chart current-style1">
-                          <div class="pie-chart"
-                            data-bar-color="#fff"
-                            data-track-color="#FF7388"
-                            data-scale-color="#fff"
-                            data-scale-length="3"
-                            data-line-cap="round"
-                            data-line-width="3"
-                            data-size="250"
-                            data-tm-width="250"
-                            data-tm-height="250"
-
-                            data-percent="75">
-                            <span class="percent"></span>
+                  <!-- End Isotope Filter -->
+                  <!-- Isotope Gallery Grid -->
+                  <div id="gallery-holder-743344" class="isotope-layout grid-3 gutter-10 clearfix lightgallery-lightbox">
+                    <div class="isotope-layout-inner">
+                      <!-- the loop -->
+                      @foreach($galleries as $post)
+                      <!-- Isotope Item Start -->
+                      <div class="isotope-item laboratory surgery">
+                        <div class="isotope-item-inner">
+                          <div class="tm-gallery">
+                            <div class="tm-gallery-inner">
+                              <div class="thumb">
+                                <a href="#"><img src="{{asset($post->image)}}" class="" alt=""/></a>
+                              </div>
+                              <div class="tm-gallery-content-wrapper">
+                                <div class="tm-gallery-content">
+                                  <div class="tm-gallery-content-inner">
+                                    <div class="icons-holder-inner">
+                                      <div class="styled-icons icon-dark icon-circled icon-theme-colored1">
+                                        <a class="lightgallery-trigger styled-icons-item" data-exthumbimage="{{asset($post->image)}}" title="photo" href="{{asset($post->image)}}"><i class="fa fa-plus"></i></a>
+                                      </div>
+                                    </div>
+                                    <div class="title-holder">
+                                      <h5 class="title"><a href="#">{{$post->title}}</a></h5>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-12 col-xl-8 ml-lg-60">
-                        <h5 class="text-white mb-0">$30,000 Goal</h5>
-                        <h3 class="text-white mt-0">Raise Fund for Clean & Healthy Water</h3>
-                        <p class="text-white">Aliq is notm hendr erit a augue insu image pellen tes. There are many variations of passages of lorem ipsum available but the majority have suffered.</p>
-                        <a href="page-causes-details.html" class="btn btn-dark btn-lg mb-md-40">Donate Now</a>
-                      </div>
+                      @endforeach
+                      <!-- Isotope Item End -->
+                      <!-- end of the loop -->
                     </div>
                   </div>
+                  <!-- End Isotope Gallery Grid -->
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="tm-floating-objects">
-          <span class="floating-object-6 tm-animation-floating" data-tm-bg-img="images/bg/bird-bg-object3.png" data-tm-opacity="1" data-tm-width="360" data-tm-height="490" data-tm-right="5%" data-tm-top="-15%"></span>
         </div>
       </section>
 

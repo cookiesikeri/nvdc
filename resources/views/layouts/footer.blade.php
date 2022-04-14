@@ -6,9 +6,12 @@
           <div class="col-md-6 col-lg-6 col-xl-4">
             <div id="tm_widget_contact_info-1" class="split-nav-menu clearfix widget widget-contact-info clearfix mb-20 pr-30">
               <div class="tm-widget tm-widget-contact-info contact-info contact-info-style1  contact-icon-theme-colored1">
-                <img class="mb-20" src="images/logo-wide-white.png" alt="images">
-                <p>Lorem ipsum dolor sit amet, consect etur adi pisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <h4 class="text-theme-colored2 m-0">666 888 0000</h4>
+                <img class="mb-20" src="{{ asset($site->logo) }}" alt="images">
+                <ul>
+                    <li><a href="tel:{{$site->hotline}}">{{$site->hotline}}</a></li>
+                    <li><a href="mailto:{{$site->site_email}}"> {{$site->site_email}}</a></li>
+                    <li><a href="javasctipt:void(0);">{{$site->site_address}}</a></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -17,51 +20,37 @@
               <h4 class="widget-title widget-title-line-bottom line-bottom-theme-colored1">Links</h4>
               <div class="menu-footer-page-list">
                 <ul class="menu">
-                  <li><a href="index-mp-layout1.html">Service</a></li>
-                  <li><a href="index-mp-layout1.html">About</a></li>
-                  <li><a href="index-mp-layout1.html">Get a Quote</a></li>
-                  <li><a href="index-mp-layout1.html">Latest Post</a></li>
-                  <li><a href="index-mp-layout1.html">Success Story</a></li>
-                  <li><a href="index-mp-layout1.html">Contact</a></li>
+                    <li @if(active('/'))  class="active" @endif><a href="#home">Home</a> </li>
+                    <li @if(active('aboutus')) class="active" @endif><a href="#about">About</a></li>
+                    <li><a href="#causes">Donate</a></li>
+                    <li><a href="#volunteer">Volunteer</a></li>
+                    <li><a href="#partner">Partner</a></li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-6 col-xl-3">
-            <div class="widget widget-newsletter">
-              <h4 class="widget-title widget-title-line-bottom line-bottom-theme-colored1">Latest News</h4>
-              <div class="latest-posts">
-                <article class="post media-post clearfix pb-0 mb-30">
-                  <a class="post-thumb" href="#"><img width="65" class="rounded" src="http://placehold.it/95x95" alt=""></a>
-                  <div class="post-right">
-                    <div class="post-date">
-                      <span class="entry-date text-theme-colored1">Jan 22 - 2020</span>
-                    </div>
-                    <h6 class="post-title"> <a href="news-details.html" class="text-white">A Clean Water Gives More Good Taste </a> </h6>
-                  </div>
-                </article>
-                <article class="post media-post clearfix pb-0">
-                  <a class="post-thumb" href="#"><img width="65" class="rounded" src="http://placehold.it/95x95" alt=""></a>
-                  <div class="post-right">
-                    <div class="post-date">
-                      <span class="entry-date text-theme-colored1">Jan 22 - 2020</span>
-                    </div>
-                    <h6 class="post-title"> <a href="news-details.html" class="text-white">A Clean Water Gives More Good Taste </a> </h6>
-                  </div>
-                </article>
+          <div class="col-md-6 col-lg-6 col-xl-2">
+            <div class="widget widget_nav_menu">
+              <h4 class="widget-title widget-title-line-bottom line-bottom-theme-colored1">Quick Links</h4>
+              <div class="menu-footer-page-list">
+                <ul class="menu">
+                    <li @if(active('/'))  class="active" @endif><a href="#home">Home</a> </li>
+                    <li @if(active('aboutus')) class="active" @endif><a href="#about">About</a></li>
+                    <li><a href="#causes">Donate</a></li>
+                    <li><a href="#volunteer">Volunteer</a></li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="col-md-6 col-lg-6 col-xl-2">
             <div class="widget widget_nav_menu">
-              <h4 class="widget-title widget-title-line-bottom line-bottom-theme-colored1">Explore</h4>
+              <h4 class="widget-title widget-title-line-bottom line-bottom-theme-colored1">Quick Links</h4>
               <div class="menu-footer-page-list">
                 <ul class="menu">
-                  <li><a href="index-mp-layout1.html">Press Release</a></li>
-                  <li><a href="index-mp-layout1.html">Contact</a></li>
-                  <li><a href="index-mp-layout1.html">Blog Post</a></li>
-                  <li><a href="index-mp-layout1.html">Scocial Connect</a></li>
-                  <li><a href="index-mp-layout1.html">Help Topics</a></li>
+                    <li><a href="#partner">Partner</a></li>
+                    <li><a href="#event">Ready To Vote Abia</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
               </div>
             </div>

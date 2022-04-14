@@ -44,9 +44,9 @@
                     <li @if(active('aboutus')) class="active" @endif><a href="#about">About</a></li>
                     <li><a href="#causes">Donate</a></li>
                     <li><a href="#volunteer">Volunteer</a></li>
-                    <li><a href="#event">Partner</a></li>
+                    <li><a href="#partner">Partner</a></li>
                     <li><a href="#event">Ready To Vote Abia</a></li>
-                    <li><a href="#news">Gallery</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#contact">Contact</a></li>
                   </ul>
                 </nav>
