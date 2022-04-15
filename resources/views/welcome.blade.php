@@ -81,7 +81,8 @@ Home
                     <img class="icon2" src="images/icons/service-white-icon1.png" alt="">
                   </div>
                   <h4 class="service-title">About <strong>{{$site->site_name}}</strong></h4>
-                  <p class="service-details mb-0">{!! $general->about_content !!}</p>
+                  {{-- <p class="service-details mb-0">{!! $general->about_content !!}</p> --}}
+                  <p class="service-details mb-0">NVDC is a coalition of several non-profit organizations made up of Nigerian professionals in the diaspora and at home who are interested in strengthening democracy in Nigeria by ATTACKING voter apathy.</p>
                 </div>
               </div>
               <div class="col-md-6 col-lg-6 col-xl-12">
@@ -90,8 +91,8 @@ Home
                     <img class="icon1" src="images/icons/service-icon2.png" alt="">
                     <img class="icon2" src="images/icons/service-white-icon2.png" alt="">
                   </div>
-                  <h4 class="service-title">Why Are We Different? </h4>
-                  <p class="service-details mb-0">{!! $general->why_we_different !!}</p>
+                  <h4 class="service-title text-center">Why Are We Different? </h4>
+                  {{-- <p class="service-details mb-0">{!! $general->why_we_different !!}</p> --}}
                   <ui>
                       <li>We are NON PARTISAN. We want Nigerians to participate in elections but we do not tell them who to vote for</li>
                       <li>We are crowdsourcing funding and that allows us to be truly INDEPENDENT
