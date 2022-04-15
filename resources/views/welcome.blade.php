@@ -371,7 +371,154 @@ Home
           </div>
         </div>
       </section>
+      <section class="">
+        <div class="container mb-lg-120">
+          <div class="tm-sc-section-title section-title">
+            <div class="row justify-content-md-center">
+              <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                {{-- <h5 class="side-line text-theme-colored1 mt-0">New Events</h5> --}}
+                <h3 class="mt-0 mb-md-40">NVDC has a comprehensive plan, and we are working closely with INEC</h3>
+              </div>
+            </div>
+          </div>
+          <div class="section-content">
+            <div class="row">
+              <div class="col-md-12 col-lg-12 col-xl-12">
+                <div class="upcoming-events-current-style mb-40">
+                  <div class="row align-items-center">
+                    <div class="col-sm-3 pr-0 pr-sm-15">
+                      <div class="thumb">
+                        <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="...">
+                        <div class="event-date">
+                          <h5 class="date">Phase 1</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-8">
+                      <div class="event-details p-15">
+                        <h4 class="media-heading text-uppercase mt-0 mb-30">find people where they are on the ward level and register them on the INEC portal
+                        </h4>
+                      </div>
+                    </div>
+                    <div class="col"></div>
+                  </div>
+                </div>
+                <hr>
+                <div class="upcoming-events-current-style mb-40">
+                  <div class="row align-items-center">
+                    <div class="col-sm-3 pr-0 pr-sm-15">
+                      <div class="thumb">
+                        <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="...">
+                        <div class="event-date">
+                          <h5 class="date">Phase 2</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-8">
+                      <div class="event-details p-15">
+                        <h4 class="media-heading text-uppercase mt-0 mb-30">Completing registration for those who have registered on the portal but have not done the biometrics
+                        </h4>
+                      </div>
+                    </div>
+                    <div class="col"></div>
+                  </div>
+                </div>
+                <hr>
+                <div class="upcoming-events-current-style mb-40">
+                    <div class="row align-items-center">
+                      <div class="col-sm-3 pr-0 pr-sm-15">
+                        <div class="thumb">
+                          <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="...">
+                          <div class="event-date">
+                            <h5 class="date">Phase 3</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-8">
+                        <div class="event-details p-15">
+                          <h4 class="media-heading text-uppercase mt-0 mb-30">Make sure that all those who have done biometrics will get their PVC cards
 
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="col"></div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="upcoming-events-current-style mb-40">
+                    <div class="row align-items-center">
+                      <div class="col-sm-3 pr-0 pr-sm-15">
+                        <div class="thumb">
+                          <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="...">
+                          <div class="event-date">
+                            <h5 class="date">Phase 4</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-8">
+                        <div class="event-details p-15">
+                          <h4 class="media-heading text-uppercase mt-0 mb-30">voters' education and literacy. Pledge to VOTE and Not sell your vote Campaign.
+
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="col"></div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="upcoming-events-current-style mb-40">
+                    <div class="row align-items-center">
+                      <div class="col-sm-3 pr-0 pr-sm-15">
+                        <div class="thumb">
+                          <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="...">
+                          <div class="event-date">
+                            <h5 class="date">Phase 5</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-8">
+                        <div class="event-details p-15">
+                          <h4 class="media-heading text-uppercase mt-0 mb-30">Providing information about nearest polling unit and election day mobilization
+
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="col"></div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="upcoming-events-current-style mb-40">
+                    <div class="row align-items-center">
+                      <div class="col-sm-3 pr-0 pr-sm-15">
+                        <div class="thumb">
+                          <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="...">
+                          <div class="event-date">
+                            <h5 class="date">Phase 6</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-8">
+                        <div class="event-details p-15">
+                          <h4 class="media-heading text-uppercase mt-0 mb-30">following voting results from every polling unit and electronic collation.
+
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="col"></div>
+                    </div>
+                  </div>
+
+                  <hr>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- floating objects -->
+        <div class="tm-floating-objects d-none d-xl-block">
+          <span class="floating-object-1 tm-animation-floating" data-tm-bg-img="images/bg/bird-bg-object2.png" data-tm-opacity="1" data-tm-width="360" data-tm-height="490" data-tm-right="0" data-tm-left="auto" data-tm-top="48%"></span>
+        </div>
+      </section>
       <section  id="partner" class="bg-white-f6">
         <div class="container">
           <div class="section-content">
