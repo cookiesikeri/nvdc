@@ -370,7 +370,7 @@ Home
                     <div class="effect-wrapper d-flex align-items-center">
                       <div class="animated-css-play-button"><span class="play-icon"><i class="fa fa-play"></i></span></div>
                       {{-- <iframe title="YouTube video player" src="https://www.youtube.com/embed/5HPiEQOfi7g" width="700" height="400" frameborder="0" allowfullscreen="allowfullscreen"></iframe> --}}
-                      <a class="hover-link" data-lightbox-gallery="youtube-video" href="https://www.youtube.com/embed/5HPiEQOfi7g" title="READY TO VOTE ABIA"></a>
+                      <a class="hover-link" data-lightbox-gallery="youtube-video" href="https://www.youtube.com/watch?v=5HPiEQOfi7g" title="READY TO VOTE ABIA"></a>
                     </div>
                   </div>
                 </div>
