@@ -357,7 +357,7 @@ Home
       </section>
 
       <!-- Section: Video Popup -->
-      <section class="layer-overlay overlay-dark-5 bg-no-repeat" data-tm-bg-img="images/job-bg.png">
+      <section id="abia" class="layer-overlay overlay-dark-5 bg-no-repeat" data-tm-bg-img="images/job-bg.png">
         <div class="container">
           <div class="section-content">
             <div class="row">
@@ -368,7 +368,7 @@ Home
                   <h2 class="text-white popup-video-title mb-40">READY TO VOTE ABIA </h2>
                   <div class="box-hover-effect tm-sc-video-popup tm-sc-video-popup-css-button">
                     <div class="effect-wrapper d-flex align-items-center">
-                      <div class="animated-css-play-button"><span class="play-icon"><i class="fa fa-play"></i></span></div>
+                      {{-- <div class="animated-css-play-button"><span class="play-icon"><i class="fa fa-play"></i></span></div> --}}
                       <iframe title="YouTube video player" src="https://www.youtube.com/embed/5HPiEQOfi7g" width="700" height="400" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                       {{-- <a class="hover-link" data-lightbox-gallery="youtube-video" href="https://www.youtube.com/embed/5HPiEQOfi7g" title=""></a> --}}
                     </div>
@@ -376,6 +376,24 @@ Home
                 </div>
               </div>
               <div class="col"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-no-repeat bg-pos-center-top bg-size-cover bg-theme-colored2" data-tm-bg-img="images/call-to-action-bg1.png">
+        <div class="container">
+          <div class="section-content">
+            <div class="row d-flex align-items-center">
+              <div class="col-lg-8 col-xl-8">
+                <div class="book-roofing">
+                  <div class="book-roofing-text">
+                    <h3 class="text-white mt-0 mb-md-15">By combining a convenient opportunity for voters to register and learn about the voting process with health screening and education, we will motivate citizens to elect leaders who will prioritize their communities and their health.</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-xl-4 text-left text-lg-right">
+                <a href="#volunteer" class="btn btn-circle btn-lg btn-dark text-white">Becone a Volunteer</a>
+              </div>
             </div>
           </div>
         </div>
