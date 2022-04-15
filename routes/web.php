@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\StripeController;
 use App\Http\Controllers\admin\AdminController;
 use App\Http\Controllers\admin\AdminLoginController;
+use App\Http\Controllers\ChartJsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +18,7 @@ use App\Http\Controllers\admin\AdminLoginController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('chartjs', [ChartJsController::class, 'index'])->name('chartjs.index');
 
 Route::post('/stripe/checkout', [StripeController::class, 'initialize'])->name('stripe.pay');
 Route::post('/stripe/success', [StripeController::class, 'callback'])->name('stripe.callback');

@@ -11,7 +11,7 @@
 
 <!-- Page Title -->
 <meta name="csrf-token" content="{{ csrf_token() }}">
-<title>@yield('title') | {{$site->site_name}} </title>
+<title>Home | {{$site->site_name}} </title>
 
 <!-- Favicon and Touch Icons -->
 <link href="{{ asset($site->logo) }}" rel="shortcut icon" type="image/png">

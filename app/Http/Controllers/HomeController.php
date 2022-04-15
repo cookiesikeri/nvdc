@@ -6,6 +6,7 @@ use App\Models\AbiaGallery;
 use App\Models\Client;
 use App\Models\ContactMessage;
 use App\Models\Country;
+use App\Models\Donate;
 use App\Models\Feedback;
 use App\Models\Gallery;
 use App\Models\NewsLetter;
@@ -40,7 +41,16 @@ class HomeController extends Controller
         $galleries = Gallery::take(6)->latest()->get();
         $clients = Client::latest()->take(9);
 
-        return view('welcome', compact('feedbacks', 'projects', 'clients', 'galleries'));
+        $year = ['2018', '2019', '2020', '2021', '2022'];
+
+        $user = [];
+        foreach ($year as $key => $value) {
+            $user[] = Donate::where(\DB::raw("DATE_FORMAT(created_at, '%Y')"),$value)->count();
+        }
+
+         return view('welcome')->with('year',json_encode($year,JSON_NUMERIC_CHECK))->with('user',json_encode($user,JSON_NUMERIC_CHECK))->with(['feedbacks' => $feedbacks, 'projects' => $projects,
+         'clients' => $clients,
+         'galleries' => $galleries]);
     }
 
     public function AboutUs()

@@ -117,7 +117,7 @@ Home
           <div class="section-content">
             <div class="row">
               <div class="col-md-12 col-lg-6 col-xl-6">
-                <h3 class="side-line text-theme-colored1 mt-0 mb-0">Reasons for poor voter’s turnout</h3>
+                <h2 class="mt-0 mb-40">Reasons for poor voter’s turnout</h2>
 
                 <ul>
                     <li>Difficulty in completing registration
@@ -140,7 +140,7 @@ Home
                   <div class="help-people-icon">
                     <img src="images/icons/help-people-icon1.png" alt="">
                   </div>
-                  <h4 class="help-people-title">Let’s Become a Volunteer</h4>
+                  <h4 class="help-people-title">Become a Volunteer</h4>
                 </div>
                 <div class="help-people-image">
                   <img class="w-100" src="{{URL::to($general->about_image)}}" alt="">
@@ -180,7 +180,7 @@ Home
                 </p>
               </div>
               <div class="col-lg-6">
-                <h2 class="mt-0 mb-0">Donation Form</h2>
+                <h2 class="mt-0 mb-0">Donate</h2>
 
                 <!-- Contact Form -->
                 <form name="contact_form" class="appointment-form" method="post" action="{{ route('stripe.pay') }}">
@@ -216,7 +216,8 @@ Home
                         <div class="col-sm-12">
                             <div class="form-group mb-0 mt-0">
                                 <input name="form_botcheck" class="form-control" type="hidden" value="">
-                                <button type="submit" class="btn btn-theme-colored1 btn-round" data-loading-text="Please wait...">Submit Now</button>
+                                <button type="submit" class="btn btn-theme-colored1 btn-round" data-loading-text="Please wait...">Donate NG</button>
+                                <button type="button" class="btn btn-theme-colored1 btn-round" data-loading-text="Please wait..." style="color: white"><a href="https://aph-foundation.org/"> Donate USD</a></button>
                             </div>
                         </div>
                     </div>
@@ -228,17 +229,15 @@ Home
           </div>
         </div>
       </section>
-
+{{--
       <section class="">
         <div class="container">
             <div class="section-content">
-                <h5 class="side-line text-theme-colored1 mt-0 mb-0">Fundraiser tracker and Voter’s registered tracker side by side</h5>
+                <h5 class="side-line text-theme-colored1 mt-0 mb-0">We have currently registered 23,000 to our goal of 250,000. Help us reach our goal by donating!</h5>
                 <div class="row">
-                    <div class="col-md-12 col-lg-6 col-xl-6">
-                        <img src="images/Picture2.png" alt="">
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-6">
-                        <img  src="images/Picture3.png" alt="">
+
+                    <div class="col-md-6 col-lg-6 col-xl-12">
+                        <canvas id="canvas" height="280" width="600"></canvas>
                     </div>
                 </div>
             </div>
@@ -246,7 +245,98 @@ Home
         <div class="tm-floating-objects">
             <span class="floating-object-4 tm-animation-floating" data-tm-bg-img="images/bg/bird-bg-object1.png" data-tm-opacity="1" data-tm-width="360" data-tm-height="490" data-tm-left="0" data-tm-top="36%"></span>
         </div>
-    </section>
+    </section> --}}
+    <section class="layer-overlay overlay-dark-7 bg-no-repeat bg-pos-center-center" data-tm-bg-img="http://placehold.it/1920x1070">
+        <div class="container pt-100 pb-150">
+          <div class="tm-sc-section-title section-title text-center mb-30">
+            <div class="row justify-content-md-center">
+              <div class="col"></div>
+              <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                <h5 class="text-white text-uppercase letter-space-3 font-weight-300 mt-0">Numbers Speak Everything</h5>
+              </div>
+              <div class="col"></div>
+            </div>
+          </div>
+          <div class="section-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                  <div class="funfact-item mb-lg-60">
+                    <h2 data-animation-duration="2000" data-value="{{ \App\Models\Donate::all()->count() }}" class="counter animate-number mt-0 mb-10">0</h2>
+                    <p class="title mb-0">Donations</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                  <div class="funfact-item mb-lg-60">
+                    <h2 data-animation-duration="2000" data-value="{{ \App\Models\Partner::all()->count() }}" class="counter animate-number mt-0 mb-10">0</h2>
+                    <p class="title mb-0">Partners</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                  <div class="funfact-item mb-lg-60">
+                    <h2 data-animation-duration="2000" data-value="{{ \App\Models\Volunteer::all()->count() }}" class="counter animate-number mt-0 mb-10">0</h2>
+                    <p class="title mb-0">Volunteers</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                  <div class="funfact-item mb-lg-60">
+                    <h2 data-animation-duration="2000" data-value="$250K" class="counter animate-number mt-0 mb-10">0</h2>
+                    <p class="title mb-0">Funds Raised</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <section>
+        <div class="container pt-0 pb-0">
+          <div class="section-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 col-xl-3">
+                  <h5 class="side-line text-theme-colored1 mt-60 mb-0">Donate Now</h5>
+                  <h3 class="mt-0 mb-40">Fundraiser tracker and Voter’s registered tracker side by side</h3>
+                  {{-- <p>Dignissim cras tincidunt feugiat at augue. Id purus integer orci.</p> --}}
+                </div>
+                <div class="col-lg-12 col-xl-9">
+                  <div class="right-infinity-bg pt-30 pb-30 mt-sm-60">
+                    <div class="row">
+                      <div class="col-lg-12 col-xl-4">
+                        <div class="tm-sc-pie-chart current-style1">
+                          <div class="pie-chart"
+                            data-bar-color="#fff"
+                            data-track-color="#FF7388"
+                            data-scale-color="#fff"
+                            data-scale-length="3"
+                            data-line-cap="round"
+                            data-line-width="3"
+                            data-size="250"
+                            data-tm-width="250"
+                            data-tm-height="250"
+
+                            data-percent="23">
+                            <span class="percent"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 col-xl-8 ml-lg-60">
+                        <h5 class="text-white mb-0">$250,000 Goal</h5>
+                        {{-- <h3 class="text-white mt-0">Raise Fund for Clean & Healthy Water</h3> --}}
+                        <p class="text-white">We have currently registered 23,000 to our goal of 250,000. Help us reach our goal by donating!</p>
+                        <a href="#causes" class="btn btn-dark btn-lg mb-md-40">Donate Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tm-floating-objects">
+          <span class="floating-object-6 tm-animation-floating" data-tm-bg-img="images/bg/bird-bg-object3.png" data-tm-opacity="1" data-tm-width="360" data-tm-height="490" data-tm-right="5%" data-tm-top="-15%"></span>
+        </div>
+      </section>
 
       <section  id="volunteer" class="bg-white-f6">
         <div class="container">
@@ -413,7 +503,7 @@ Home
                 </div>
               </div>
               <div class="col-lg-4 col-xl-4 text-left text-lg-right">
-                <a href="#volunteer" class="btn btn-circle btn-lg btn-dark text-white">Becone a Volunteer</a>
+                <a href="#causes" class="btn btn-circle btn-lg btn-dark text-white">Donate</a>
               </div>
             </div>
           </div>
@@ -567,6 +657,45 @@ Home
           <span class="floating-object-1 tm-animation-floating" data-tm-bg-img="images/bg/bird-bg-object2.png" data-tm-opacity="1" data-tm-width="360" data-tm-height="490" data-tm-right="0" data-tm-left="auto" data-tm-top="48%"></span>
         </div>
       </section>
+            <!-- Section: Testimonials -->
+            <section id="partner">
+                <div class="container-fluid pl-60 pr-60">
+                  <div class="tm-sc-section-title section-title text-center">
+                    <div class="row justify-content-md-center">
+                      <div class="col"></div>
+                      {{-- <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                        <h5 class="side-line text-theme-colored1 mt-0">Testimonials</h5>
+                        <h2 class="mt-0">What People Says</h2>
+                      </div> --}}
+                      <div class="col"></div>
+                    </div>
+                  </div>
+                  <div class="section-content">
+                    <div class="row">
+                        @foreach($feedbacks as $state)
+                      <div class="col-md-12 col-lg-6 col-xl-4">
+                        <div class="testimonial-current-item mb-lg-30">
+                          <div class="testimonial-thumb-holder d-flex align-items-center">
+                            <div class="author-thumb">
+                                <i class="fa fab-user"></i>
+                              <img class="w-100 rounded-circle" src="images/icons/icon2.png" alt="Image">
+                            </div>
+                            <div class="testimonial-author-info">
+                              <h4 class="name m-0">{{$state->name}}</h4>
+                              {{-- <p class="job-position text-uppercase font-weight-500 m-0">Consultant in Bank</p> --}}
+                            </div>
+                          </div>
+                          <div class="testimonial-text-holder">
+                            <div class="author-text">{!! $state->body !!}</div>
+                          </div>
+                        </div>
+                      </div>
+                      @endforeach
+
+                    </div>
+                  </div>
+                </div>
+              </section>
       <section  id="partner" class="bg-white-f6">
         <div class="container">
           <div class="section-content">
@@ -581,7 +710,7 @@ Home
                     <li>Please click this button to find out how you can be a corporate partner
                     </li>
                 </ul>
-                <h5 class="mb-0 text-gray">SignUp To Be A Partner </h5>
+                <h5 class="mb-0 text-gray">Sign Up To Be A Partner </h5>
 
                 <form action="{{route('become.partner.post')}}" class="appointment-form" method="POST" enctype="multipart/form-data">
                         {{csrf_field()}}
@@ -693,45 +822,7 @@ Home
       </section>
 
 
-      <!-- Section: Testimonials -->
-      <section>
-        <div class="container-fluid pl-60 pr-60">
-          <div class="tm-sc-section-title section-title text-center">
-            <div class="row justify-content-md-center">
-              <div class="col"></div>
-              <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                <h5 class="side-line text-theme-colored1 mt-0">Testimonials</h5>
-                <h2 class="mt-0">What People Says</h2>
-              </div>
-              <div class="col"></div>
-            </div>
-          </div>
-          <div class="section-content">
-            <div class="row">
-                @foreach($feedbacks as $state)
-              <div class="col-md-12 col-lg-6 col-xl-4">
-                <div class="testimonial-current-item mb-lg-30">
-                  <div class="testimonial-thumb-holder d-flex align-items-center">
-                    <div class="author-thumb">
-                        <i class="fa fab-user"></i>
-                      <img class="w-100 rounded-circle" src="images/icons/icon2.png" alt="Image">
-                    </div>
-                    <div class="testimonial-author-info">
-                      <h4 class="name m-0">{{$state->name}}</h4>
-                      {{-- <p class="job-position text-uppercase font-weight-500 m-0">Consultant in Bank</p> --}}
-                    </div>
-                  </div>
-                  <div class="testimonial-text-holder">
-                    <div class="author-text">{!! $state->body !!}</div>
-                  </div>
-                </div>
-              </div>
-              @endforeach
 
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section id="gallery" class="bg-white-f6">
         <div class="container pb-70">
@@ -959,4 +1050,5 @@ Home
       </section>
 
 
-@endsection
+
+      @endsection
