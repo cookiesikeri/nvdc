@@ -136,7 +136,7 @@ Home
               </div>
               <div class="col-md-6 col-lg-3 col-xl-3">
                 <div class="help-people-image mb-30 mt-30">
-                  <img class="w-100" src="{{URL::to($general->introimage)}}" alt="">
+                  <img class="w-100" src="{{URL::to($general->slider1)}}" alt="">
                 </div>
                 <div class="help-people-icon-box">
                   <div class="help-people-icon">
