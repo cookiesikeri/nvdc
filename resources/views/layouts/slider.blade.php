@@ -31,7 +31,7 @@
                     data-frame_1="st:1500;sp:1000;"
                     data-frame_999="o:0;st:w;"
                     style="z-index:9;"
-                    >{{$general->sub_header1}}
+                    >{{$general->header1}}
                   </rs-layer>
                   <rs-layer
                     id="slider-9-slide-40-layer-12"
@@ -55,7 +55,7 @@
                     data-frame_1="st:1100;sp:1000;sR:600;"
                     data-frame_999="o:0;st:w;sR:7400;"
                     style="z-index:10;font-family:Averia Sans Libre;"
-                    >
+                    >{{$general->sub_header1}}
                   </rs-layer>
                   <rs-layer
                     id="slider-9-slide-40-layer-22"
@@ -233,7 +233,7 @@
                     data-frame_1="st:500;sp:1000;"
                     data-frame_999="o:0;st:w;sR:8000;"
                     style="z-index:3;background-color:rgba(0,0,0,0.5);"
-                  >
+                  >{{$general->sub_header3}}
                   </rs-layer>
                 </rs-slide>
               </rs-slides>
