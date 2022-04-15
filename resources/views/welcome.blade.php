@@ -115,14 +115,23 @@ Home
           <div class="section-content">
             <div class="row">
               <div class="col-md-12 col-lg-6 col-xl-6">
-                <h5 class="side-line text-theme-colored1 mt-0 mb-0">Help People Now</h5>
-                <h2 class="mt-0 mb-40">Who We Are</h2>
-                <p class="mb-60">{!! $general->who_we_are !!}</p>
-                <h2 class="mt-0 mb-40">What We Do</h2>
-                <p class="mb-60">{!! $general->what_we_do !!}</p>
-                <h2 class="mt-0 mb-40">Targeted States</h2>
-                <p class="mb-60">{!! $general->targeted_states !!}</p>
-                {{-- <a href="page-about.html" class="btn btn-theme-colored2 btn-lg text-white mb-md-40">Discover More</a> --}}
+                <h3 class="side-line text-theme-colored1 mt-0 mb-0">Reasons for poor voter’s turnout</h3>
+
+                <ul>
+                    <li>Difficulty in completing registration
+                    </li>
+                    <li>Not enough voter’s cards
+                    </li>
+                    <li>
+                        Lack of faith/trust in election results
+                    </li>
+                    <li>Rigging and other electoral malpractices
+                    </li>
+                    <li>Not being able to move freely on election day
+                    </li>
+                    <li>Not knowing the nearest polling unit
+                    </li>
+                </ul>
               </div>
               <div class="col-md-6 col-lg-3 col-xl-3">
                 <div class="help-people-icon-box mb-30">
@@ -524,8 +533,17 @@ Home
           <div class="section-content">
             <div class="row">
               <div class="col-lg-12">
-                <h5 class="mb-0 text-gray">Partnership Form </h5>
-                {{-- <h2 class="mt-0 mb-0">Volunteer Form</h2> --}}
+                <h2 class="mt-0 mb-0">Seeking Corporate partners</h2>
+                <ul>
+                    <li>We are seeking interested corporate sponsors to assist us in our goal to strengthen Nigeria’s democracy by addressing voter apathy.
+                    </li>
+                    <li>Corporate partners have a key role to play with our online activities and grassroots ‘boots on ground’ mobilization efforts.
+                    </li>
+                    <li>Please click this button to find out how you can be a corporate partner
+                    </li>
+                </ul>
+                <h5 class="mb-0 text-gray">SignUp To Be A Partner </h5>
+
                 <form action="{{route('become.partner.post')}}" class="appointment-form" method="POST" enctype="multipart/form-data">
                         {{csrf_field()}}
                         @if(Session::has('success'))
