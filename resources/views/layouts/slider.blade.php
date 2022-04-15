@@ -185,7 +185,7 @@
                     data-frame_1="st:1500;sp:1000;"
                     data-frame_999="o:0;st:w;"
                     style="z-index:9;"
-                    >Lorem ipsum dolor sit amet adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    >
                   </rs-layer>
                   <rs-layer
                     id="slider-9-slide-44-layer-12"
