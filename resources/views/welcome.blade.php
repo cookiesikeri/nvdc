@@ -229,6 +229,25 @@ Home
         </div>
       </section>
 
+      <section class="">
+        <div class="container">
+            <div class="section-content">
+                <h5 class="side-line text-theme-colored1 mt-0 mb-0">Fundraiser tracker and Voter’s registered tracker side by side</h5>
+                <div class="row">
+                    <div class="col-md-12 col-lg-6 col-xl-6">
+                        <img src="images/Picture2.png" alt="">
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-6">
+                        <img  src="images/Picture3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tm-floating-objects">
+            <span class="floating-object-4 tm-animation-floating" data-tm-bg-img="images/bg/bird-bg-object1.png" data-tm-opacity="1" data-tm-width="360" data-tm-height="490" data-tm-left="0" data-tm-top="36%"></span>
+        </div>
+    </section>
+
       <section  id="volunteer" class="bg-white-f6">
         <div class="container">
           <div class="section-content">
