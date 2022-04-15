@@ -84,41 +84,74 @@ Home
                   <p class="service-details mb-0">{!! $general->about_content !!}</p>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-6 col-xl-4">
+              <div class="col-md-6 col-lg-6 col-xl-12">
                 <div class="service-item-current-style1 mb-lg-30">
                   <div class="service-icon mb-20">
                     <img class="icon1" src="images/icons/service-icon2.png" alt="">
                     <img class="icon2" src="images/icons/service-white-icon2.png" alt="">
                   </div>
-                  <h4 class="service-title">Who We Are</h4>
-                  <p class="service-details mb-0">{!! $general->who_we_are !!}</p>
+                  <h4 class="service-title">Why Are We Different? </h4>
+                  <p class="service-details mb-0">{!! $general->why_we_different !!}</p>
+                  <ui>
+                      <li>We are NON PARTISAN. We want Nigerians to participate in elections but we do not tell them who to vote for</li>
+                      <li>We are crowdsourcing funding and that allows us to be truly INDEPENDENT
+                    </li>
+                      <li>We are emphasizing ACCOUNTABILITY and TRANSPARENCY
+                    </li>
+                      <li>We are working collaboratively with partners at home and abroad. Our grassroots activities will allow us to engage Nigerians ONLINE and OFFLINE
+                    </li>
+                      <li>We are backed by highly reputable individuals with impeccable INTEGRITY</li>
+                  </ui>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-6 col-xl-4">
-                <div class="service-item-current-style1 mb-lg-30">
-                  <div class="service-icon mb-20">
-                    <img class="icon1" src="images/icons/service-icon3.png" alt="">
-                    <img class="icon2" src="images/icons/service-white-icon3.png" alt="">
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="">
+        <div class="container">
+          <div class="section-content">
+            <div class="row">
+              <div class="col-md-12 col-lg-6 col-xl-6">
+                <h5 class="side-line text-theme-colored1 mt-0 mb-0">Help People Now</h5>
+                <h2 class="mt-0 mb-40">Who We Are</h2>
+                <p class="mb-60">{!! $general->who_we_are !!}</p>
+                <h2 class="mt-0 mb-40">What We Do</h2>
+                <p class="mb-60">{!! $general->what_we_do !!}</p>
+                <h2 class="mt-0 mb-40">Targeted States</h2>
+                <p class="mb-60">{!! $general->targeted_states !!}</p>
+                {{-- <a href="page-about.html" class="btn btn-theme-colored2 btn-lg text-white mb-md-40">Discover More</a> --}}
+              </div>
+              <div class="col-md-6 col-lg-3 col-xl-3">
+                <div class="help-people-icon-box mb-30">
+                  <div class="help-people-icon">
+                    <img src="images/icons/help-people-icon1.png" alt="">
                   </div>
-                  <h4 class="service-title">What we Do</h4>
-                  <p class="service-details mb-0">{!! $general->what_we_do !!}</p>
+                  <h4 class="help-people-title">Let’s Become a Volunteer</h4>
+                </div>
+                <div class="help-people-image">
+                  <img class="w-100" src="{{URL::to($general->about_image)}}" alt="">
                 </div>
               </div>
-              <div class="col-md-6 col-lg-6 col-xl-4">
-                <div class="service-item-current-style1 mb-lg-30">
-                  <div class="service-icon mb-20">
-                    <img class="icon1" src="images/icons/service-icon4.png" alt="">
-                    <img class="icon2" src="images/icons/service-white-icon4.png" alt="">
+              <div class="col-md-6 col-lg-3 col-xl-3">
+                <div class="help-people-image mb-30 mt-30">
+                  <img class="w-100" src="{{URL::to($general->introimage)}}" alt="">
+                </div>
+                <div class="help-people-icon-box">
+                  <div class="help-people-icon">
+                    <img src="images/icons/help-people-icon2.png" alt="">
                   </div>
-                  <h4 class="service-title">Targeted <br>States</h4>
-                  <p class="service-details mb-0">{!! $general->targeted_states !!}</p>
+                  <h4 class="help-people-title">Or make a Donation</h4>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="tm-floating-objects">
+          <span class="floating-object-4 tm-animation-floating" data-tm-bg-img="images/bg/bird-bg-object1.png" data-tm-opacity="1" data-tm-width="360" data-tm-height="490" data-tm-left="0" data-tm-top="36%"></span>
+        </div>
       </section>
-
 
       <section  id="causes" class="bg-white-f6">
         <div class="container">
