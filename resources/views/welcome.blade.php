@@ -368,9 +368,9 @@ Home
                   <h2 class="text-white popup-video-title mb-40">READY TO VOTE ABIA </h2>
                   <div class="box-hover-effect tm-sc-video-popup tm-sc-video-popup-css-button">
                     <div class="effect-wrapper d-flex align-items-center">
-                      {{-- <div class="animated-css-play-button"><span class="play-icon"><i class="fa fa-play"></i></span></div> --}}
-                      <iframe title="YouTube video player" src="https://www.youtube.com/embed/5HPiEQOfi7g" width="700" height="400" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-                      {{-- <a class="hover-link" data-lightbox-gallery="youtube-video" href="https://www.youtube.com/embed/5HPiEQOfi7g" title=""></a> --}}
+                      <div class="animated-css-play-button"><span class="play-icon"><i class="fa fa-play"></i></span></div>
+                      {{-- <iframe title="YouTube video player" src="https://www.youtube.com/embed/5HPiEQOfi7g" width="700" height="400" frameborder="0" allowfullscreen="allowfullscreen"></iframe> --}}
+                      <a class="hover-link" data-lightbox-gallery="youtube-video" href="https://www.youtube.com/embed/5HPiEQOfi7g" title="READY TO VOTE ABIA"></a>
                     </div>
                   </div>
                 </div>
