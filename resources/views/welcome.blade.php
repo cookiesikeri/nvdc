@@ -112,7 +112,7 @@ Home
           </div>
         </div>
       </section>
-      <section class="">
+      <section class="" id="reasons">
         <div class="container">
           <div class="section-content">
             <div class="row">

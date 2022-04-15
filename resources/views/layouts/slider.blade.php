@@ -221,7 +221,7 @@
                     data-frame_1="st:1700;sp:1000;sR:1200;"
                     data-frame_999="o:0;st:w;sR:6800;"
                     style="z-index:8;"
-                    ><a href="page-about.html" class="btn btn-lg btn-bordered btn-theme-colored1 text-white">Learn More</a>
+                    ><a href="#reasons" class="btn btn-lg btn-bordered btn-theme-colored1 text-white">Learn More</a>
                   </rs-layer>
                   <rs-layer
                     id="slider-9-slide-44-layer-33"
