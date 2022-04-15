@@ -16,6 +16,7 @@ Home
                     <div class="icon-text">
                       <h4 class="icon-box-sub-title mb-0">What do we hope to achieve in 2023</h4>
                       <p class="icon-box-title mt-0">We would like to improve voter’s turnout to 50% from 34%. We would also like to be responsible for getting 10 million Nigerians to vote. </p>
+                      <p class="icon-box-title mt-0" style="visibility: hidden">We would like to improve </p>
                     </div>
                     <div class="clearfix"></div>
                   </div>
@@ -28,9 +29,10 @@ Home
                     <div class="icon-text">
                       <h4 class="icon-box-sub-title mb-0">What have we done already?</h4>
                       <p class="icon-box-title mt-0">In Abia state, we have registered 30,000 Abians  to vote and completed their Biometrics. We did this within 30 days.
-                          <br>
+
                       </p>
-                      <br>
+                      <p class="icon-box-title mt-0" style="visibility: hidden">We would like to improve </p>
+                      <p ></p>
 
                     </div>
                     <div class="clearfix"></div>
