@@ -527,9 +527,9 @@ Home
                     <div class="col-sm-3 pr-0 pr-sm-15">
                       <div class="thumb">
                         <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="...">
-                        <div class="event-date">
-                          <h5 class="date">Phase 1</h5>
-                        </div>
+                        {{-- <div class="event-date"> --}}
+                          <a href="#" class="btn btn-theme-colored1 btn-round" style="color: white">Phase 1 >></a>
+                        {{-- </div> --}}
                       </div>
                     </div>
                     <div class="col-sm-8">
@@ -547,9 +547,7 @@ Home
                     <div class="col-sm-3 pr-0 pr-sm-15">
                       <div class="thumb">
                         <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="...">
-                        <div class="event-date">
-                          <h5 class="date">Phase 2</h5>
-                        </div>
+                        <a href="#" class="btn btn-theme-colored1 btn-round" style="color: white">Phase 2 >></a>
                       </div>
                     </div>
                     <div class="col-sm-8">
@@ -567,9 +565,7 @@ Home
                       <div class="col-sm-3 pr-0 pr-sm-15">
                         <div class="thumb">
                           <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="...">
-                          <div class="event-date">
-                            <h5 class="date">Phase 3</h5>
-                          </div>
+                          <a href="#" class="btn btn-theme-colored1 btn-round" style="color: white">Phase 3 >></a>
                         </div>
                       </div>
                       <div class="col-sm-8">
@@ -588,9 +584,7 @@ Home
                       <div class="col-sm-3 pr-0 pr-sm-15">
                         <div class="thumb">
                           <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="...">
-                          <div class="event-date">
-                            <h5 class="date">Phase 4</h5>
-                          </div>
+                          <a href="#" class="btn btn-theme-colored1 btn-round" style="color: white">Phase 4 >></a>
                         </div>
                       </div>
                       <div class="col-sm-8">
@@ -609,9 +603,7 @@ Home
                       <div class="col-sm-3 pr-0 pr-sm-15">
                         <div class="thumb">
                           <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="...">
-                          <div class="event-date">
-                            <h5 class="date">Phase 5</h5>
-                          </div>
+                          <a href="#" class="btn btn-theme-colored1 btn-round" style="color: white">Phase 5 >></a>
                         </div>
                       </div>
                       <div class="col-sm-8">
@@ -630,9 +622,7 @@ Home
                       <div class="col-sm-3 pr-0 pr-sm-15">
                         <div class="thumb">
                           <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="...">
-                          <div class="event-date">
-                            <h5 class="date">Phase 6</h5>
-                          </div>
+                          <a href="#" class="btn btn-theme-colored1 btn-round" style="color: white">Phase 6 >></a>
                         </div>
                       </div>
                       <div class="col-sm-8">
