@@ -262,8 +262,8 @@ Home
               <div class="row">
                 <div class="col-md-6 col-lg-6 col-xl-3">
                   <div class="funfact-item mb-lg-60">
-                    <h2 data-animation-duration="2000" data-value="{{ \App\Models\Donate::all()->count() }}" class="counter animate-number mt-0 mb-10">0</h2>
-                    <p class="title mb-0">Donations</p>
+                    <h2 data-animation-duration="2000" data-value="{{ \App\Models\Client::all()->count() }}" class="counter animate-number mt-0 mb-10">0</h2>
+                    <p class="title mb-0">Partners</p>
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-3">
