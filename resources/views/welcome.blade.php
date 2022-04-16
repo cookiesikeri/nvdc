@@ -143,12 +143,12 @@ Home
                   <h4 class="help-people-title">Become a Volunteer</h4>
                 </div>
                 <div class="help-people-image">
-                  <img class="w-100" src="{{URL::to($general->about_image)}}" alt="">
+                  <img class="w-100" src="images/PHOTO-2022-03-02-19-04-23-1-400x250.jpg" alt="">
                 </div>
               </div>
               <div class="col-md-6 col-lg-3 col-xl-3">
                 <div class="help-people-image mb-30 mt-30">
-                  <img class="w-100" src="{{URL::to($general->slider1)}}" alt="">
+                  <img class="w-100" src="images/a677db7b-17c6-431a-9200-cb4c5eed95ed-1-400x250.jpg" alt="">
                 </div>
                 <div class="help-people-icon-box">
                   <div class="help-people-icon">
@@ -217,7 +217,7 @@ Home
                             <div class="form-group mb-0 mt-0">
                                 <input name="form_botcheck" class="form-control" type="hidden" value="">
                                 <button type="submit" class="btn btn-theme-colored1 btn-round" data-loading-text="Please wait...">Donate NG</button>
-                                <button type="button" class="btn btn-theme-colored btn-round" data-loading-text="Please wait..." style="color: black"><a href="https://aph-foundation.org/"> Donate USD</a></button>
+                                <button type="button" class="btn btn-theme-colored btn-round"  style="color: black"><a href="https://aph-foundation.org/" target="_blank"> Donate USD</a></button>
                             </div>
                         </div>
                     </div>
@@ -246,7 +246,7 @@ Home
             <span class="floating-object-4 tm-animation-floating" data-tm-bg-img="images/bg/bird-bg-object1.png" data-tm-opacity="1" data-tm-width="360" data-tm-height="490" data-tm-left="0" data-tm-top="36%"></span>
         </div>
     </section> --}}
-    <section class="layer-overlay overlay-dark-7" data-tm-bg-img="img/gallery-lg2.jpg">
+    <section class="layer-overlay overlay-dark-7" data-tm-bg-img="images/a677db7b-17c6-431a-9200-cb4c5eed95ed-1-400x250.jpg">
         <div class="container pt-100 pb-150">
           <div class="tm-sc-section-title section-title text-center mb-30">
             <div class="row justify-content-md-center">
@@ -268,19 +268,25 @@ Home
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-3">
                   <div class="funfact-item mb-lg-60">
-                    <h2 data-animation-duration="2000" data-value="{{ \App\Models\Partner::all()->count() }}" class="counter animate-number mt-0 mb-10">0</h2>
-                    <p class="title mb-0">Partners</p>
+                    <h2 data-animation-duration="2000" data-value="23,000" class="counter animate-number mt-0 mb-10">0</h2>
+                    <p class="title mb-0">Registered</p>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-6 col-xl-3">
+                {{-- <div class="col-md-6 col-lg-6 col-xl-3">
                   <div class="funfact-item mb-lg-60">
                     <h2 data-animation-duration="2000" data-value="{{ \App\Models\Volunteer::all()->count() }}" class="counter animate-number mt-0 mb-10">0</h2>
                     <p class="title mb-0">Volunteers</p>
                   </div>
-                </div>
+                </div> --}}
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="funfact-item mb-lg-60">
+                      <h2 data-animation-duration="2000" data-value="138" class="counter animate-number mt-0 mb-10">0</h2>
+                      <p class="title mb-0">Volunteers</p>
+                    </div>
+                  </div>
                 <div class="col-md-6 col-lg-6 col-xl-3">
                   <div class="funfact-item mb-lg-60">
-                    <h2 data-animation-duration="2000" data-value="$250K" class="counter animate-number mt-0 mb-10">0</h2>
+                    <h2 data-animation-duration="2000" data-value="$5,820" class="counter animate-number mt-0 mb-10">0</h2>
                     <p class="title mb-0">Funds Raised</p>
                   </div>
                 </div>
@@ -296,7 +302,7 @@ Home
               <div class="row">
                 <div class="col-lg-12 col-xl-3">
                   <h5 class="side-line text-theme-colored1 mt-60 mb-0">Donate Now</h5>
-                  <h3 class="mt-0 mb-40">Fundraiser tracker and Voter’s registered tracker side by side</h3>
+                  <h3 class="mt-0 mb-40">Voter’s registered tracker</h3>
                   {{-- <p>Dignissim cras tincidunt feugiat at augue. Id purus integer orci.</p> --}}
                 </div>
                 <div class="col-lg-12 col-xl-9">
@@ -321,7 +327,56 @@ Home
                         </div>
                       </div>
                       <div class="col-lg-12 col-xl-8 ml-lg-60">
-                        <h5 class="text-white mb-0">$250,000 Goal</h5>
+                        <h5 class="text-white mb-0">50,000 Goal</h5>
+                        {{-- <h3 class="text-white mt-0">Raise Fund for Clean & Healthy Water</h3> --}}
+                        <p class="text-white">We have currently raised $5,820. Help us register more voters by donating!</p>
+                        <a href="#causes" class="btn btn-dark btn-lg mb-md-40">Donate Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tm-floating-objects">
+          <span class="floating-object-6 tm-animation-floating" data-tm-bg-img="images/bg/bird-bg-object3.png" data-tm-opacity="1" data-tm-width="360" data-tm-height="490" data-tm-right="5%" data-tm-top="-15%"></span>
+        </div>
+    </section>
+
+    <section>
+        <div class="container pt-0 pb-0">
+          <div class="section-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 col-xl-3">
+                  <h5 class="side-line text-theme-colored1 mt-60 mb-0">Donate Now</h5>
+                  <h3 class="mt-0 mb-40">Voter’s registered tracker</h3>
+                  {{-- <p>Dignissim cras tincidunt feugiat at augue. Id purus integer orci.</p> --}}
+                </div>
+                <div class="col-lg-12 col-xl-9">
+                  <div class="right-infinity-bg pt-30 pb-30 mt-sm-60">
+                    <div class="row">
+                      <div class="col-lg-12 col-xl-4">
+                        <div class="tm-sc-pie-chart current-style1">
+                          <div class="pie-chart"
+                            data-bar-color="#fff"
+                            data-track-color="#FF7388"
+                            data-scale-color="#fff"
+                            data-scale-length="3"
+                            data-line-cap="round"
+                            data-line-width="3"
+                            data-size="250"
+                            data-tm-width="250"
+                            data-tm-height="250"
+
+                            data-percent="23">
+                            <span class="percent"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 col-xl-8 ml-lg-60">
+                        <h5 class="text-white mb-0">250,000 Goal</h5>
                         {{-- <h3 class="text-white mt-0">Raise Fund for Clean & Healthy Water</h3> --}}
                         <p class="text-white">We have currently registered 23,000 to our goal of 250,000. Help us reach our goal by donating!</p>
                         <a href="#causes" class="btn btn-dark btn-lg mb-md-40">Donate Now</a>
@@ -336,7 +391,7 @@ Home
         <div class="tm-floating-objects">
           <span class="floating-object-6 tm-animation-floating" data-tm-bg-img="images/bg/bird-bg-object3.png" data-tm-opacity="1" data-tm-width="360" data-tm-height="490" data-tm-right="5%" data-tm-top="-15%"></span>
         </div>
-      </section>
+    </section>
 
       <section  id="volunteer" class="bg-white-f6">
         <div class="container">
@@ -526,7 +581,7 @@ Home
                   <div class="row align-items-center">
                     <div class="col-sm-3 pr-0 pr-sm-15">
                       <div class="thumb">
-                        <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="...">
+                        {{-- <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="..."> --}}
                         {{-- <div class="event-date"> --}}
                           <a href="#" class="btn btn-theme-colored1 btn-round" style="color: white">Phase 1 >></a>
                         {{-- </div> --}}
@@ -546,7 +601,7 @@ Home
                   <div class="row align-items-center">
                     <div class="col-sm-3 pr-0 pr-sm-15">
                       <div class="thumb">
-                        <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="...">
+                        {{-- <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="..."> --}}
                         <a href="#" class="btn btn-theme-colored1 btn-round" style="color: white">Phase 2 >></a>
                       </div>
                     </div>
@@ -564,7 +619,7 @@ Home
                     <div class="row align-items-center">
                       <div class="col-sm-3 pr-0 pr-sm-15">
                         <div class="thumb">
-                          <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="...">
+                          {{-- <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="..."> --}}
                           <a href="#" class="btn btn-theme-colored1 btn-round" style="color: white">Phase 3 >></a>
                         </div>
                       </div>
@@ -602,7 +657,7 @@ Home
                     <div class="row align-items-center">
                       <div class="col-sm-3 pr-0 pr-sm-15">
                         <div class="thumb">
-                          <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="...">
+                          {{-- <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="..."> --}}
                           <a href="#" class="btn btn-theme-colored1 btn-round" style="color: white">Phase 5 >></a>
                         </div>
                       </div>
@@ -621,7 +676,7 @@ Home
                     <div class="row align-items-center">
                       <div class="col-sm-3 pr-0 pr-sm-15">
                         <div class="thumb">
-                          <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="...">
+                          {{-- <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="..."> --}}
                           <a href="#" class="btn btn-theme-colored1 btn-round" style="color: white">Phase 6 >></a>
                         </div>
                       </div>
@@ -653,34 +708,54 @@ Home
                   <div class="tm-sc-section-title section-title text-center">
                     <div class="row justify-content-md-center">
                       <div class="col"></div>
-                      {{-- <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                        <h5 class="side-line text-theme-colored1 mt-0">Testimonials</h5>
-                        <h2 class="mt-0">What People Says</h2>
-                      </div> --}}
+                      <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                        {{-- <h5 class="side-line text-theme-colored1 mt-0">Testimonials</h5> --}}
+                        <h2 class="mt-0">Seeking Corporate partners</h2>
+                      </div>
                       <div class="col"></div>
                     </div>
                   </div>
                   <div class="section-content">
                     <div class="row">
-                        @foreach($feedbacks as $state)
+
                       <div class="col-md-12 col-lg-6 col-xl-4">
                         <div class="testimonial-current-item mb-lg-30">
                           <div class="testimonial-thumb-holder d-flex align-items-center">
-                            <div class="author-thumb">
-                                <i class="fa fab-user"></i>
-                              <img class="w-100 rounded-circle" src="images/icons/icon2.png" alt="Image">
-                            </div>
-                            <div class="testimonial-author-info">
-                              <h4 class="name m-0">{{$state->name}}</h4>
-                              {{-- <p class="job-position text-uppercase font-weight-500 m-0">Consultant in Bank</p> --}}
-                            </div>
                           </div>
                           <div class="testimonial-text-holder">
-                            <div class="author-text">{!! $state->body !!}</div>
+                            <div class="author-text">We are seeking interested corporate sponsors to assist us in our goal to strengthen Nigeria’s democracy by addressing voter apathy.</div>
                           </div>
                         </div>
                       </div>
-                      @endforeach
+
+                      <div class="col-md-12 col-lg-6 col-xl-4">
+                        <div class="testimonial-current-item mb-lg-30">
+                          <div class="testimonial-thumb-holder d-flex align-items-center">
+                          </div>
+                          <div class="testimonial-text-holder">
+                            <div class="author-text">Corporate partners have a key role to play with our online activities and grassroots ‘boots on ground’ mobilization efforts.
+                                <p></p>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 col-lg-6 col-xl-4">
+                        <div class="testimonial-current-item mb-lg-30">
+                          <div class="testimonial-thumb-holder d-flex align-items-center">
+                          </div>
+                          <div class="testimonial-text-holder">
+                            <div class="author-text">change it to sign up to below to be a corporate partner.
+                                <br>
+                                <br>
+                                <p style="visibility: hidden">lkjh nmj hgf</p>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
 
                     </div>
                   </div>
@@ -691,15 +766,6 @@ Home
           <div class="section-content">
             <div class="row">
               <div class="col-lg-12">
-                <h2 class="mt-0 mb-0">Seeking Corporate partners</h2>
-                <ul>
-                    <li>We are seeking interested corporate sponsors to assist us in our goal to strengthen Nigeria’s democracy by addressing voter apathy.
-                    </li>
-                    <li>Corporate partners have a key role to play with our online activities and grassroots ‘boots on ground’ mobilization efforts.
-                    </li>
-                    <li>Please click this button to find out how you can be a corporate partner
-                    </li>
-                </ul>
                 <h5 class="mb-0 text-gray">Sign Up To Be A Partner </h5>
 
                 <form action="{{route('become.partner.post')}}" class="appointment-form" method="POST" enctype="multipart/form-data">
@@ -869,7 +935,7 @@ Home
 
 
       <!-- Start Divider -->
-      <section class="bg-silver-light pt-0" data-tm-margin-top="-100">
+      {{-- <section class="bg-silver-light pt-0" data-tm-margin-top="-100">
         <div class="container pb-80 pt-150">
           <div class="section-content">
             <div class="row">
@@ -881,6 +947,27 @@ Home
                     <div class="item"> <a target="_blank" href="{{$client->link}}"> <img src='{{URL::to($client->image)}}' alt='Image' /> </a></div>
                     @endforeach
 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> --}}
+          <!-- Start Divider -->
+    <section class="bg-silver-light pt-0" data-tm-margin-top="-100">
+        <div class="container pb-80 pt-150">
+          <div class="section-content">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="tm-sc-clients tm-sc-clients-carousel owl-dots-light-skin owl-dots-center clients-animation-grayscale">
+                  <div class="owl-carousel owl-theme tm-owl-carousel-6col" data-autoplay="true" data-loop="true" data-duration="6000" data-smartspeed="300" data-margin="30" data-stagepadding="0" data-laptop="4">
+                    <div class="item"> <a target="_blank" href="#"> <img src='images/clients/1.png' alt='Image' /> </a></div>
+                    <div class="item"> <a target="_blank" href="#"> <img src='images/clients/2.png' alt='Image' /> </a></div>
+                    <div class="item"> <a target="_blank" href="#"> <img src='images/clients/3.png' alt='Image' /> </a></div>
+                    @foreach($clients as $client)
+                    <div class="item"> <a target="_blank" href="{{$client->link}}"> <img src='{{URL::to($client->image)}}' alt='Image' /> </a></div>
+                    @endforeach
                   </div>
                 </div>
               </div>
@@ -1029,7 +1116,8 @@ Home
       <!-- End Divider -->
 
           <!-- Section: Contact -->
-    {{-- <section>
+
+          {{-- <section>
         <div class="container-fluid pt-0 pb-0">
           <div class="row">
             <div class="col-md-12">

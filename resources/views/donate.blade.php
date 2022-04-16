@@ -54,6 +54,7 @@ Donate
                                 <div class="form-group mb-0 mt-0">
                                     <input name="form_botcheck" class="form-control" type="hidden" value="">
                                     <button type="submit" class="btn btn-theme-colored1 btn-round" data-loading-text="Please wait...">Submit Now</button>
+                                    <button type="button" class="btn btn-theme-colored btn-round"  style="color: black"><a href="https://aph-foundation.org/" target="_blank"> Donate USD</a></button>
                                 </div>
                             </div>
                         </div>
