@@ -31,7 +31,7 @@
                     data-frame_1="st:1500;sp:1000;"
                     data-frame_999="o:0;st:w;"
                     style="z-index:9;"
-                    >{{$general->header1}}
+                    >Our goal is to register 250,000 Nigerians in 12 strategic states across all 6 geo-political zones.
                   </rs-layer>
                   <rs-layer
                     id="slider-9-slide-40-layer-12"
@@ -55,7 +55,7 @@
                     data-frame_1="st:1100;sp:1000;sR:600;"
                     data-frame_999="o:0;st:w;sR:7400;"
                     style="z-index:10;font-family:Averia Sans Libre;"
-                    >{{$general->sub_header1}}
+                    >Your PVC is your power.
                   </rs-layer>
                   <rs-layer
                     id="slider-9-slide-40-layer-22"
@@ -66,7 +66,8 @@
                     data-frame_1="st:1700;sp:1000;sR:1200;"
                     data-frame_999="o:0;st:w;sR:6800;"
                     style="z-index:8;"
-                    ><a href="#about" class="btn btn-lg btn-bordered btn-theme-colored1 text-white">Learn More</a>
+                    >
+                    <a href="#about" class="btn btn-lg btn-bordered btn-theme-colored1 text-white">Learn More</a>
                     <a href="#volunteer" class="btn btn-lg btn-bordered btn-theme-colored1 text-white"> Partner With Us</a>
                   </rs-layer>
                   <rs-layer
@@ -82,8 +83,6 @@
                   >
                   </rs-layer>
                 </rs-slide>
-
-
                 <rs-slide data-key="rs-43" data-title="Slide 1" data-thumb="http://placehold.it/1920x1280" data-anim="ei:d;eo:d;s:d;r:0;t:slotslide-horizontal;sl:d;">
                   <img src="{{ asset($general->slider2) }}" title="slide2" width="1920" height="1280" data-parallax="off" class="rev-slidebg" data-no-retina>
                   <rs-layer
@@ -96,7 +95,7 @@
                     data-frame_1="st:500;sp:1000;"
                     data-frame_999="o:0;st:w;"
                     style="z-index:12;font-family:Roboto;"
-                    >
+                    >Start Donating Now
                   </rs-layer>
                   <rs-layer
                     id="slider-9-slide-43-layer-11"
@@ -108,7 +107,7 @@
                     data-frame_1="st:1500;sp:1000;"
                     data-frame_999="o:0;st:w;"
                     style="z-index:9;"
-                    >{{$general->header2}}
+                    >only 15% of eligible voters <br>turn out to vote in Nigeria.
                   </rs-layer>
                   <rs-layer
                     id="slider-9-slide-43-layer-12"
@@ -132,7 +131,7 @@
                     data-frame_1="st:1100;sp:1000;sR:600;"
                     data-frame_999="o:0;st:w;sR:7400;"
                     style="z-index:10;font-family:Averia Sans Libre;"
-                    >{{$general->sub_header2}}
+                    >We must use our voting power to elect leaders that will work for us.
                   </rs-layer>
                   <rs-layer
                     id="slider-9-slide-43-layer-22"
@@ -159,7 +158,6 @@
                   >
                   </rs-layer>
                 </rs-slide>
-
                 <rs-slide data-key="rs-44" data-title="Slide 1" data-thumb="http://placehold.it/1920x1280" data-anim="ei:d;eo:d;s:d;r:0;t:slotslide-horizontal;sl:d;">
                   <img src="{{ asset($general->slider3) }}" title="slide3" width="1920" height="1280" data-parallax="off" class="rev-slidebg" data-no-retina>
                   <rs-layer
@@ -184,7 +182,7 @@
                     data-frame_1="st:1500;sp:1000;"
                     data-frame_999="o:0;st:w;"
                     style="z-index:9;"
-                    >
+                    >Lorem ipsum dolor sit amet adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </rs-layer>
                   <rs-layer
                     id="slider-9-slide-44-layer-12"
@@ -208,7 +206,7 @@
                     data-frame_1="st:1100;sp:1000;sR:600;"
                     data-frame_999="o:0;st:w;sR:7400;"
                     style="z-index:10;font-family:Averia Sans Libre;"
-                    >{{$general->header3}}
+                    >We have the lowest voter turnout in Africa. Then if they click "Learn More" it should take them to the section with "Reasons for poor voter turnout"
                   </rs-layer>
                   <rs-layer
                     id="slider-9-slide-44-layer-22"
@@ -231,7 +229,7 @@
                     data-frame_1="st:500;sp:1000;"
                     data-frame_999="o:0;st:w;sR:8000;"
                     style="z-index:3;background-color:rgba(0,0,0,0.5);"
-                  >{{$general->sub_header3}}
+                  >
                   </rs-layer>
                 </rs-slide>
               </rs-slides>
