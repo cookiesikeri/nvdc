@@ -38,7 +38,7 @@ class HomeController extends Controller
     {
         $feedbacks  = Feedback::take(3)->latest()->get();
         $projects = Project::take(3)->latest()->get();
-        $galleries = Gallery::take(6)->latest()->get();
+        $galleries = Gallery::take(9)->latest()->get();
         $clients = Client::latest()->take(9);
 
         $year = ['2018', '2019', '2020', '2021', '2022'];
