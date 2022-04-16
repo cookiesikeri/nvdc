@@ -217,7 +217,7 @@ Home
                             <div class="form-group mb-0 mt-0">
                                 <input name="form_botcheck" class="form-control" type="hidden" value="">
                                 <button type="submit" class="btn btn-theme-colored1 btn-round" data-loading-text="Please wait...">Donate NG</button>
-                                <button type="button" class="btn btn-theme-colored1 btn-round" data-loading-text="Please wait..." style="color: black"><a href="https://aph-foundation.org/"> Donate USD</a></button>
+                                <button type="button" class="btn btn-theme-colored btn-round" data-loading-text="Please wait..." style="color: black"><a href="https://aph-foundation.org/"> Donate USD</a></button>
                             </div>
                         </div>
                     </div>
