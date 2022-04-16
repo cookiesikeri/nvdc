@@ -962,9 +962,9 @@ Home
               <div class="col-sm-12">
                 <div class="tm-sc-clients tm-sc-clients-carousel owl-dots-light-skin owl-dots-center clients-animation-grayscale">
                   <div class="owl-carousel owl-theme tm-owl-carousel-6col" data-autoplay="true" data-loop="true" data-duration="6000" data-smartspeed="300" data-margin="30" data-stagepadding="0" data-laptop="4">
-                    <div class="item"> <a target="_blank" href="#"> <img src='images/clients/1.png' alt='Image' /> </a></div>
+                    {{-- <div class="item"> <a target="_blank" href="#"> <img src='images/clients/1.png' alt='Image' /> </a></div>
                     <div class="item"> <a target="_blank" href="#"> <img src='images/clients/2.png' alt='Image' /> </a></div>
-                    <div class="item"> <a target="_blank" href="#"> <img src='images/clients/3.png' alt='Image' /> </a></div>
+                    <div class="item"> <a target="_blank" href="#"> <img src='images/clients/3.png' alt='Image' /> </a></div> --}}
                     @foreach($clients as $client)
                     <div class="item"> <a target="_blank" href="{{$client->link}}"> <img src='{{URL::to($client->image)}}' alt='Image' /> </a></div>
                     @endforeach
