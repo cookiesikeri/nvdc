@@ -302,7 +302,7 @@ Home
               <div class="row">
                 <div class="col-lg-12 col-xl-3">
                   {{-- <h5 class="side-line text-theme-colored1 mt-60 mb-0">Donate Now</h5> --}}
-                  <h3 class="mt-0 mb-40">Fundraiser tracker</h3>
+                  <h3 class="mt-0 mb-40">Donate Now</h3>
                   {{-- <p>Dignissim cras tincidunt feugiat at augue. Id purus integer orci.</p> --}}
                 </div>
                 <div class="col-lg-12 col-xl-9">
@@ -321,13 +321,13 @@ Home
                             data-tm-width="250"
                             data-tm-height="250"
 
-                            data-percent="23">
+                            data-percent="11">
                             <span class="percent"></span>
                           </div>
                         </div>
                       </div>
                       <div class="col-lg-12 col-xl-8 ml-lg-60">
-                        <h5 class="text-white mb-0">50,000 Goal</h5>
+                        <h5 class="text-white mb-0">$50,000 Goal</h5>
                         {{-- <h3 class="text-white mt-0">Raise Fund for Clean & Healthy Water</h3> --}}
                         <p class="text-white">We have currently raised $5,820. Help us register more voters by donating!</p>
                         <a href="#causes" class="btn btn-dark btn-lg mb-md-40">Donate Now</a>
@@ -350,7 +350,7 @@ Home
             <div class="container">
               <div class="row">
                 <div class="col-lg-12 col-xl-3">
-                  <h5 class="side-line text-theme-colored1 mt-60 mb-0">Donate Now</h5>
+                  <h5 class="side-line text-theme-colored1 mt-60 mb-0">Fundraiser tracker</h5>
                   <h3 class="mt-0 mb-40">Voter’s registered tracker</h3>
                   {{-- <p>Dignissim cras tincidunt feugiat at augue. Id purus integer orci.</p> --}}
                 </div>
@@ -379,7 +379,7 @@ Home
                         <h5 class="text-white mb-0">250,000 Goal</h5>
                         {{-- <h3 class="text-white mt-0">Raise Fund for Clean & Healthy Water</h3> --}}
                         <p class="text-white">We have currently registered 23,000 to our goal of 250,000. Help us reach our goal by donating!</p>
-                        <a href="#causes" class="btn btn-dark btn-lg mb-md-40">Donate Now</a>
+                        {{-- <a href="#causes" class="btn btn-dark btn-lg mb-md-40">Donate Now</a> --}}
                       </div>
                     </div>
                   </div>
