@@ -1039,7 +1039,7 @@ Home
       <!-- End Divider -->
 
           <!-- Section: Contact -->
-    <section>
+    {{-- <section>
         <div class="container-fluid pt-0 pb-0">
           <div class="row">
             <div class="col-md-12">
@@ -1047,7 +1047,7 @@ Home
             </div>
           </div>
         </div>
-      </section>
+      </section> --}}
 
 
 
