@@ -301,8 +301,8 @@ Home
             <div class="container">
               <div class="row">
                 <div class="col-lg-12 col-xl-3">
-                  <h5 class="side-line text-theme-colored1 mt-60 mb-0">Donate Now</h5>
-                  <h3 class="mt-0 mb-40">Voter’s registered tracker</h3>
+                  {{-- <h5 class="side-line text-theme-colored1 mt-60 mb-0">Donate Now</h5> --}}
+                  <h3 class="mt-0 mb-40">Fundraiser tracker</h3>
                   {{-- <p>Dignissim cras tincidunt feugiat at augue. Id purus integer orci.</p> --}}
                 </div>
                 <div class="col-lg-12 col-xl-9">
