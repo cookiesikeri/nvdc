@@ -217,7 +217,7 @@ Home
                             <div class="form-group mb-0 mt-0">
                                 <input name="form_botcheck" class="form-control" type="hidden" value="">
                                 <button type="submit" class="btn btn-theme-colored1 btn-round" data-loading-text="Please wait...">Donate NG</button>
-                                <button type="button" class="btn btn-theme-colored1 btn-round" data-loading-text="Please wait..." style="color: white"><a href="https://aph-foundation.org/"> Donate USD</a></button>
+                                <button type="button" class="btn btn-theme-colored1 btn-round" data-loading-text="Please wait..." style="color: black"><a href="https://aph-foundation.org/"> Donate USD</a></button>
                             </div>
                         </div>
                     </div>
@@ -246,7 +246,7 @@ Home
             <span class="floating-object-4 tm-animation-floating" data-tm-bg-img="images/bg/bird-bg-object1.png" data-tm-opacity="1" data-tm-width="360" data-tm-height="490" data-tm-left="0" data-tm-top="36%"></span>
         </div>
     </section> --}}
-    <section class="layer-overlay overlay-dark-7 bg-no-repeat bg-pos-center-center" data-tm-bg-img="http://placehold.it/1920x1070">
+    <section class="layer-overlay overlay-dark-7" data-tm-bg-img="img/gallery-lg2.jpg">
         <div class="container pt-100 pb-150">
           <div class="tm-sc-section-title section-title text-center mb-30">
             <div class="row justify-content-md-center">
