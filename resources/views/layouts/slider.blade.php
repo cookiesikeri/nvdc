@@ -132,8 +132,7 @@
                     data-frame_1="st:1100;sp:1000;sR:600;"
                     data-frame_999="o:0;st:w;sR:7400;"
                     style="z-index:10;font-family:Averia Sans Libre;"
-                    >Let’s become<br />
-                    a helping hand
+                    >{{$general->sub_header2}}
                   </rs-layer>
                   <rs-layer
                     id="slider-9-slide-43-layer-22"
@@ -209,8 +208,7 @@
                     data-frame_1="st:1100;sp:1000;sR:600;"
                     data-frame_999="o:0;st:w;sR:7400;"
                     style="z-index:10;font-family:Averia Sans Libre;"
-                    >Let’s become<br />
-                    a helping hand
+                    >{{$general->header3}}
                   </rs-layer>
                   <rs-layer
                     id="slider-9-slide-44-layer-22"
