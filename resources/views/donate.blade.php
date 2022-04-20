@@ -19,7 +19,7 @@ Donate
                         <input type="hidden" name="reference" value="{{ Paystack::genTranxRef() }}"> {{-- required --}}
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         {{csrf_field()}}
-                        {{csrf_field()}}
+
                         <p class="">Why should you donate or volunteer?</p>
                         <p>
                             By joining us on this mission, you become part of the solution to ALL of Nigeria’s problems. We watched generations before us complain all the time, we want to be the generation that actually does something about it. Democracy is our only form of government,

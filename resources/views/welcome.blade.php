@@ -190,16 +190,13 @@ Home
                     </ul>
                 </div>
             @endif
-                <!-- Contact Form -->
-                {{-- <form class="appointment-form" method="post" action="{{ route('pay') }}">
-                    <input type="hidden" name="type"  value="card" class="form-control">
-                    <input type="hidden" name="amount" value="800">
-                    <input type="hidden" name="reference" value="{{ Paystack::genTranxRef() }}">
-                    <input type="hidden" name="_token" value="{{ csrf_token() }}"> --}}
+
+                    <input type="hidden" name="paystack_ref" value="{{ Paystack::genTranxRef() }}">
                     <input type="hidden" name="_auth" id="_auth" value="{{csrf_token()}}">
                     <form class="p-30 pb-15"  method="POST" action="{{ route('pay') }}">
                         <input type="hidden" name="amount" id="amount"  value="amount" class="form-control">
                         <input type="hidden" name="type"  value="card" class="form-control">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         {{csrf_field()}}
 
                     <div class="row">

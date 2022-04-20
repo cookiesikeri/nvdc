@@ -74,7 +74,7 @@ class PaymentController extends Controller
             $order->paystack_ref = $request->pRef;
 
             $order->payment_type = 'Card';
-            $order->reference = $ref;
+            $order->reference = 'NVDC_NG_DONATION_' . $ref;
             $order->payment_status = 1;
             $order->status = 1;
 
@@ -169,7 +169,7 @@ public function verifyPaystackPayment($paystackRef) {
     } else {
         if ($request) {
             $result = json_decode($request, true);
-            \Log::info($result);
+            Log::info($result);
             if($result["status"] == "success") {
                 $verified = 100;
             } else {
