@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use Unicodeveloper\Paystack\Facades\Paystack;
+use Illuminate\Support\Facades\Mail;
 
 class PaymentController extends Controller
 {
@@ -82,12 +83,18 @@ class PaymentController extends Controller
             Log::info('order saved.');
             $resp['status'] = 200;
             $resp['msg'] = "successful.";
+
+            Mail::to('info@nvdcng.com')->send(new \App\Mail\DonationPaymentAdmin($user));
+            Mail::to($request->email)->send(new \App\Mail\DonationPayment($user));
+
             if(Auth::check()) {
-                return response()->json($resp);
+                Session::flash('success', 'Payment successful!');
+                return redirect()->route('paymentsummary');
             } else {
             $resp['status'] = 100;
-            $resp['msg'] = "Payment successful.";
-            return response()->json($resp);
+
+            Session::flash('success', 'Payment successful!');
+            return redirect()->route('paymentsummary');
             }
 
         }
