@@ -194,7 +194,6 @@ Home
                 <form class="appointment-form" method="post" action="{{ route('pay') }}">
                     <input type="hidden" name="type"  value="card" class="form-control">
                     <input type="hidden" name="amount" value="800">
-                    <input type="hidden" name="metadata" value="{{ json_encode($array = ['key_name' => 'value',]) }}" > {{-- For other necessary things you want to add to your payload. it is optional though --}}
                     <input type="hidden" name="reference" value="{{ Paystack::genTranxRef() }}"> {{-- required --}}
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     {{csrf_field()}}
