@@ -23,7 +23,7 @@ Thank you again for your dedication to educating voters on their rights for fair
  Your Friends at the Ready to Vote Abia Project.
 </p>
 <small>
-    If you have any questions or comments, please send an email to <span style="color: #16a599"><a href="mailto:info@nvdcng.com"> info@aph-foundation.com</a></span> or send us a message on *Twitter*, *Instagram* or *Facebook*.
+    If you have any questions or comments, please send an email to <span style="color: #16a599"><a href="mailto:info@nvdcng.com"> info@nvdcng.com</a></span> or send us a message on *Twitter*, *Instagram* or *Facebook*.
 
     To gain more insight about {{ config('app.name') }} and to get firsthand information from us, visit our FAQ page *here*.
 </small>
