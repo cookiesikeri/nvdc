@@ -181,23 +181,37 @@ Home
               </div>
               <div class="col-lg-6">
                 <h2 class="mt-0 mb-0">Donate</h2>
-
+                @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
                 <!-- Contact Form -->
-                <form name="contact_form" class="appointment-form" method="post" action="{{ route('stripe.pay') }}">
+                <form class="appointment-form" method="post" action="{{ route('pay') }}">
+                    <input type="hidden" name="type"  value="card" class="form-control">
+                    <input type="hidden" name="amount" value="800">
+                    <input type="hidden" name="metadata" value="{{ json_encode($array = ['key_name' => 'value',]) }}" > {{-- For other necessary things you want to add to your payload. it is optional though --}}
+                    <input type="hidden" name="reference" value="{{ Paystack::genTranxRef() }}"> {{-- required --}}
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     {{csrf_field()}}
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="form-group mb-30">
-                                <input type="text" placeholder="NameName" name="name" required class="form-control required">
+                                <input type="text" placeholder="NameName" name="name" id="name" required class="form-control required">
                                  @if ($errors->has('name'))
                                 <span class="invalid-feedback" role="alert">
                                     <strong class="text-danger">{{ $errors->first('name') }}</strong>
-                                </span> @endif
+                                </span>
+                                @endif
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group mb-30">
-                                <input type="email" placeholder="Email" name="email" class="form-control required">
+                                <input type="email" placeholder="Email" name="email" id="email" class="form-control required">
                                 @if ($errors->has('email'))
                                 <span class="invalid-feedback" role="alert">
                                     <strong class="text-danger">{{ $errors->first('email') }}</strong>
@@ -206,7 +220,16 @@ Home
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group mb-30">
-                                <input type="text" placeholder="Enter Amount" name="amount" required class="form-control required">
+                                <input type="text" placeholder="Phone" name="phone" id="phone" class="form-control required">
+                                @if ($errors->has('phone'))
+                                <span class="invalid-feedback" role="alert">
+                                    <strong class="text-danger">{{ $errors->first('phone') }}</strong>
+                                </span> @endif
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group mb-30">
+                                <input type="text" placeholder="Enter Amount" name="amount" id="amount" required class="form-control required">
                                  @if ($errors->has('amount'))
                                 <span class="invalid-feedback" role="alert">
                                     <strong class="text-danger">{{ $errors->first('amount') }}</strong>
@@ -216,8 +239,8 @@ Home
                         <div class="col-sm-12">
                             <div class="form-group mb-0 mt-0">
                                 <input name="form_botcheck" class="form-control" type="hidden" value="">
-                                <button type="submit" class="btn btn-theme-colored1 btn-round" data-loading-text="Please wait...">Donate NG</button>
-                                <button type="button" class="btn btn-theme-colored btn-round"  style="color: black"><a href="https://aph-foundation.org/" target="_blank"> Donate USD</a></button>
+                                <button type="submit" class="btn btn-theme-colored1 btn-round">Donate NG</button>
+                                <button type="button" class="btn btn-theme-colored btn-round"  style="color: black"><a href="https://aph-foundation.org/ready-to-vote-abia" target="_blank"> Donate USD</a></button>
                             </div>
                         </div>
                     </div>
@@ -262,7 +285,7 @@ Home
               <div class="row">
                 <div class="col-md-6 col-lg-6 col-xl-3">
                   <div class="funfact-item mb-lg-60">
-                    <h2 data-animation-duration="2000" data-value="{{ \App\Models\Client::all()->count() }}" class="counter animate-number mt-0 mb-10">0</h2>
+                    <h2 data-animation-duration="2000" data-value="9" class="counter animate-number mt-0 mb-10">0</h2>
                     <p class="title mb-0">Partners</p>
                   </div>
                 </div>
@@ -301,9 +324,10 @@ Home
             <div class="container">
               <div class="row">
                 <div class="col-lg-12 col-xl-3">
-                  {{-- <h5 class="side-line text-theme-colored1 mt-60 mb-0">Donate Now</h5> --}}
-                  <h3 class="mt-0 mb-40">Donate Now</h3>
-                  {{-- <p>Dignissim cras tincidunt feugiat at augue. Id purus integer orci.</p> --}}
+                  <h3 class="mt-0 mb-40">Fundraiser Tracker</h3>
+                  <h5 class="side-line text-theme-colored1 mt-60 mb-0">Donate Now</h5>
+
+
                 </div>
                 <div class="col-lg-12 col-xl-9">
                   <div class="right-infinity-bg pt-30 pb-30 mt-sm-60">
@@ -330,7 +354,7 @@ Home
                         <h5 class="text-white mb-0">$50,000 Goal</h5>
                         {{-- <h3 class="text-white mt-0">Raise Fund for Clean & Healthy Water</h3> --}}
                         <p class="text-white">We have currently raised $5,820. Help us register more voters by donating!</p>
-                        <a href="#causes" class="btn btn-dark btn-lg mb-md-40">Donate Now</a>
+                        <a href="#causes" class="btn btn-dark btn-lg mb-md-40">FundraiserTracker</a>
                       </div>
                     </div>
                   </div>
@@ -350,7 +374,7 @@ Home
             <div class="container">
               <div class="row">
                 <div class="col-lg-12 col-xl-3">
-                  <h5 class="side-line text-theme-colored1 mt-60 mb-0">Fundraiser tracker</h5>
+                  {{-- <h5 class="side-line text-theme-colored1 mt-60 mb-0">Fundraiser tracker</h5> --}}
                   <h3 class="mt-0 mb-40">Voter’s registered tracker</h3>
                   {{-- <p>Dignissim cras tincidunt feugiat at augue. Id purus integer orci.</p> --}}
                 </div>
@@ -746,7 +770,7 @@ Home
                           <div class="testimonial-thumb-holder d-flex align-items-center">
                           </div>
                           <div class="testimonial-text-holder">
-                            <div class="author-text">change it to sign up to below to be a corporate partner.
+                            <div class="author-text">Sign up to below to be a corporate partner.
                                 <br>
                                 <br>
                                 <p style="visibility: hidden">lkjh nmj hgf</p>

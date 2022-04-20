@@ -5,7 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\StripeController;
 use App\Http\Controllers\admin\AdminController;
 use App\Http\Controllers\admin\AdminLoginController;
-use App\Http\Controllers\ChartJsController;
+use App\Http\Controllers\PaymentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +18,13 @@ use App\Http\Controllers\ChartJsController;
 |
 */
 
-Route::get('chartjs', [ChartJsController::class, 'index'])->name('chartjs.index');
+Route::get('/paymentsummary', [PaymentController::class, 'PaymentSummary'])->name('paymentsummary');
+//card payment
+Route::get('/payment/callback', [PaymentController::class, 'handleGatewayCallback']);
+Route::post('wallet/card-payment', [PaymentController::class, 'payWithCard'])->name('payment.card-payment');
+Route::get('paywithcard/invoice/{id}', [PaymentController::class, 'payWithCardSlip'])->name('paywithcard.invoice');
+Route::post('/pay', [PaymentController::class, 'redirectToGateway'])->name('pay');
+
 
 Route::post('/stripe/checkout', [StripeController::class, 'initialize'])->name('stripe.pay');
 Route::post('/stripe/success', [StripeController::class, 'callback'])->name('stripe.callback');

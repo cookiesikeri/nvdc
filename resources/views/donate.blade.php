@@ -12,7 +12,13 @@ Donate
             <div class="row">
                 <div class="col-md-12">
                     <!-- Reservation Form Start-->
-                    <form name="appointment_form" class="appointment-form" method="post" action="{{ route('stripe.pay') }}">
+                    <form name="appointment_form" class="appointment-form" method="post" action="{{ route('pay') }}">
+                        <input type="hidden" name="type"  value="card" class="form-control">
+                        <input type="hidden" name="amount" value="800">
+                        <input type="hidden" name="metadata" value="{{ json_encode($array = ['key_name' => 'value',]) }}" > {{-- For other necessary things you want to add to your payload. it is optional though --}}
+                        <input type="hidden" name="reference" value="{{ Paystack::genTranxRef() }}"> {{-- required --}}
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        {{csrf_field()}}
                         {{csrf_field()}}
                         <p class="">Why should you donate or volunteer?</p>
                         <p>
@@ -38,6 +44,15 @@ Donate
                                     @if ($errors->has('email'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong class="text-danger">{{ $errors->first('email') }}</strong>
+                                    </span> @endif
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group mb-30">
+                                    <input type="text" placeholder="Phone" name="phone" id="phone" class="form-control required">
+                                    @if ($errors->has('phone'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong class="text-danger">{{ $errors->first('phone') }}</strong>
                                     </span> @endif
                                 </div>
                             </div>
