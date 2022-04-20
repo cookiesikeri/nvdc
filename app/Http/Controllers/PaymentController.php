@@ -72,7 +72,7 @@ class PaymentController extends Controller
             $order->phone = $request->phone;
             $order->email = $request->email;
             $order->amount = $request->amount;
-            $order->paystack_ref = $request->pRef;
+            $order->paystack_ref = $request->paystack_ref;
 
             $order->payment_type = 'Card';
             $order->reference = 'NVDC_NG_DONATION_' . $ref;
@@ -88,13 +88,11 @@ class PaymentController extends Controller
             Mail::to($request->email)->send(new \App\Mail\DonationPayment($user));
 
             if(Auth::check()) {
-                Session::flash('success', 'Payment successful!');
-                return redirect()->route('paymentsummary');
+                return response()->json($resp);
             } else {
             $resp['status'] = 100;
-
-            Session::flash('success', 'Payment successful!');
-            return redirect()->route('paymentsummary');
+            $resp['msg'] = "Payment successful.";
+            return response()->json($resp);
             }
 
         }

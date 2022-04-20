@@ -191,9 +191,10 @@ Home
                 </div>
             @endif
 
-                    <input type="hidden" name="paystack_ref" value="{{ Paystack::genTranxRef() }}">
+
                     <input type="hidden" name="_auth" id="_auth" value="{{csrf_token()}}">
                     <form class="p-30 pb-15"  method="POST" action="{{ route('pay') }}">
+                        <input type="hidden" name="paystack_ref" value="{{ Paystack::genTranxRef() }}">
                         <input type="hidden" name="amount" id="amount"  value="amount" class="form-control">
                         <input type="hidden" name="type"  value="card" class="form-control">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
