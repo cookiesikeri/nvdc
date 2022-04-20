@@ -7,67 +7,180 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Models\Donate;
+use App\Models\User;
+use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Redirect;
-use Paystack;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
+use Unicodeveloper\Paystack\Facades\Paystack;
 
 class PaymentController extends Controller
 {
 
-    /**
-     * Redirect the User to Paystack Payment Page
-     * @return Url
-     */
-    public function redirectToGateway()
+    public function redirectToGateway(Request $request)
     {
-        try{
-            return Paystack::getAuthorizationUrl()->redirectNow();
-        }catch(\Exception $e) {
-            return Redirect::back()->withMessage(['msg'=>'The paystack token has expired. Please refresh the page and try again.', 'type'=>'error']);
+        // Paystack receives the amount in Kobo, so we multiply by 100 to get the Naira equivalent
+        $request->amount = $request->amount * 100;
+
+        if ($request->type == 'card'){
+            $this->payWithCard($request);
         }
+
+        return Paystack::getAuthorizationUrl()->redirectNow();
     }
 
-
-    /**
-     * Obtain Paystack payment information
-     * @return void
-     */
-    public function handleGatewayCallback()
+    public function payWithCard(Request $request)
     {
-        $paymentDetails = Paystack::getPaymentData();
+        $resp = array(
+            'status'    =>  0,
+            'msg'       =>  'Pending'
+        );
+        $verified = $this->verifyPaystackPayment($request->pRef);
+        if($verified == -1) {
+            $resp['status'] = $verified;
+            $resp['msg'] = 'We were unable to initiate the process of verifying your payment status. Please contact our customer support lines for help.';
+        } else if((1 <= $verified) && ($verified <= 88)) {
+            $resp['status'] = $verified;
+            $resp['msg'] = 'Unfortunately, our servers encountered an error trying to validate your payment status. Please contact our customer support lines for help.';
+        } else if($verified == 404) {
+            $resp['status'] = $verified;
+            $resp['msg'] = 'We could not find your payment transaction reference. Your payment might have been declined. Please contact your bank for clarification.';
+        } else if($verified == '503') {
+            $resp['status'] = $verified;
+            $resp['msg'] = 'Unable to verify transaction. Please contact our customer support lines for help.';
+        } else {
+            $ref = Str::random(6);
+            if(Auth::check()) {
+                Log::info('user is Authenticated');
+                $user = Auth::user();
+            } else {
+                Log::info('user is not Authenticated');
+                $user = User::create([
+                    'username' => 'user',
+                    'email' => $this->random_email(),
+                    'password' => 'user',
+                    'phone' =>  'user',
+                ]);
+                Log::info('user account was successfully created.');
+                Log::info($user);
+            }
+            $order = new Donate();
 
+            $order->name = $request->name;
+            $order->phone = $request->phone;
+            $order->email = $request->email;
+            $order->amount = $request->amount;
+            $order->paystack_ref = $request->pRef;
 
+            $order->payment_type = 'Card';
+            $order->reference = $ref;
+            $order->payment_status = 1;
+            $order->status = 1;
 
-        if ($paymentDetails['status'] == true && $paymentDetails['status'] == 'Verification successful') {
-            $payment = new Donate();
-            $payment->user_id = auth()->user() ? auth()->user()->id : NULL;
-            $payment->reference = $paymentDetails['data']['reference'];
-            $payment->actual_amount = array_key_exists('actual_amount', $paymentDetails['data']['metadata']) ? $paymentDetails['data']['metadata']['actual_amount'] : null;
-            $payment->customer_id = $paymentDetails['data']['customer']['id'];
-            $payment->name = $paymentDetails['data']['customer']['first_name'] != null ? $paymentDetails['data']['customer']['first_name'] . ' ' . $paymentDetails['data']['customer']['last_name'] : null;
-            $payment->email = $paymentDetails['data']['customer']['email'];
-            $payment->phone = $paymentDetails['data']['customer']['phone'];
-            $payment->amount = $paymentDetails['data']['amount'] / 100;
-            $payment->fees = $paymentDetails['data']['fees'] / 100;
-            $payment->gateway_response = $paymentDetails['data']['gateway_response'];
-            $payment->paid_at = $paymentDetails['data']['paid_at'];
-            $payment->transaction_date = $paymentDetails['data']['transaction_date'];
-            $payment->payment_status = $paymentDetails['data']['status'];
-            $payment->save;
+            $user->donations()->save($order);
+            Log::info('order saved.');
+            $resp['status'] = 200;
+            $resp['msg'] = "successful.";
+            if(Auth::check()) {
+                return response()->json($resp);
+            } else {
+            $resp['status'] = 100;
+            $resp['msg'] = "Payment successful.";
+            return response()->json($resp);
+            }
 
         }
+}
+
+public function paymentCallBack(){
+
+    $paymentDetails = Paystack::getPaymentData();
+
+
+    if ($paymentDetails['status'] == true && $paymentDetails['data']['metadata']['custom_field']['type'] == 'card'){
+
+        return $this->payWithCardCallback();
+    }
+    else{
+        dd($paymentDetails['data']['metadata']['custom_field']['type']);
+    }
 
 
 }
 
-    /**
- *  In the case where you need to pass the data from your
- *  controller instead of a form
- *  Make sure to send:
- *  required: email, amount, reference, orderID(probably)
- *  optionally: currency, description, metadata
- *  e.g:
- *
- */
+public function payWithCardCallback(){
+    $paymentDetails = Paystack::getPaymentData();
+    if ($paymentDetails['data']['status'] == 'success'){
+        $order = Donate::find($paymentDetails['data']['metadata']['custom_field']);
+        $order->reference = request()->trxref;
+        $order->status = 'paid';
+        $order->save();
+
+        Session::flash('success', 'Transaction Successful. Your Reference ID is: ' . request()->trxref);
+        return redirect()->route('paymentsummary')->with('transaction_ref', request()->trxref);
+    }else{
+        dd('payment failed');
+    }
+    return $this;
+}
+
+public function random_email()
+{
+    $alpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890';
+    $domains = ['gmail', 'yahoo', 'outlook', 'protonmail'];
+    $groups = ['com', 'net', 'ai', 'org', 'tech'];
+    $suffix = rand(0, count($domains) - 1);
+    $dot = rand(0, count($groups) - 1);
+    $chars = '';
+    for($i = 0; $i < 8; $i++)
+    {
+        $r = rand(0, strlen($alpha) - 1);
+        $chars .= $alpha[$r];
+    }
+    $email = $chars . '@' . $domains[$suffix] . '.' . $groups[$dot];
+    return $email;
+}
+
+public function PaymentSummary()
+{
+
+
+    return view('paywithcard');
+
+}
+
+public function verifyPaystackPayment($paystackRef) {
+    $verified = 0;
+    $result = array();
+    $url = 'https://api.paystack.co/transaction/verify/' . $paystackRef;
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt(
+        $ch, CURLOPT_HTTPHEADER, ['Authorization: Bearer ' . env('PAYSTACK_SECRET_KEY')]
+    );
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+    $request = curl_exec($ch);
+
+    if(curl_errno($ch)) {
+        $verified = curl_errno($ch);
+    } else {
+        if ($request) {
+            $result = json_decode($request, true);
+            \Log::info($result);
+            if($result["status"] == "success") {
+                $verified = 100;
+            } else {
+                $verified = 404;
+            }
+        } else {
+            $verified = 503;
+        }
+    }
+    curl_close($ch);
+}
 
 
 
@@ -76,125 +189,6 @@ class PaymentController extends Controller
 
 
 
-/**
- *  This fluent method does all the dirty work of sending a POST request with the form data
- *  to Paystack Api, then it gets the authorization Url and redirects the user to Paystack
- *  Payment Page. We've abstracted all of it, so you don't have to worry about that.
- *  Just eat your cookies while coding!
- */
-Paystack::getAuthorizationUrl()->redirectNow();
-
-/**
- * Alternatively, use the helper.
- */
-paystack()->getAuthorizationUrl()->redirectNow();
-
-/**
- * This fluent method does all the dirty work of verifying that the just concluded transaction was actually valid,
- * It verifies the transaction reference with Paystack Api and then grabs the data returned from Paystack.
- * In that data, we have a lot of good stuff, especially the `authorization_code` that you can save in your db
- * to allow for easy recurrent subscription.
- */
-Paystack::getPaymentData();
-
-/**
- * Alternatively, use the helper.
- */
-paystack()->getPaymentData();
-
-/**
- * This method gets all the customers that have performed transactions on your platform with Paystack
- * @returns array
- */
-Paystack::getAllCustomers();
-
-/**
- * Alternatively, use the helper.
- */
-paystack()->getAllCustomers();
-
-
-/**
- * This method gets all the plans that you have registered on Paystack
- * @returns array
- */
-Paystack::getAllPlans();
-
-/**
- * Alternatively, use the helper.
- */
-paystack()->getAllPlans();
-
-
-/**
- * This method gets all the transactions that have occurred
- * @returns array
- */
-Paystack::getAllTransactions();
-
-/**
- * Alternatively, use the helper.
- */
-paystack()->getAllTransactions();
-
-/**
- * This method generates a unique super secure cryptographic hash token to use as transaction reference
- * @returns string
- */
-Paystack::genTranxRef();
-
-/**
- * Alternatively, use the helper.
- */
-paystack()->genTranxRef();
-
-
-/**
-* This method creates a subaccount to be used for split payments
-* @return array
-*/
-Paystack::createSubAccount();
-
-/**
- * Alternatively, use the helper.
- */
-paystack()->createSubAccount();
-
-
-/**
-* This method fetches the details of a subaccount
-* @return array
-*/
-Paystack::fetchSubAccount();
-
-/**
- * Alternatively, use the helper.
- */
-paystack()->fetchSubAccount();
-
-
-/**
-* This method lists the subaccounts associated with your paystack account
-* @return array
-*/
-Paystack::listSubAccounts();
-
-/**
- * Alternatively, use the helper.
- */
-paystack()->listSubAccounts();
-
-
-/**
-* This method Updates a subaccount to be used for split payments
-* @return array
-*/
-Paystack::updateSubAccount();
-
-/**
- * Alternatively, use the helper.
- */
-paystack()->updateSubAccount();
 
 }
 
