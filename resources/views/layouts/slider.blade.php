@@ -68,7 +68,7 @@
                     style="z-index:8;"
                     >
                     <a href="#about" class="btn btn-lg btn-bordered btn-theme-colored1 text-white">Learn More</a>
-                    <a href="#volunteer" class="btn btn-lg btn-bordered btn-theme-colored1 text-white"> Partner With Us</a>
+                    <a href="#partner" class="btn btn-lg btn-bordered btn-theme-colored1 text-white"> Partner With Us</a>
                   </rs-layer>
                   <rs-layer
                     id="slider-9-slide-40-layer-33"

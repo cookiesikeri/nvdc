@@ -353,7 +353,7 @@ Home
                         </div>
                       </div>
                       <div class="col-lg-12 col-xl-8 ml-lg-60">
-                        <h5 class="text-white mb-0">$50,000 Goal</h5>
+                        <h5 class="text-white mb-0">$2m Goal</h5>
                         {{-- <h3 class="text-white mt-0">Raise Fund for Clean & Healthy Water</h3> --}}
                         <p class="text-white">We have currently raised $5,820. Help us register more voters by donating!</p>
                         <a href="#causes" class="btn btn-dark btn-lg mb-md-40">FundraiserTracker</a>
@@ -396,7 +396,7 @@ Home
                             data-tm-width="250"
                             data-tm-height="250"
 
-                            data-percent="23">
+                            data-percent="12">
                             <span class="percent"></span>
                           </div>
                         </div>
@@ -664,7 +664,7 @@ Home
                     <div class="row align-items-center">
                       <div class="col-sm-3 pr-0 pr-sm-15">
                         <div class="thumb">
-                          <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="...">
+                          {{-- <img class="w-100 img-fullwidth" src="http://placehold.it/200x200" alt="..."> --}}
                           <a href="#" class="btn btn-theme-colored1 btn-round" style="color: white">Phase 4 >></a>
                         </div>
                       </div>
@@ -969,7 +969,7 @@ Home
                 <div class="tm-sc-clients tm-sc-clients-carousel owl-dots-light-skin owl-dots-center clients-animation-grayscale">
                   <div class="owl-carousel owl-theme tm-owl-carousel-6col" data-autoplay="true" data-loop="true" data-duration="6000" data-smartspeed="300" data-margin="30" data-stagepadding="0" data-laptop="4">
                     <div class="item"> <a target="_blank" href="https://www.ofiar.org/"> <img src='clients/chekkkk.png' alt='Image' /> </a></div>
-                    <div class="item"> <a target="_blank" href="https://www.inecnigeria.org/"> <img src='clients/inec-removebg-preview.jpg' alt='Image' /> </a></div>
+                    {{-- <div class="item"> <a target="_blank" href="https://www.inecnigeria.org/"> <img src='clients/inec-removebg-preview.jpg' alt='Image' /> </a></div> --}}
                     <div class="item"> <a target="_blank" href="https://www.npagroup.org/"> <img src='clients/NPAG-LOGO-2-300x104.png' alt='Image' /> </a></div>
                     <div class="item"> <a target="_blank" href="https://readytoleadafrica.org/"> <img src='clients/vjh.jpg' alt='Image' /> </a></div>
                     <div class="item"> <a target="_blank" href="https://www.facebook.com/ProgressiveAbiaYouths/"> <img src='clients/Webp.net-resizeimage.png' alt='Image' /> </a></div>
