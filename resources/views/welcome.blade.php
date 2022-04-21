@@ -772,7 +772,7 @@ Home
                           <div class="testimonial-thumb-holder d-flex align-items-center">
                           </div>
                           <div class="testimonial-text-holder">
-                            <div class="author-text">Sign up to below to be a corporate partner.
+                            <div class="author-text">Sign up below to be a corporate partner.
                                 <br>
                                 <br>
                                 <p style="visibility: hidden">lkjh nmj hgf</p>
