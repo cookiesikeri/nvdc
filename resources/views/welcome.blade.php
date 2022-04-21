@@ -242,7 +242,7 @@ Home
                             <div class="form-group mb-0 mt-0">
                                 <input name="form_botcheck" class="form-control" type="hidden" value="">
                                 <button type="submit" class="btn btn-theme-colored1 btn-round">Donate NG</button>
-                                <button type="button" class="btn btn-theme-colored btn-round"  style="color: black"><a href="https://aph-foundation.org/ready-to-vote-abia" target="_blank"> Donate USD</a></button>
+                                <button type="button" class="btn btn-theme-colored btn-round"  style="color: black"><a href="https://aph-foundation.org/donate" target="_blank"> Donate USD</a></button>
                             </div>
                         </div>
                     </div>
