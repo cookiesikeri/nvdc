@@ -150,7 +150,6 @@ public function random_email()
 public function PaymentSummary()
 {
 
-
     return view('paywithcard');
 
 }
