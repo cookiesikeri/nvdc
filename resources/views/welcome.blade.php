@@ -974,6 +974,7 @@ Home
                     <div class="item"> <a target="_blank" href="https://readytoleadafrica.org/"> <img src='clients/vjh.jpg' alt='Image' /> </a></div>
                     <div class="item"> <a target="_blank" href="https://www.facebook.com/ProgressiveAbiaYouths/"> <img src='clients/Webp.net-resizeimage.png' alt='Image' /> </a></div>
                     <div class="item"> <a target="_blank" href="https://aph-foundation.org/"> <img src='clients/logo-horizontal.jpg' alt='Image' /> </a></div>
+                    <div class="item"> <a target="_blank" href="https://www.shiftnigeria.com/"> <img src='clients/fjkk.png' alt='Image' /> </a></div>
                     {{-- @foreach($clients as $client)
                     <div class="item"> <a target="_blank" href="{{$client->link}}"> <img src='{{URL::to($client->image)}}' alt='Image' /> </a></div>
                     @endforeach --}}
