@@ -293,7 +293,7 @@ Home
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-3">
                   <div class="funfact-item mb-lg-60">
-                    <h2 data-animation-duration="2000" data-value="23,000" class="counter animate-number mt-0 mb-10">0</h2>
+                    <h2 data-animation-duration="2000" data-value="30,000" class="counter animate-number mt-0 mb-10">0</h2>
                     <p class="title mb-0">Registered</p>
                   </div>
                 </div>
@@ -305,13 +305,13 @@ Home
                 </div> --}}
                 <div class="col-md-6 col-lg-6 col-xl-3">
                     <div class="funfact-item mb-lg-60">
-                      <h2 data-animation-duration="2000" data-value="138" class="counter animate-number mt-0 mb-10">0</h2>
+                      <h2 data-animation-duration="2000" data-value="142" class="counter animate-number mt-0 mb-10">0</h2>
                       <p class="title mb-0">Volunteers</p>
                     </div>
                   </div>
                 <div class="col-md-6 col-lg-6 col-xl-3">
                   <div class="funfact-item mb-lg-60">
-                    <h2 data-animation-duration="2000" data-value="$5,820" class="counter animate-number mt-0 mb-10">0</h2>
+                    <h2 data-animation-duration="2000" data-value="$20m" class="counter animate-number mt-0 mb-10">0</h2>
                     <p class="title mb-0">Funds Raised</p>
                   </div>
                 </div>
@@ -968,11 +968,12 @@ Home
               <div class="col-sm-12">
                 <div class="tm-sc-clients tm-sc-clients-carousel owl-dots-light-skin owl-dots-center clients-animation-grayscale">
                   <div class="owl-carousel owl-theme tm-owl-carousel-6col" data-autoplay="true" data-loop="true" data-duration="6000" data-smartspeed="300" data-margin="30" data-stagepadding="0" data-laptop="4">
-                    <div class="item"> <a target="_blank" href="#"> <img src='clients/chekkkk.png' alt='Image' /> </a></div>
-                    <div class="item"> <a target="_blank" href="#"> <img src='clients/inec-removebg-preview.jpg' alt='Image' /> </a></div>
-                    <div class="item"> <a target="_blank" href="#"> <img src='clients/NPAG-LOGO-2-300x104.png' alt='Image' /> </a></div>
-                    <div class="item"> <a target="_blank" href="#"> <img src='clients/vjh.jpg' alt='Image' /> </a></div>
-                    <div class="item"> <a target="_blank" href="#"> <img src='clients/Webp.net-resizeimage.png' alt='Image' /> </a></div>
+                    <div class="item"> <a target="_blank" href="https://www.ofiar.org/"> <img src='clients/chekkkk.png' alt='Image' /> </a></div>
+                    <div class="item"> <a target="_blank" href="https://www.inecnigeria.org/"> <img src='clients/inec-removebg-preview.jpg' alt='Image' /> </a></div>
+                    <div class="item"> <a target="_blank" href="https://www.npagroup.org/"> <img src='clients/NPAG-LOGO-2-300x104.png' alt='Image' /> </a></div>
+                    <div class="item"> <a target="_blank" href="https://readytoleadafrica.org/"> <img src='clients/vjh.jpg' alt='Image' /> </a></div>
+                    <div class="item"> <a target="_blank" href="https://www.facebook.com/ProgressiveAbiaYouths/"> <img src='clients/Webp.net-resizeimage.png' alt='Image' /> </a></div>
+                    <div class="item"> <a target="_blank" href="https://aph-foundation.org/"> <img src='clients/logo-horizontal.jpg' alt='Image' /> </a></div>
                     {{-- @foreach($clients as $client)
                     <div class="item"> <a target="_blank" href="{{$client->link}}"> <img src='{{URL::to($client->image)}}' alt='Image' /> </a></div>
                     @endforeach --}}
