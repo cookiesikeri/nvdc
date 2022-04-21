@@ -55,7 +55,7 @@
                     data-frame_1="st:1100;sp:1000;sR:600;"
                     data-frame_999="o:0;st:w;sR:7400;"
                     style="z-index:10;font-family:Averia Sans Libre;"
-                    >Your PVC is your power.
+                    >Your PVC is <br>your power.
                   </rs-layer>
                   <rs-layer
                     id="slider-9-slide-40-layer-22"
@@ -107,7 +107,7 @@
                     data-frame_1="st:1500;sp:1000;"
                     data-frame_999="o:0;st:w;"
                     style="z-index:9;"
-                    >only 15% of eligible voters <br>turn out to vote in Nigeria.
+                    >Only 15% of eligible voters turn out to vote in Nigeria. It's time to change that
                   </rs-layer>
                   <rs-layer
                     id="slider-9-slide-43-layer-12"
@@ -131,7 +131,7 @@
                     data-frame_1="st:1100;sp:1000;sR:600;"
                     data-frame_999="o:0;st:w;sR:7400;"
                     style="z-index:10;font-family:Averia Sans Libre;"
-                    >We must use our voting power to elect leaders that will work for us.
+                    > We need more<br> voters
                   </rs-layer>
                   <rs-layer
                     id="slider-9-slide-43-layer-22"
@@ -182,7 +182,7 @@
                     data-frame_1="st:1500;sp:1000;"
                     data-frame_999="o:0;st:w;"
                     style="z-index:9;"
-                    >Lorem ipsum dolor sit amet adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    >To see real transformative change we must show up and vote.
                   </rs-layer>
                   <rs-layer
                     id="slider-9-slide-44-layer-12"
@@ -206,7 +206,7 @@
                     data-frame_1="st:1100;sp:1000;sR:600;"
                     data-frame_999="o:0;st:w;sR:7400;"
                     style="z-index:10;font-family:Averia Sans Libre;"
-                    >We have the lowest voter turnout in Africa. Then if they click "Learn More" it should take them to the section with "Reasons for poor voter turnout"
+                    >We must improve<br> turnout
                   </rs-layer>
                   <rs-layer
                     id="slider-9-slide-44-layer-22"
