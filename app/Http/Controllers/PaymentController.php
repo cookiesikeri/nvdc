@@ -27,18 +27,13 @@ class PaymentController extends Controller
     public function redirectToGateway(Request $request)
     {
         // Paystack receives the amount in Kobo, so we multiply by 100 to get the Naira equivalent
-        // $request->amount = $request->amount * 100;
+        $request->amount = $request->amount * 100;
 
-        // if ($request->type == 'card'){
-        //     $this->payWithCard($request);
-        // }
-
-        // return Paystack::getAuthorizationUrl()->redirectNow();
-        try{
-            return Paystack::getAuthorizationUrl()->redirectNow();
-        }catch(\Exception $e) {
-            return Redirect::back()->withMessage(['msg'=>'The paystack token has expired. Please refresh the page and try again.', 'type'=>'error']);
+        if ($request->type == 'card'){
+            $this->payWithCard($request);
         }
+
+        return Paystack::getAuthorizationUrl()->redirectNow();
     }
 
     public function payWithCard(Request $request)
@@ -110,19 +105,17 @@ class PaymentController extends Controller
 
 public function paymentCallBack(){
 
-    // $paymentDetails = Paystack::getPaymentData();
-
-
-    // if ($paymentDetails['status'] == true && $paymentDetails['data']['metadata']['custom_field']['type'] == 'card'){
-
-    //     return $this->payWithCardCallback();
-    // }
-    // else{
-    //     dd($paymentDetails['data']['metadata']['custom_field']['type']);
-    // }
     $paymentDetails = Paystack::getPaymentData();
 
-    dd($paymentDetails);
+
+    if ($paymentDetails['status'] == true && $paymentDetails['data']['metadata']['custom_field']['type'] == 'card'){
+
+        return $this->payWithCardCallback();
+    }
+    else{
+        dd($paymentDetails['data']['metadata']['custom_field']['type']);
+    }
+
 
 }
 
