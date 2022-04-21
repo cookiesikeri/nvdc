@@ -16,10 +16,10 @@ class DonationPayment extends Mailable
      *
      * @return void
      */
-    public $user;
-    public function __construct($user)
+    public $order;
+    public function __construct($order)
     {
-        $this->user = $user;
+        $this->order = $order;
     }
     /**
      * Build the message.
@@ -29,7 +29,7 @@ class DonationPayment extends Mailable
     public function build()
     {
         return $this
-        ->subject('APH Donation')
+        ->subject('NVDC NG Donation')
         ->markdown('mails.donation');
     }
 }

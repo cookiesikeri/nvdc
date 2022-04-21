@@ -1,12 +1,12 @@
 @component('mail::message')
 
-Dear {{ $user['name'] }},
+Dear {{ $order['name'] }},
 <br>
 
 <p>
     Thank you for your generous donation to the Ready to Vote Abia Project! Donors like you are vital to the continued success of our mission to encourage voters to use their right to vote for the greater good and we are grateful for your support.
 
-    On {{ $user->created_at->format('d/m/Y') }}, you made a contribution of ${{number_format($user->amount), 2}} to the Ready to Vote Abia project .
+    On {{ $order->created_at->format('d/m/Y') }}, you made a contribution of ${{number_format($order->amount), 2}} to NVDC NG project .
 
 </p>
 <p>

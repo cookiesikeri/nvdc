@@ -16,10 +16,10 @@ class DonationPaymentAdmin extends Mailable
      *
      * @return void
      */
-    public $user;
-    public function __construct($user)
+    public $order;
+    public function __construct($order)
     {
-        $this->user = $user;
+        $this->order = $order;
     }
 
     /**
@@ -30,7 +30,7 @@ class DonationPaymentAdmin extends Mailable
     public function build()
     {
         return $this
-        ->subject('New Donation')
+        ->subject('New NVDC NG Donation')
         ->markdown('mails.new_donation');
     }
 }

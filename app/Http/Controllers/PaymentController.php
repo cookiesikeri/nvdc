@@ -84,8 +84,8 @@ class PaymentController extends Controller
             $resp['status'] = 200;
             $resp['msg'] = "successful.";
 
-            Mail::to('info@nvdcng.com')->send(new \App\Mail\DonationPaymentAdmin($user));
-            Mail::to($request->email)->send(new \App\Mail\DonationPayment($user));
+            Mail::to('info@nvdcng.com')->send(new \App\Mail\DonationPaymentAdmin($order));
+            Mail::to($request->email)->send(new \App\Mail\DonationPayment($order));
 
             if(Auth::check()) {
                 return response()->json($resp);
