@@ -1,10 +1,10 @@
 <h4>{{ config('app.name') }}</h4>
-<p>Sender: {{$user->name}}</p>
-<p>E-Mail: {{$user->email}}</p>
+<p>Sender: {{$order->name}}</p>
+<p>E-Mail: {{$order->email}}</p>
 <p>Subject: You Have A New Donation</p>
 <p>Message:
 Hello Admin,<br>
-you have a new donation of ${{number_format($user->amount), 2}}
+you have a new donation of {{number_format($order->amount), 2}}
 <p>
     &copy; {{ config('app.name') }} {{date('Y')}}
 </p>
