@@ -52,17 +52,17 @@ class StripeController extends Controller
 
 
 
-        $user           = new USDPayment();
-        $user->name     = $request->name;
-        $user->email    = $request->email;
-        $user->amount   = $request->amount;
-        $user->phone   = $request->phone;
-        $user->status   = 0;
-        $user->reference = 'NVDC_DONATION_' . $ref;
-        $user->save();
+        $order           = new USDPayment();
+        $order->name     = $request->name;
+        $order->email    = $request->email;
+        $order->amount   = $request->amount;
+        $order->phone   = $request->phone;
+        $order->status   = 0;
+        $order->reference = 'NVDC_DONATION_' . $ref;
+        $order->save();
 
-        Mail::to('info@nvdcng.com')->send(new \App\Mail\DonationPaymentAdmin($user));
-        Mail::to($request->email)->send(new \App\Mail\DonationPayment($user));
+        Mail::to('info@nvdcng.com')->send(new \App\Mail\DonationPaymentAdmin($order));
+        Mail::to($request->email)->send(new \App\Mail\DonationPayment($order));
 
         return view('stripe.checkout', [
             'intent' => $intent,
