@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Donate;
+use App\Models\USDPayment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
 use Stripe;
 use Illuminate\Support\Str;
@@ -25,6 +27,8 @@ class StripeController extends Controller
 
     public function initialize(Request $request)
     {
+        $ref = '51' . substr(uniqid(mt_rand(), true), 0, 8);
+
         if (!$request->amount) {
             return redirect()->route('stripe.pay');
         }
@@ -36,14 +40,29 @@ class StripeController extends Controller
         $amount *= 100;
         $amount = (int) $amount;
 
+
         $payment_intent = \Stripe\PaymentIntent::create([
             'description' => 'Stripe Test Payment',
             'amount' => $amount,
             'currency' => 'USD',
-            'description' => 'DPayment for Donation',
+            'description' => 'Payment for UDSD Donation',
             'payment_method_types' => ['card']
         ]);
         $intent = $payment_intent->client_secret;
+
+
+
+        $user           = new USDPayment();
+        $user->name     = $request->name;
+        $user->email    = $request->email;
+        $user->amount   = $request->amount;
+        $user->phone   = $request->phone;
+        $user->status   = 0;
+        $user->reference = 'NVDC_DONATION_' . $ref;
+        $user->save();
+
+        Mail::to('info@nvdcng.com')->send(new \App\Mail\DonationPaymentAdmin($user));
+        Mail::to($request->email)->send(new \App\Mail\DonationPayment($user));
 
         return view('stripe.checkout', [
             'intent' => $intent,
@@ -55,14 +74,6 @@ class StripeController extends Controller
 
     public function callback(Request $request)
     {
-        // $ref = Str::random(10);
-
-        // $donations           = new Donate();
-        // $donations->name     = $request->name;
-        // $donations->email    = $request->email;
-        // $donations->amount = $request->amount;
-        // $donations->reference = $ref;
-        // $donations->save();
 
 
         return view('stripe.success');

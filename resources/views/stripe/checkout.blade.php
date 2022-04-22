@@ -155,6 +155,9 @@
                                             <label for="email">Email:</label>
                                             <input type="email" id="email" name="email" value="{{ $email }}" readonly>
 
+                                            <label for="email">Phone Number:</label>
+                                            <input type="email" id="phone" name="phone" value="{{ $phone }}" readonly>
+
                                             <div id="card-element">
                                             <!-- A Stripe Element will be inserted here. -->
                                             </div>
