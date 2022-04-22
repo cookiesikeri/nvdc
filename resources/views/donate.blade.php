@@ -7,7 +7,7 @@ Donate
 
 <section class="" >
     <div class="container position-relative p-0 mt-90" style="max-width: 700px;">
-        <h3 class="bg-theme-colored1 p-15 mb-0 text-white">Donation Form</h3>
+        <h3 class="bg-theme-colored1 p-15 mb-0 text-white">Donation Form (USD)</h3>
         <div class="section-content bg-white p-30">
             <div class="row">
                 <div class="col-md-12">
