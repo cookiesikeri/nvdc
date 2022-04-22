@@ -311,7 +311,7 @@ Home
                   </div>
                 <div class="col-md-6 col-lg-6 col-xl-3">
                   <div class="funfact-item mb-lg-60">
-                    <h2 data-animation-duration="2000" data-value="$20m" class="counter animate-number mt-0 mb-10">0</h2>
+                    <h2 data-animation-duration="2000" data-value="N20m" class="counter animate-number mt-0 mb-10">0</h2>
                     <p class="title mb-0">Funds Raised</p>
                   </div>
                 </div>
@@ -355,8 +355,8 @@ Home
                       <div class="col-lg-12 col-xl-8 ml-lg-60">
                         <h5 class="text-white mb-0">$2m Goal</h5>
                         {{-- <h3 class="text-white mt-0">Raise Fund for Clean & Healthy Water</h3> --}}
-                        <p class="text-white">We have currently raised $5,820. Help us register more voters by donating!</p>
-                        <a href="#causes" class="btn btn-dark btn-lg mb-md-40">FundraiserTracker</a>
+                        <p class="text-white">We have currently raised $36,000. Help us register more voters by donating!</p>
+                        <a href="#causes" class="btn btn-dark btn-lg mb-md-40">Donate Now</a>
                       </div>
                     </div>
                   </div>
