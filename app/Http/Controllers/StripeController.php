@@ -68,6 +68,7 @@ class StripeController extends Controller
             'intent' => $intent,
             'amount' => $request->amount,
             'name' => $request->name,
+            'phone' => $request->phone,
             'email' => $request->email,
         ]);
     }
