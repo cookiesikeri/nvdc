@@ -977,6 +977,7 @@ Home
                     <div class="item"> <a target="_blank" href="https://www.shiftnigeria.com/"> <img src='clients/fjkk.png' alt='Image' /> </a></div>
                     <div class="item"> <a target="_blank" href="http://www.100igbos.org/"> <img src='clients/100igbo.jpg' alt='Image' /> </a></div>
                     <div class="item"> <a target="_blank" href="https://www.shiftnigeria.com/"> <img src='clients/shift.png' alt='Image' /> </a></div>
+                    <div class="item"> <a target="_blank" href="https://thecompatriots.com/"> <img src='clients/compan.jpeg' alt='Image' /> </a></div>
                     {{-- @foreach($clients as $client)
                     <div class="item"> <a target="_blank" href="{{$client->link}}"> <img src='{{URL::to($client->image)}}' alt='Image' /> </a></div>
                     @endforeach --}}
