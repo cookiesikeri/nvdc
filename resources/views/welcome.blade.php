@@ -989,6 +989,46 @@ Home
         </div>
       </section>
 
+      <section class="bg-white-f5" id="endorsers">
+        <div class="container">
+            <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                {{-- <h5 class="side-line text-theme-colored1 mt-0">Testimonials</h5> --}}
+                <h2 class="mt-0 text-center">Our Endorsers</h2>
+              </div>
+          <div class="section-content">
+            <div class="row">
+              <div class="col-md-12 col-lg-3 col-xl-3">
+                <div class="team-item mb-30">
+                  <div class="team-thumb">
+                    <img class="w-100" src="img/ngozi-700.jpg" alt="">
+                  </div>
+                  <div class="team-content bg-white">
+                    <div class="team-information">
+                      <h5 class="team-name mt-0 mb-0">Ngozi Okonjo-Iweala</h5>
+                      <p class="designation mb-0">Director general of the World Trade Organization</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-3 col-xl-3">
+                <div class="team-item mb-30">
+                  <div class="team-thumb">
+                    <img class="w-100"src="img/adiche.jpg" alt="">
+                  </div>
+                  <div class="team-content bg-white">
+                    <div class="team-information">
+                      <h5 class="team-name mt-0 mb-0"> Chimamanda Ngozi Adichie</h5>
+                      <p class="designation mb-0">Nigerian writer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Section: Contact Form -->
       <section  id="contact" class="bg-white-f6">
         <div class="container">

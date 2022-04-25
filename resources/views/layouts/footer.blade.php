@@ -34,8 +34,9 @@
               <h4 class="widget-title widget-title-line-bottom line-bottom-theme-colored1">Quick Links</h4>
               <div class="menu-footer-page-list">
                 <ul class="menu">
-                    <li @if(active('/'))  class="active" @endif><a href="#home">Home</a> </li>
-                    <li @if(active('aboutus')) class="active" @endif><a href="#about">About</a></li>
+                    <li class="active"><a href="#home">Home</a> </li>
+                    <li><a href="#endorsers">Endorsers</a> </li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#causes">Donate</a></li>
                     <li><a href="#volunteer">Volunteer</a></li>
                 </ul>
