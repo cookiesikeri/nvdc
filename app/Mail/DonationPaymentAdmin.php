@@ -30,7 +30,7 @@ class DonationPaymentAdmin extends Mailable
     public function build()
     {
         return $this
-        ->subject('New NVDC NG Donation')
+        ->subject('New NVDC US Donation')
         ->markdown('mails.new_donation');
     }
 }

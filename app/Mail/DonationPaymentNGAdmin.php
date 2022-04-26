@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class DonationPayment extends Mailable
+class DonationPaymentNGAdmin extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -21,15 +21,16 @@ class DonationPayment extends Mailable
     {
         $this->order = $order;
     }
+
     /**
      * Build the message.
      *
-     * @return $thisjoin_volunteer
+     * @return $this
      */
     public function build()
     {
         return $this
-        ->subject('NVDC US Donation')
-        ->markdown('mails.donation');
+        ->subject('New NVDC NG Donation')
+        ->markdown('mails.new_ng_donation');
     }
 }
