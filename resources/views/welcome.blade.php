@@ -311,7 +311,7 @@ Home
                   </div>
                 <div class="col-md-6 col-lg-6 col-xl-3">
                   <div class="funfact-item mb-lg-60">
-                    <h2 data-animation-duration="2000" data-value="N20m" class="counter animate-number mt-0 mb-10">0</h2>
+                    <h2 data-animation-duration="2000" data-value="$75,000" class="counter animate-number mt-0 mb-10">0</h2>
                     <p class="title mb-0">Funds Raised</p>
                   </div>
                 </div>
