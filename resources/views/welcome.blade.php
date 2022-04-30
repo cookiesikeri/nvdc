@@ -31,7 +31,7 @@ Home
                       <p class="icon-box-title mt-0">In Abia state, we have registered 30,000 Abians  to vote and completed their Biometrics. We did this within 30 days.
 
                       </p>
-                      <p class="icon-box-title mt-0" style="visibility: hidden">We would like to improvehh hh <br>ggggg <br>hgggggg</p>
+                      <p class="icon-box-title mt-0" style="visibility: hidden">We would like to improvehh hh <br>ggggg <br>hgggggg<br>gggg</p>
                       <p ></p>
 
                     </div>
