@@ -353,9 +353,9 @@ Home
                         </div>
                       </div>
                       <div class="col-lg-12 col-xl-8 ml-lg-60">
-                        <h5 class="text-white mb-0">$2m Goal</h5>
+                        <h5 class="text-white mb-0">$20m Goal</h5>
                         {{-- <h3 class="text-white mt-0">Raise Fund for Clean & Healthy Water</h3> --}}
-                        <p class="text-white">We have currently raised $36,000. Help us register more voters by donating!</p>
+                        <p class="text-white">We have currently raised $75,000. Help us register more voters by donating!</p>
                         <a href="#causes" class="btn btn-dark btn-lg mb-md-40">Donate Now</a>
                       </div>
                     </div>
@@ -402,9 +402,9 @@ Home
                         </div>
                       </div>
                       <div class="col-lg-12 col-xl-8 ml-lg-60">
-                        <h5 class="text-white mb-0">250,000 Goal</h5>
+                        <h5 class="text-white mb-0">2m Goal</h5>
                         {{-- <h3 class="text-white mt-0">Raise Fund for Clean & Healthy Water</h3> --}}
-                        <p class="text-white">We have currently registered 23,000 to our goal of 250,000. Help us reach our goal by donating!</p>
+                        <p class="text-white">We have currently registered 30,000 out of 2m. Help us reach our goal by donating!</p>
                         {{-- <a href="#causes" class="btn btn-dark btn-lg mb-md-40">Donate Now</a> --}}
                       </div>
                     </div>
