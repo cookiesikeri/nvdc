@@ -347,7 +347,7 @@ Home
                             data-tm-width="250"
                             data-tm-height="250"
 
-                            data-percent="4">
+                            data-percent=".4">
                             <span class="percent"></span>
                           </div>
                         </div>
