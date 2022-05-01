@@ -347,7 +347,7 @@ Home
                             data-tm-width="250"
                             data-tm-height="250"
 
-                            data-percent="11">
+                            data-percent="4">
                             <span class="percent"></span>
                           </div>
                         </div>
@@ -396,7 +396,7 @@ Home
                             data-tm-width="250"
                             data-tm-height="250"
 
-                            data-percent="12">
+                            data-percent="1.5">
                             <span class="percent"></span>
                           </div>
                         </div>
