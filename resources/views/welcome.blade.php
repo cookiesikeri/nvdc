@@ -46,7 +46,7 @@ Home
                     <div class="icon-text">
                       <h4 class="icon-box-sub-title mb-0">Why are we using this approach?</h4>
                       <p class="icon-box-title mt-0">If we can raise 0.0001% of the annual remittance ($2m) to strengthen democracy and improve the type of leadership we have, then NVDC can help move the needle towards better governance in Nigeria</p>
-                                            <p class="icon-box-title mt-0" style="visibility: hidden">We would like <br>hgggg</p>
+                                            <p class="icon-box-title mt-0" style="visibility: hidden">We</p>
                     </div>
                     <div class="clearfix"></div>
                   </div>
