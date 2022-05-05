@@ -49,7 +49,7 @@ Home
                     <div class="icon-text">
                       <h4 class="icon-box-sub-title mb-0">Why are we using this approach?</h4>
                       <p class="icon-box-title mt-0">If we can raise 0.0001% of the annual remittance ($2m) to strengthen democracy and improve the type of leadership we have, then NVDC can help move the needle towards better governance in Nigeria</p>
-                                        
+
                     </div>
                     <div class="clearfix"></div>
                   </div>
@@ -1017,12 +1017,12 @@ Home
               <div class="col-md-12 col-lg-3 col-xl-3">
                 <div class="team-item mb-30">
                   <div class="team-thumb">
-                    <img class="w-100"src="img/adiche.jpg" alt="">
+                    <img class="w-100"src="img/iheanacho-emeruwa.jpeg" alt="" style="size: 10px;">
                   </div>
                   <div class="team-content bg-white">
                     <div class="team-information">
-                      <h5 class="team-name mt-0 mb-0"> Chimamanda Ngozi Adichie</h5>
-                      <p class="designation mb-0">Nigerian writer</p>
+                      <h5 class="team-name mt-0 mb-0"> Iheanacho Emeruwa</h5>
+                      <p class="designation mb-0">MD, FACP, FACOG</p>
                     </div>
                   </div>
                 </div>
