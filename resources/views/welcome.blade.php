@@ -1017,7 +1017,7 @@ Home
               <div class="col-md-12 col-lg-3 col-xl-3">
                 <div class="team-item mb-30">
                   <div class="team-thumb">
-                    <img class="w-100"src="img/iheanacho-emeruwa.jpeg" alt="" style="size: 10px;">
+                    <img class="w-100"src="img/iheanacho-emeruwa.jpeg" alt="" style="size: 20px">
                   </div>
                   <div class="team-content bg-white">
                     <div class="team-information">

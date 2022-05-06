@@ -43,16 +43,16 @@ class AppServiceProvider extends ServiceProvider
 
 
         });
-            // if(App::environment() == "production")
-        // {
-        //     $url = \Request::url();
-        //     $check = strstr($url,"http://");
-        //     if($check)
-        //     {
-        //        $newUrl = str_replace("http","https",$url);
-        //        header("Location:".$newUrl);
+            if(App::environment() == "production")
+        {
+            $url = \Request::url();
+            $check = strstr($url,"http://");
+            if($check)
+            {
+               $newUrl = str_replace("http","https",$url);
+               header("Location:".$newUrl);
 
-        //     }
-        // }
+            }
+        }
 }
 }
