@@ -1004,7 +1004,7 @@ Home
               <div class="col-md-12 col-lg-3 col-xl-3">
                 <div class="team-item mb-30">
                   <div class="team-thumb">
-                    <img class="w-100" src="img/ngozi-700.jpg" alt="">
+                    <img class="w-100" src="img/owIdZtRs_400x400.jpeg" alt="">
                   </div>
                   <div class="team-content bg-white">
                     <div class="team-information">
