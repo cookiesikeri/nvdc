@@ -207,7 +207,7 @@ Home
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="form-group mb-30">
-                                <input type="text" placeholder="NameName" name="name" id="name" required class="form-control required">
+                                <input type="text" placeholder="FullName" name="name" id="name" required class="form-control required">
                                  @if ($errors->has('name'))
                                 <span class="invalid-feedback" role="alert">
                                     <strong class="text-danger">{{ $errors->first('name') }}</strong>
@@ -978,7 +978,7 @@ Home
                     <div class="item"> <a target="_blank" href="https://readytoleadafrica.org/"> <img src='clients/vjh.jpg' alt='Image' /> </a></div>
                     <div class="item"> <a target="_blank" href="https://www.facebook.com/ProgressiveAbiaYouths/"> <img src='clients/Webp.net-resizeimage.png' alt='Image' /> </a></div>
                     <div class="item"> <a target="_blank" href="https://aph-foundation.org/"> <img src='clients/logo-horizontal.jpg' alt='Image' /> </a></div>
-                    <div class="item"> <a target="_blank" href="https://www.shiftnigeria.com/"> <img src='clients/fjkk.png' alt='Image' /> </a></div>
+                    {{-- <div class="item"> <a target="_blank" href="https://www.shiftnigeria.com/"> <img src='clients/fjkk.png' alt='Image' /> </a></div> --}}
                     <div class="item"> <a target="_blank" href="http://www.100igbos.org/"> <img src='clients/100igbo.jpg' alt='Image' /> </a></div>
                     <div class="item"> <a target="_blank" href="https://www.shiftnigeria.com/"> <img src='clients/shift.png' alt='Image' /> </a></div>
                     <div class="item"> <a target="_blank" href="https://thecompatriots.com/"> <img src='clients/compan.jpeg' alt='Image' /> </a></div>
