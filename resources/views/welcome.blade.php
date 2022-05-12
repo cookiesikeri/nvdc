@@ -1003,7 +1003,10 @@ Home
             <div class="row">
               <div class="col-md-12 col-lg-3 col-xl-3">
                 <div class="team-item mb-30">
-                  <div class="team-thumb">
+                  {{-- <div class="team-thumb">
+                    <img class="w-100" src="img/owIdZtRs_400x400.jpeg" alt="">
+                  </div> --}}
+                  <div class="help-people-image">
                     <img class="w-100" src="img/owIdZtRs_400x400.jpeg" alt="">
                   </div>
                   <div class="team-content bg-white">
@@ -1016,9 +1019,9 @@ Home
               </div>
               <div class="col-md-12 col-lg-3 col-xl-3">
                 <div class="team-item mb-30">
-                  <div class="team-thumb">
-                    <img class="w-100"src="img/iheanacho-emeruwa.jpeg" alt="" style="size: 20px">
-                  </div>
+                    <div class="help-people-image">
+                        <img class="w-100" src="img/iheanacho-emeruwa.jpeg" alt="">
+                      </div>
                   <div class="team-content bg-white">
                     <div class="team-information">
                       <h5 class="team-name mt-0 mb-0"> Iheanacho Emeruwa</h5>
