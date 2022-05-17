@@ -1020,7 +1020,7 @@ Home
               <div class="col-md-12 col-lg-3 col-xl-3">
                 <div class="team-item mb-30">
                     <div class="help-people-image">
-                        <img class="w-100" src="{{asset('img/image.png')}}" alt="no image">
+                        <img class="w-100" src="{{asset('img/imageimage.jpg')}}" alt="no image">
                       </div>
                   <div class="team-content bg-white">
                     <div class="team-information">
