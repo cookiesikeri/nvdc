@@ -1026,6 +1026,7 @@ Home
                     <div class="team-information">
                       <h5 class="team-name mt-0 mb-0"> Iheanacho Emeruwa</h5>
                       <p class="designation mb-0">MD, FACP, FACOG</p>
+                      <p class="designation mb-0" style="visibility: hidden">MD, FACP, FACOG</p>
                     </div>
                   </div>
                 </div>
