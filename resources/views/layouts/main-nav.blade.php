@@ -20,7 +20,7 @@
               </ul>
             </div>
             <div class="element pt-0 pb-0">
-              <a href="{{route('donate')}}" class="btn btn-theme-colored2 btn-sm ajaxload-popup">Make a Donation</a>
+              <a href="{{route('donate')}}" class="btn btn-theme-colored2 btn-sm">Make a Donation</a>
             </div>
           </div>
         </div>
