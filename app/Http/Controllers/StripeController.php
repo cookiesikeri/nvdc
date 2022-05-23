@@ -61,8 +61,8 @@ class StripeController extends Controller
         $order->reference = 'NVDC_DONATION_' . $ref;
         $order->save();
 
-        Mail::to('info@nvdcng.com')->send(new \App\Mail\DonationPaymentAdmin($order));
-        Mail::to($request->email)->send(new \App\Mail\DonationPayment($order));
+        // Mail::to('info@nvdcng.com')->send(new \App\Mail\DonationPaymentAdmin($order));
+        // Mail::to($request->email)->send(new \App\Mail\DonationPayment($order));
 
         return view('stripe.checkout', [
             'intent' => $intent,
