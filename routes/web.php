@@ -27,7 +27,7 @@ Route::post('/pay', [PaymentController::class, 'redirectToGateway'])->name('pay'
 
 
 Route::post('/stripe/checkout', [StripeController::class, 'initialize'])->name('stripe.pay');
-Route::post('/stripe/success', [StripeController::class, 'callback'])->name('stripe.callback');
+Route::get('/stripe/success', [StripeController::class, 'callback'])->name('stripe.callback');
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/donate', [HomeController::class, 'Donate'])->name('donate');
