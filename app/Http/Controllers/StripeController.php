@@ -33,12 +33,15 @@ class StripeController extends Controller
             return redirect()->route('stripe.pay');
         }
 
+
+
         // Enter Your Stripe Secret
         \Stripe\Stripe::setApiKey(config('services.payment.stripe_secret'));
 
         $amount = $request->amount;
         $amount *= 100;
         $amount = (int) $amount;
+        $request->amount = $request->amount * 100;
 
 
         $payment_intent = \Stripe\PaymentIntent::create([
