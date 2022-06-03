@@ -30,7 +30,7 @@ Home
                     <div class="icon-wrapper"> <a class="icon icon-default"> <i data-tm-font-size="4rem" class="flaticon-charity-donation-box" ></i> </a></div>
                     <div class="icon-text">
                       <h4 class="icon-box-sub-title mb-0">What have we done already?</h4>
-                      <p class="icon-box-title mt-0">In Abia state, we have registered 30,000 Abians  to vote and completed their Biometrics. We did this within 30 days.
+                      <p class="icon-box-title mt-0">In Abia state, we have registered 72,000 Abians  to vote and completed their Biometrics. We did this within 30 days.
 
                       </p>
                       <p class="icon-box-title mt-0" style="visibility: hidden">Wegg <br></p>
@@ -297,7 +297,7 @@ Home
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-3">
                   <div class="funfact-item mb-lg-60">
-                    <h2 data-animation-duration="2000" data-value="30,000" class="counter animate-number mt-0 mb-10">0</h2>
+                    <h2 data-animation-duration="2000" data-value="72,000" class="counter animate-number mt-0 mb-10">0</h2>
                     <p class="title mb-0">Registered</p>
                   </div>
                 </div>
@@ -315,7 +315,7 @@ Home
                   </div>
                 <div class="col-md-6 col-lg-6 col-xl-3">
                   <div class="funfact-item mb-lg-60">
-                    <h2 data-animation-duration="2000" data-value="$75,000" class="counter animate-number mt-0 mb-10">0</h2>
+                    <h2 data-animation-duration="2000" data-value="$90,000" class="counter animate-number mt-0 mb-10">0</h2>
                     <p class="title mb-0">Funds Raised</p>
                   </div>
                 </div>
@@ -359,7 +359,7 @@ Home
                       <div class="col-lg-12 col-xl-8 ml-lg-60">
                         <h5 class="text-white mb-0">$20m Goal</h5>
                         {{-- <h3 class="text-white mt-0">Raise Fund for Clean & Healthy Water</h3> --}}
-                        <p class="text-white">We have currently raised $75,000. Help us register more voters by donating!</p>
+                        <p class="text-white">We have currently raised $90,000. Help us register more voters by donating!</p>
                         <a href="#causes" class="btn btn-dark btn-lg mb-md-40">Donate Now</a>
                       </div>
                     </div>
